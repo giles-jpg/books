@@ -3961,18 +3961,6 @@ const BOOKS = [
   "rating": 4
  },
  {
-  "title": "Lonesome Dove",
-  "author": "Larry McMurtry",
-  "year": 1985,
-  "series": "",
-  "awards": "",
-  "format": "Audiobook",
-  "read": true,
-  "shelf": "Digital",
-  "pages": 858,
-  "rating": 5
- },
- {
   "title": "Tomorrow, and Tomorrow, and Tomorrow",
   "author": "Gabrielle Zevin",
   "year": 2022,
