@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giles' Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EDE8DC; --paper-2:#E4DECF; --ink:#15171C; --ink-soft:#4A4B50;
+  --orange:#E1500F; --blue:#2E5FA3; --green:#0F7357; --mustard:#B8890B;
+  --rule:#C7C0AE; --card:#F4F0E6;
+  --disp:'Jost',system-ui,sans-serif; --body:'Spectral',Georgia,serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+a{color:inherit}
+button{font-family:var(--disp);cursor:pointer}
+:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+
+.triband{display:flex;height:10px}
+.triband span{flex:1}
+.triband .b1{background:var(--orange)}.triband .b2{background:var(--green)}.triband .b3{background:var(--blue)}
+
+header.mast{padding:34px 24px 18px;text-align:center;border-bottom:1px solid var(--rule)}
+.mast h1{font-family:var(--disp);font-weight:700;letter-spacing:.28em;font-size:clamp(22px,4vw,34px);text-transform:uppercase}
+.mast p{font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);margin-top:8px;letter-spacing:.06em}
+.mast p b{color:var(--ink);font-weight:500}
+
+nav.tabs{display:flex;justify-content:center;gap:4px;padding:14px 16px;border-bottom:1px solid var(--rule);position:sticky;top:0;background:var(--paper);z-index:30}
+.tabs button{background:none;border:1px solid transparent;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:8px 18px;color:var(--ink-soft);border-radius:2px}
+.tabs button:hover{color:var(--ink)}
+.tabs button.on{color:var(--paper);background:var(--ink);border-color:var(--ink)}
+
+main{max-width:1060px;margin:0 auto;padding:28px 24px 90px}
+section.view{display:none}
+section.view.on{display:block}
+
+/* ---------- HOME ---------- */
+.strip-wrap{margin:6px 0 8px}
+.spine-strip i.fresh{box-shadow:0 0 0 1px var(--mustard),0 0 6px 1px var(--mustard);animation:freshpulse 2.4s ease-in-out infinite;position:relative;z-index:1}
+@keyframes freshpulse{0%,100%{box-shadow:0 0 0 1px var(--mustard),0 0 5px 0 var(--mustard)}50%{box-shadow:0 0 0 1px var(--mustard),0 0 9px 2px var(--mustard)}}
+.newbadge:empty{display:none}
+.newbadge{color:var(--mustard);font-weight:600}
+.freshdot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--mustard);margin-right:5px;transform:translateY(.5px)}
+.strip-label{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:10px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.legend{display:flex;gap:14px}
+.legend i{display:inline-block;width:9px;height:9px;margin-right:5px;transform:translateY(.5px)}
+.legend .k{background:var(--orange)}.legend .a{background:var(--blue)}.legend .p{background:var(--green)}
+.spine-strip{display:flex;align-items:flex-end;gap:1px;height:64px;padding:0 2px;border-bottom:3px solid var(--ink);overflow:hidden}
+.spine-strip i{flex:1 0 auto;min-width:1px;max-width:5px;display:block;transition:transform .12s}
+.spine-strip i:hover{transform:translateY(-6px)}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:34px 0}
+.stat{background:var(--card);padding:16px 18px}
+.stat .n{font-family:var(--disp);font-weight:700;font-size:30px;line-height:1}
+.stat .l{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-top:7px}
+.stat .bar{height:4px;background:var(--paper-2);margin-top:10px;position:relative}
+.stat .bar b{position:absolute;inset:0;right:auto;background:var(--green)}
+.catbreak{margin-top:12px;display:flex;flex-direction:column;gap:5px}
+.catrow{display:flex;align-items:center;gap:8px}
+.catrow .cl{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);width:74px;flex:none}
+.catrow .cbar{flex:1;height:3px;background:var(--paper-2);position:relative}
+.catrow .cbar b{position:absolute;inset:0;right:auto;background:var(--ink-soft)}
+.catrow .cp{font-family:var(--mono);font-size:10px;color:var(--ink-soft);width:30px;text-align:right;flex:none}
+.stat.pie{display:flex;align-items:center;justify-content:center;padding:10px}
+.stat.pie svg{display:block}
+.stat.pie text{font-family:var(--mono);font-size:13px;font-weight:500;fill:#fff}
+
+h2.sec{font-family:var(--disp);font-weight:600;font-size:15px;letter-spacing:.2em;text-transform:uppercase;margin:44px 0 4px;display:flex;align-items:center;gap:14px}
+h2.sec::after{content:"";flex:1;height:1px;background:var(--rule)}
+.sec-sub{font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);margin-bottom:18px}
+
+.recent{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.rcard{background:var(--card);border:1px solid var(--rule);border-top:5px solid var(--ink);padding:14px 15px 13px;display:flex;flex-direction:column;gap:6px;min-height:118px;cursor:pointer;transition:transform .12s}
+.rcard:hover{transform:translateY(-3px)}
+.rcard .yr{font-family:var(--mono);font-size:11.5px;color:var(--ink-soft)}
+.rcard .tt{font-weight:600;font-size:16.5px;line-height:1.25}
+.rcard .au{font-size:13.5px;font-style:italic;color:var(--ink-soft);margin-top:auto}
+
+.shelves{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.shelf{background:var(--card);border:1px solid var(--rule);padding:16px 16px 12px;cursor:pointer;transition:transform .12s}
+.shelf:hover{transform:translateY(-3px)}
+.shelf .stack{display:flex;align-items:flex-end;gap:3px;height:66px;border-bottom:3px solid var(--ink);padding:0 3px}
+.shelf .stack i{width:11px;display:block}
+.shelf .who{display:flex;justify-content:space-between;align-items:baseline;margin-top:10px;gap:8px}
+.shelf .who .a{font-family:var(--disp);font-weight:600;font-size:14px;letter-spacing:.02em}
+.shelf .who .c{font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);white-space:nowrap}
+
+/* ---------- LIBRARY ---------- */
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:6px}
+.toolbar input[type=search]{flex:1 1 240px;padding:10px 14px;font-family:var(--body);font-size:15px;border:1px solid var(--ink);background:var(--card);border-radius:0}
+.toolbar select{padding:10px 8px;font-family:var(--mono);font-size:12.5px;border:1px solid var(--rule);background:var(--card)}
+.hits{font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);margin:8px 2px 14px}
+.hits button{background:none;border:none;font-family:var(--mono);font-size:11.5px;color:var(--orange);text-decoration:underline;padding:0;margin-left:8px}
+
+table.lib{width:100%;border-collapse:collapse}
+.lib th{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;text-align:left;color:var(--ink-soft);padding:6px 10px;border-bottom:2px solid var(--ink);cursor:pointer;user-select:none;white-space:nowrap}
+.lib th:hover{color:var(--ink)}
+.lib td{padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:baseline}
+.lib tr:hover td{background:var(--card)}
+td.c-pages,td.c-year{font-family:var(--mono);font-size:12.5px;text-align:right;color:var(--ink-soft)}
+td.c-title{font-weight:600;font-size:15.5px;line-height:1.3}
+td.c-title small{display:block;font-family:var(--mono);font-weight:400;font-size:10.5px;color:var(--ink-soft);margin-top:3px}
+td.c-title small .aw{color:var(--mustard);font-weight:500}
+td.c-title a.loc{cursor:pointer;border-bottom:1px dotted var(--ink-soft)}
+td.c-title a.loc:hover{border-bottom-style:solid;color:var(--orange)}
+td.c-author{font-style:italic;font-size:14px}
+td.c-author a{cursor:pointer;text-decoration:none;border-bottom:1px dotted var(--rule)}
+td.c-author a:hover{border-bottom-color:var(--ink)}
+td.c-year{font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);white-space:nowrap}
+.fmt{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#fff;padding:3px 7px 2px}
+.fmt.Kindle{background:var(--orange)}.fmt.Audiobook{background:var(--blue)}.fmt.Paperback{background:var(--green)}
+.readtag{background:none;border:1px solid var(--rule);font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px 3px;color:var(--ink-soft);white-space:nowrap}
+.readtag.yes{border-color:var(--green);color:var(--green);font-weight:500}
+.readtag:hover{border-color:var(--ink);color:var(--ink)}
+td.c-shelf{font-family:var(--mono);font-size:12px;color:var(--ink-soft);cursor:pointer;white-space:nowrap}
+td.c-shelf:hover{color:var(--ink)}
+td.c-shelf .none{opacity:.45}
+input.shelf-edit{font-family:var(--mono);font-size:12px;width:120px;border:1px solid var(--ink);padding:3px 6px;background:#fff}
+
+/* ---------- AWARDS ---------- */
+:root{--aw-nobel:#B8890B;--aw-booker:#15171C;--aw-pulitzer:#5F7186;--aw-hugo:#6B4FA0;--aw-nebula:#0B7285}
+.chip{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--aw-other,var(--mustard));color:var(--aw-other,var(--mustard));padding:2px 6px 1px;margin-left:8px;vertical-align:2px;white-space:nowrap}
+.chip.nobel{border-color:var(--aw-nobel);color:var(--aw-nobel)}
+.chip.booker{border-color:var(--aw-booker);color:var(--aw-booker)}
+.chip.pulitzer{border-color:var(--aw-pulitzer);color:var(--aw-pulitzer)}
+.chip.hugo{border-color:var(--aw-hugo);color:var(--aw-hugo)}
+.chip.nebula{border-color:var(--aw-nebula);color:var(--aw-nebula)}
+.prizes{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:22px}
+.prize{background:var(--card);border:1px solid var(--rule);border-left:6px solid var(--pc);padding:16px 18px;cursor:pointer;transition:transform .12s}
+.prize:hover{transform:translateY(-3px)}
+.prize .n{font-family:var(--disp);font-weight:700;font-size:34px;line-height:1;color:var(--pc)}
+.prize .p{font-family:var(--disp);font-weight:600;font-size:14px;letter-spacing:.16em;text-transform:uppercase;margin-top:6px}
+.prize .s{font-family:var(--mono);font-size:11px;color:var(--ink-soft);margin-top:4px}
+.tl{display:flex;gap:5px;align-items:flex-end;padding:6px 2px 0;overflow-x:auto}
+.tl .col{flex:1;min-width:30px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:3px}
+.tl .col .dots{display:flex;flex-direction:column-reverse;gap:3px;padding-bottom:8px}
+.tl .col i{width:9px;height:9px;border-radius:50%;display:block}
+.tl .col .lab{font-family:var(--mono);font-size:10px;color:var(--ink-soft);border-top:2px solid var(--ink);padding:6px 4px 0;width:100%;text-align:center}
+.tl-note{font-family:var(--mono);font-size:10.5px;color:var(--ink-soft);margin-top:10px;display:flex;gap:16px;flex-wrap:wrap}
+.tl-note i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;transform:translateY(.5px)}
+
+/* ---------- MAP ---------- */
+.plan{background:var(--card);border:1px solid var(--rule);padding:18px;margin-bottom:18px}
+.plan svg{display:block;max-width:640px;margin:0 auto}
+.plan .unit{fill:url(#caseFace);stroke:var(--ink);stroke-width:1.4;cursor:pointer;filter:url(#caseShadow)}
+.plan .unit:hover{fill:var(--mustard)}
+.plan .depth{fill:var(--ink);opacity:.16;pointer-events:none}
+.plan text{font-family:var(--mono);font-size:9px;fill:var(--ink);pointer-events:none}
+.case{background:var(--card);border:1px solid var(--rule);padding:16px;margin-bottom:26px;
+  transform:perspective(1400px) rotateX(6deg);transform-origin:50% 0;
+  box-shadow:0 14px 22px -14px rgba(21,23,28,.4)}
+.case h3{font-family:var(--disp);font-size:14px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+.shelfrow{display:flex;align-items:flex-end;gap:2px;min-height:56px;border-bottom:4px solid var(--ink);margin-bottom:12px;padding:0 6px 0 38px;position:relative;box-shadow:0 7px 8px -7px rgba(21,23,28,.35)}
+.shelfrow .slab{position:absolute;left:0;bottom:6px;font-family:var(--mono);font-size:10px;color:var(--paper);background:var(--ink);padding:2px 7px;z-index:2}
+.shelfrow.empty{border-bottom-color:var(--rule)}
+.shelfrow .await{font-family:var(--mono);font-size:10.5px;color:var(--ink-soft);align-self:center;margin:auto;opacity:.6}
+.spine2{display:block;cursor:pointer;position:relative;transition:transform .1s}
+.spine2:hover{transform:translateY(-5px)}
+.spine2.read{background:var(--green)}
+.spine2.unread{background:#CFC8B4}
+.spine2 i{position:absolute;top:0;left:0;right:0;height:4px;background:var(--mustard)}
+.spine2.dim{opacity:.22}
+.spine2.hit{outline:2px solid var(--orange);outline-offset:1px;transform:translateY(-6px)}
+.prizesplit{display:flex;gap:14px}
+.prow-lab{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:2px 0 6px}
+.prizesplit>div{flex:1}
+.mapleg{font-family:var(--mono);font-size:10.5px;color:var(--ink-soft);margin:4px 2px 16px;display:flex;gap:16px;flex-wrap:wrap}
+.mapleg i{display:inline-block;width:9px;height:9px;margin-right:5px;transform:translateY(.5px)}
+
+/* ---------- ADD ---------- */
+.panel{background:var(--card);border:1px solid var(--rule);padding:22px;margin-bottom:22px}
+.panel h3{font-family:var(--disp);font-size:14px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px}
+.panel p{font-size:14.5px;color:var(--ink-soft);max-width:64ch;margin-bottom:12px}
+.panel p code{font-family:var(--mono);font-size:12px;background:var(--paper-2);padding:1px 5px}
+textarea{width:100%;min-height:170px;font-family:var(--mono);font-size:12.5px;padding:12px;border:1px solid var(--ink);background:#fff;resize:vertical}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:11px 20px;margin:12px 10px 0 0;border-radius:0}
+.btn:hover{background:var(--orange);border-color:var(--orange)}
+.btn.ghost{background:none;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.msg{font-family:var(--mono);font-size:12.5px;margin-top:12px;color:var(--green)}
+.msg.err{color:var(--orange)}
+.dirty{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--ink);color:var(--paper);padding:12px 20px;font-family:var(--mono);font-size:12.5px;z-index:50;text-align:center}
+.dirty.on{display:block}
+.dirty button{margin-left:14px;background:var(--orange);color:#fff;border:none;padding:7px 14px;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:640px){ .lib th:nth-child(4),.lib td:nth-child(4){display:none} main{padding:20px 14px 110px} }
+</style>
+</head>
+<body>
+<div class="triband" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+
+<header class="mast">
+  <h1>Giles&rsquo; Library</h1>
+  <p id="mast-line"></p>
+</header>
+
+<nav class="tabs" aria-label="Views">
+  <button data-v="home" class="on">Home</button>
+  <button data-v="library">Library</button>
+  <button data-v="reading">Reading</button>
+  <button data-v="map">Map</button>
+  <button data-v="add">Add &amp; export</button>
+</nav>
+
+<main>
+<!-- ================= HOME ================= -->
+<section class="view on" id="v-home">
+  <div class="strip-wrap">
+    <div class="strip-label">
+      <span>The whole collection, spine by spine &middot; oldest to newest &middot; height &asymp; length where known</span>
+      <span class="legend"><span id="newbadge" class="newbadge"></span><span><i class="k"></i>Kindle</span><span><i class="a"></i>Audiobook</span><span><i class="p"></i>Paperback</span></span>
+    </div>
+    <div class="spine-strip" id="strip" aria-hidden="true"></div>
+  </div>
+
+  <div class="stats" id="stats"></div>
+
+  <h2 class="sec">The prize cabinet</h2>
+  <div class="sec-sub">Tap a prize to browse its winners &middot; the timeline plots each winner by decade of publication</div>
+  <div class="prizes" id="prizes"></div>
+  <div class="tl" id="timeline"></div>
+  <div class="tl-note" id="tl-note"></div>
+
+  <h2 class="sec">Try something new</h2>
+  <div class="sec-sub">Eight unread books from the shelves &middot; refresh the page for a new hand</div>
+  <div class="recent" id="recent"></div>
+
+  <h2 class="sec">Most collected authors</h2>
+  <div class="sec-sub">Tap a shelf to browse that author</div>
+  <div class="shelves" id="shelves"></div>
+</section>
+
+<!-- ================= LIBRARY ================= -->
+<section class="view" id="v-library">
+  <div class="toolbar">
+    <input type="search" id="q" placeholder="Search title, author or series&hellip;" aria-label="Search">
+    <select id="f-format" aria-label="Format"><option value="">Format: all</option></select>
+    <select id="f-read" aria-label="Read status"><option value="">Status: all</option><option value="read">Read</option><option value="unread">Unread</option></select>
+    <select id="f-series" aria-label="Series"><option value="">Series: all</option></select>
+    <select id="f-award" aria-label="Awards"><option value="">Awards: all</option></select>
+    <select id="f-shelf" aria-label="Shelf"><option value="">Shelf: all</option></select>
+  </div>
+  <div class="hits" id="hits"></div>
+  <table class="lib">
+    <thead><tr>
+      <th data-s="title">Title</th><th data-s="author">Author</th><th data-s="year">Year</th><th data-s="pages">Pages</th><th data-s="format">Format</th><th data-s="shelf">Shelf</th><th data-s="read">Status</th>
+    </tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+</section>
+
+<!-- ================= READING ================= -->
+<section class="view" id="v-reading">
+  <div id="reading-body"></div>
+</section>
+
+<!-- ================= MAP ================= -->
+<section class="view" id="v-map">
+  <div class="toolbar" style="margin-bottom:14px">
+    <input type="search" id="mapq" placeholder="Find a book on the shelves&hellip;" aria-label="Locate a book">
+  </div>
+  <div id="map-body"></div>
+</section>
+
+<!-- ================= ADD ================= -->
+<section class="view" id="v-add">
+  <div class="panel">
+    <h3>Add books in bulk</h3>
+    <p>Paste rows copied straight from Excel or a spreadsheet (tab&#8209;separated), one book per line, columns in this order: <code>Title&nbsp;&middot;&nbsp;Author&nbsp;&middot;&nbsp;Year&nbsp;&middot;&nbsp;Series&nbsp;&middot;&nbsp;Awards&nbsp;&middot;&nbsp;Format&nbsp;&middot;&nbsp;Read/Unread&nbsp;&middot;&nbsp;Shelf</code>. Only the title is required; a header row is skipped automatically, duplicates (same title and author) are ignored, and a blank Shelf is filled in automatically (Kindle/Audiobook &rarr; Digital, prize winners &rarr; Prizewinners).</p>
+    <textarea id="paste" placeholder="The Long Good-bye&#9;Raymond Chandler&#9;1953&#9;Philip Marlowe&#9;&#9;Paperback&#9;Read"></textarea>
+    <button class="btn" id="do-import">Add to library</button>
+    <div class="msg" id="import-msg" role="status"></div>
+  </div>
+  <div class="panel">
+    <h3>Save your library</h3>
+    <p>Your library lives in <code>giles-library-data.js</code>, kept in the same folder as this app. Changes made here live only in this open page until you save: <b>Download data file</b> gives you an updated copy &mdash; replace the old one and reload. The app file itself never needs re-saving. CSV export is there for spreadsheets or a future enrichment pass.</p>
+    <button class="btn" id="dl-html">Download data file</button>
+    <button class="btn ghost" id="dl-csv">Download CSV</button>
+    <div class="msg" id="save-msg" role="status"></div>
+  </div>
+</section>
+</main>
+
+<div class="dirty" id="dirty">You have unsaved changes <button id="dirty-save">Download updated data file</button></div>
+
+<script src="giles-library-data.js"></script>
+<script src="giles-reading-log.js"></script>
+<style>
+/* ---------- READING ---------- */
+.rgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-bottom:14px}
+.rpanel{background:var(--card);border:1px solid var(--rule);padding:18px}
+.rpanel h3{font-family:var(--disp);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:4px}
+.rpanel .sub{font-family:var(--mono);font-size:10.5px;color:var(--ink-soft);margin-bottom:14px}
+.hrow{display:flex;align-items:center;gap:10px;margin:6px 0}
+.hrow .lab{font-family:var(--mono);font-size:11.5px;width:86px;flex:none;color:var(--ink-soft);text-align:right}
+.hrow .bar{flex:1;height:16px;background:var(--paper-2);position:relative}
+.hrow .bar b{position:absolute;top:0;bottom:0;left:0;background:var(--ink)}
+.hrow .bar i{position:absolute;top:0;bottom:0;background:repeating-linear-gradient(45deg,var(--rule),var(--rule) 3px,transparent 3px,transparent 6px)}
+.hrow .n{font-family:var(--mono);font-size:11.5px;width:52px;flex:none}
+.strip{display:flex;height:20px;margin:5px 0 2px}
+.strip span{display:block;height:100%}
+.striplab{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--ink-soft);margin-bottom:8px}
+.rleg{display:flex;gap:12px;flex-wrap:wrap;font-family:var(--mono);font-size:10.5px;color:var(--ink-soft);margin-top:10px}
+.rleg i{display:inline-block;width:9px;height:9px;margin-right:5px;transform:translateY(.5px)}
+.hm{display:grid;gap:3px;font-family:var(--mono);font-size:10.5px}
+.hm .cell{aspect-ratio:auto;min-height:30px;display:flex;align-items:center;justify-content:center;background:var(--paper-2)}
+.hm .rowlab,.hm .collab{display:flex;align-items:center;justify-content:center;color:var(--ink-soft);background:none}
+.bignum{font-family:var(--disp);font-weight:700;font-size:34px;line-height:1}
+</style>
+<script>
+"use strict";
+const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+if(typeof BOOKS==='undefined'){document.body.innerHTML='<div style="font-family:monospace;padding:60px 24px;max-width:60ch;margin:auto;line-height:1.7"><b>Data file not found.</b><br>This app needs <code>giles-library-data.js</code> in the same folder as this HTML file. Move the two files back together and reload.</div>';throw new Error('no data');}
+let books=BOOKS;
+let dirty=false;
+const FMT_COLOR={Kindle:'var(--orange)',Audiobook:'var(--blue)',Paperback:'var(--green)'};
+const ALIAS={'Richard Stark':'Donald E. Westlake'}; // pen names fold into one writer on the shelves
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const hash=s=>{let h=0;for(let i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))|0}return Math.abs(h)};
+
+/* ---- tabs ---- */
+$$('.tabs button').forEach(b=>b.addEventListener('click',()=>{
+  $$('.tabs button').forEach(x=>x.classList.toggle('on',x===b));
+  $$('.view').forEach(v=>v.classList.toggle('on',v.id==='v-'+b.dataset.v));
+}));
+function goLibrary(){ $$('.tabs button').forEach(x=>x.classList.toggle('on',x.dataset.v==='library'));
+  $$('.view').forEach(v=>v.classList.toggle('on',v.id==='v-library')); }
+function goMap(t){ $$('.tabs button').forEach(x=>x.classList.toggle('on',x.dataset.v==='map'));
+  $$('.view').forEach(v=>v.classList.toggle('on',v.id==='v-map'));
+  const q=$('#mapq'); q.value=t||''; q.dispatchEvent(new Event('input')); }
+
+/* ---- home ---- */
+function renderHome(){
+  const total=books.length, read=books.filter(b=>b.read).length;
+  const fmt=f=>books.filter(b=>b.format===f).length;
+  $('#mast-line').innerHTML=`A private catalogue &middot; <b>${total}</b> titles &middot; <b>${read}</b> read &middot; four centuries of print`;
+
+  const spineH=b=>b.pages?Math.round(26+36*Math.min(1,Math.max(0,(b.pages-80)/920))):(30+hash(b.title)%32);
+  const monthAgo=new Date(Date.now()-30*864e5).toISOString().slice(0,10);
+  const isNew=b=>b.added&&b.added>=monthAgo;
+  const strip=$('#strip'); strip.innerHTML='';
+  [...books].sort((a,b)=>(a.year||99999)-(b.year||99999)).forEach(b=>{const i=document.createElement('i');
+    i.style.background=FMT_COLOR[b.format]||'var(--ink-soft)';
+    i.style.height=spineH(b)+'px';
+    if(isNew(b))i.className='fresh';
+    i.title=b.title+(b.author?' — '+b.author:'')+(b.year?' ('+b.year+')':'')+(b.pages?' · '+b.pages+'pp':'')+(isNew(b)?' · newly added':''); strip.appendChild(i);});
+  const nNew=books.filter(isNew).length;
+  const nb=$('#newbadge'); if(nb){nb.innerHTML=nNew?`<span class="freshdot"></span>${nNew} added this month`:'';}
+
+  const pct=Math.round(read/total*100);
+  const fmts=['Kindle','Audiobook','Paperback'].map(f=>({f,n:fmt(f)})).filter(x=>x.n>0);
+  const other=total-fmts.reduce((s,x)=>s+x.n,0);
+  if(other>0)fmts.push({f:'Other',n:other});
+  const R=56,CX=60,CY=60;let ang=-Math.PI/2,paths='',labels='';
+  fmts.forEach(({f,n})=>{
+    const a2=ang+n/total*2*Math.PI;
+    const x1=CX+R*Math.cos(ang),y1=CY+R*Math.sin(ang),x2=CX+R*Math.cos(a2),y2=CY+R*Math.sin(a2);
+    const large=(a2-ang)>Math.PI?1:0;
+    paths+=`<path d="M${CX} ${CY} L${x1.toFixed(1)} ${y1.toFixed(1)} A${R} ${R} 0 ${large} 1 ${x2.toFixed(1)} ${y2.toFixed(1)} Z" fill="${FMT_COLOR[f]||'var(--ink-soft)'}" stroke="var(--card)" stroke-width="1.5"><title>${f}: ${n} (${Math.round(n/total*100)}%)</title></path>`;
+    const mid=(ang+a2)/2, lr=(a2-ang)<0.5?R*0.8:R*0.62;
+    labels+=`<text x="${(CX+lr*Math.cos(mid)).toFixed(1)}" y="${(CY+lr*Math.sin(mid)+4).toFixed(1)}" text-anchor="middle">${n}</text>`;
+    ang=a2;
+  });
+  const pie=`<svg width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Formats: ${fmts.map(x=>x.f+' '+x.n).join(', ')}">${paths}${labels}</svg>`;
+  const catOf=b=>{const s=b.shelf||'';return s.indexOf('Fiction')===0?'Fiction':(s.indexOf('Non-Fiction')===0||s==='Prizewinners')?'Non-Fiction':s==='Film'?'Film':'Digital';};
+  const catPct=c=>{const l=books.filter(b=>catOf(b)===c);return l.length?{n:l.length,r:l.filter(b=>b.read).length,p:Math.round(l.filter(b=>b.read).length/l.length*100)}:null;};
+  const cats=['Fiction','Non-Fiction','Film','Digital'].map(c=>[c,catPct(c)]).filter(x=>x[1]);
+  const catRows=cats.map(([c,d])=>`<div class="catrow"><span class="cl">${c}</span><div class="cbar"><b style="width:${d.p}%"></b></div><span class="cp">${d.p}%</span></div>`).join('');
+  $('#stats').innerHTML=`
+    <div class="stat"><div class="n">${total}</div><div class="l">Titles</div></div>
+    <div class="stat"><div class="n">${pct}%</div><div class="l">${read} read &middot; ${total-read} to go</div><div class="bar"><b style="width:${pct}%"></b></div><div class="catbreak">${catRows}</div></div>
+    <div class="stat pie">${pie}</div>`;
+
+  const AW_COLOR={Nobel:'var(--aw-nobel)',Booker:'var(--aw-booker)',Pulitzer:'var(--aw-pulitzer)',Hugo:'var(--aw-hugo)',Nebula:'var(--aw-nebula)'};
+  const AW_TIP={Nobel:'By a Nobel literature laureate',Booker:'Booker Prize winner',Pulitzer:'Pulitzer Prize winner',Hugo:'Hugo Award winner',Nebula:'Nebula Award winner'};
+  const awList=b=>(b.awards||'').split(',').map(s=>s.trim()).filter(Boolean);
+  const chip=b=>awList(b).map(a=>`<span class="chip ${esc(a.toLowerCase())}" title="${esc(AW_TIP[a]||a)}">${esc(a)}</span>`).join('');
+  const winners=[];
+  books.forEach(b=>awList(b).forEach(a=>winners.push({b,a})));
+  const prizes=[...new Set(winners.map(w=>w.a))].map(p=>{
+    const list=winners.filter(w=>w.a===p);
+    return {p,n:list.length,authors:new Set(list.map(w=>w.b.author)).size};
+  }).sort((a,b)=>b.n-a.n);
+  $('#prizes').innerHTML=prizes.map(({p,n,authors})=>`
+    <div class="prize" style="--pc:${AW_COLOR[p]||'var(--mustard)'}" data-p="${esc(p)}" tabindex="0" role="button" aria-label="Browse ${esc(p)} winners">
+      <div class="n">${n}</div><div class="p">${esc(p)}</div>
+      <div class="s">${p==='Nobel'?`books by ${authors} laureates`:`winning books`}</div>
+    </div>`).join('');
+  $$('#prizes .prize').forEach(t=>{
+    const open=()=>{ resetFilters(); $('#f-award').value=t.dataset.p; goLibrary(); renderLib(); };
+    t.addEventListener('click',open);
+    t.addEventListener('keydown',e=>{if(e.key==='Enter')open();});
+  });
+  const dated=winners.filter(w=>w.b.year);
+  if(dated.length){
+    const d0=Math.floor(Math.min(...dated.map(w=>w.b.year))/10)*10;
+    const d1=Math.floor(Math.max(...dated.map(w=>w.b.year))/10)*10;
+    let cols='';
+    for(let d=d0;d<=d1;d+=10){
+      const dots=dated.filter(w=>Math.floor(w.b.year/10)*10===d)
+        .map(w=>`<i style="background:${AW_COLOR[w.a]||'var(--mustard)'}" title="${esc(w.b.title)} (${w.b.year}) — ${esc(w.a)}"></i>`).join('');
+      cols+=`<div class="col"><div class="dots">${dots}</div><span class="lab">${String(d).slice(2)}s</span></div>`;
+    }
+    $('#timeline').innerHTML=cols;
+    const undated=new Set(winners.filter(w=>!w.b.year).map(w=>w.b.title)).size;
+    $('#tl-note').innerHTML=prizes.map(({p})=>`<span><i style="background:${AW_COLOR[p]||'var(--mustard)'}"></i>${esc(p)}</span>`).join('')
+      +(undated?`<span>+ ${undated} undated winner${undated===1?'':'s'} not plotted</span>`:'');
+  }
+
+  const unread=books.filter(b=>!b.read);
+  for(let i=unread.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[unread[i],unread[j]]=[unread[j],unread[i]];}
+  const recent=unread.slice(0,8);
+  $('#recent').innerHTML=recent.map(b=>`
+    <div class="rcard" style="border-top-color:${FMT_COLOR[b.format]||'var(--ink)'}" data-t="${esc(b.title)}" tabindex="0" role="button" aria-label="Find ${esc(b.title)} in library">
+      <span class="yr">${b.year??''}</span><span class="tt">${esc(b.title)}${chip(b)}</span><span class="au">${esc(b.author)}</span>
+    </div>`).join('');
+  $$('#recent .rcard').forEach(c=>{
+    const open=()=>{ $('#q').value=c.dataset.t; goLibrary(); renderLib(); };
+    c.addEventListener('click',open);
+    c.addEventListener('keydown',e=>{if(e.key==='Enter')open();});
+  });
+
+  const byAuthor={};
+  books.forEach(b=>{if(b.author){const c=ALIAS[b.author]||b.author;(byAuthor[c]=byAuthor[c]||[]).push(b);}});
+  const top=Object.entries(byAuthor).sort((a,b)=>b[1].length-a[1].length).slice(0,8);
+  $('#shelves').innerHTML=top.map(([a,list])=>`
+    <div class="shelf" data-a="${esc(a)}" tabindex="0" role="button" aria-label="Browse ${esc(a)}">
+      <div class="stack">${list.map(b=>`<i style="background:${FMT_COLOR[b.format]||'var(--ink-soft)'};height:${b.pages?Math.round(30+32*Math.min(1,Math.max(0,(b.pages-80)/920))):34+hash(b.title)%28}px" title="${esc(b.title)}${b.pages?' \u00b7 '+b.pages+'pp':''}"></i>`).join('')}</div>
+      <div class="who"><span class="a">${esc(a)}${[...new Set(list.map(b=>b.author))].filter(x=>x!==a).map(x=>` <span style="font-weight:400;color:var(--ink-soft)">&middot; incl. ${esc(x)}</span>`).join('')}</span><span class="c">${list.length} books &middot; ${list.filter(b=>b.read).length} read</span></div>
+    </div>`).join('');
+  $$('#shelves .shelf').forEach(s=>{
+    const open=()=>{ resetFilters(); $('#q').value=s.dataset.a; goLibrary(); renderLib(); };
+    s.addEventListener('click',open);
+    s.addEventListener('keydown',e=>{if(e.key==='Enter')open();});
+  });
+}
+
+/* ---- library ---- */
+let sortKey='title', sortDir=1;
+function fillFilters(){
+  const opts=(sel,vals)=>{const keep=sel.value;sel.length=1;[...vals].sort().forEach(v=>{const o=document.createElement('option');o.value=o.textContent=v;sel.appendChild(o);});sel.value=keep;};
+  opts($('#f-format'),new Set(books.map(b=>b.format).filter(Boolean)));
+  opts($('#f-series'),new Set(books.map(b=>b.series).filter(Boolean)));
+  opts($('#f-award'),new Set(books.flatMap(b=>(b.awards||'').split(',').map(s=>s.trim()).filter(Boolean))));
+  opts($('#f-shelf'),new Set(books.map(b=>b.shelf).filter(Boolean)));
+}
+function resetFilters(){ $('#q').value='';$('#f-format').value='';$('#f-read').value='';$('#f-series').value='';$('#f-award').value='';$('#f-shelf').value=''; }
+function renderLib(){
+  const q=$('#q').value.trim().toLowerCase();
+  const ff=$('#f-format').value, fr=$('#f-read').value, fs=$('#f-series').value, fa=$('#f-award').value, fsh=$('#f-shelf').value;
+  let list=books.filter(b=>
+    (!q || (b.title+' '+b.author+' '+(ALIAS[b.author]||'')+' '+b.series).toLowerCase().includes(q)) &&
+    (!ff || b.format===ff) && (!fs || b.series===fs) &&
+    (!fsh || (b.shelf||'')===fsh) &&
+    (!fa || (b.awards||'').split(',').map(s=>s.trim()).includes(fa)) &&
+    (!fr || (fr==='read')===b.read));
+  list.sort((a,b)=>{
+    let x=a[sortKey],y=b[sortKey];
+    if(sortKey==='year'||sortKey==='pages'){x=x||0;y=y||0;return (x-y)*sortDir;}
+    if(sortKey==='read'){return ((x?1:0)-(y?1:0))*sortDir;}
+    return String(x??'').localeCompare(String(y??''))*sortDir;
+  });
+  const filtered=q||ff||fr||fs||fa||fsh;
+  $('#hits').innerHTML=`${list.length} of ${books.length} titles ${filtered?'<button id="clear-f">clear filters</button>':''}`;
+  if(filtered) $('#clear-f').addEventListener('click',()=>{resetFilters();renderLib();});
+  const AW_TIP2={Nobel:'By a Nobel literature laureate',Booker:'Booker Prize winner',Pulitzer:'Pulitzer Prize winner',Hugo:'Hugo Award winner',Nebula:'Nebula Award winner'};
+  $('#rows').innerHTML=list.map(b=>{
+    const idx=books.indexOf(b);
+    const c=(b.awards||'').split(',').map(s=>s.trim()).filter(Boolean)
+      .map(a=>` <span class="chip ${esc(a.toLowerCase())}" title="${esc(AW_TIP2[a]||a)}">${esc(a)}</span>`).join('');
+    const stars=b.rating?`<span style="color:var(--mustard)" title="Your rating: ${b.rating}/5">${'\u2605'.repeat(b.rating)}</span>`:'';
+    const metabits=[b.series?esc(b.series):null,stars||null].filter(Boolean).join(' \u00b7 ');
+    const meta=metabits?`<small>${metabits}</small>`:'';
+    return `<tr>
+      <td class="c-title">${b.shelf&&b.shelf!=='Digital'?`<a class="loc" data-t="${esc(b.title)}" title="Locate on the shelf map">${esc(b.title)}</a>`:esc(b.title)}${c}${meta}</td>
+      <td class="c-author">${b.author?`<a data-a="${esc(b.author)}">${esc(b.author)}</a>`:''}</td>
+      <td class="c-year">${b.year??''}</td>
+      <td class="c-pages">${b.pages??''}</td>
+      <td>${b.format?`<span class="fmt ${esc(b.format)}">${esc(b.format)}</span>`:''}</td>
+      <td class="c-shelf">${b.shelf?esc(b.shelf):'<span class="none">&mdash;</span>'}</td>
+      <td><button class="readtag ${b.read?'yes':''}" data-i="${idx}" title="Click to toggle">${b.read?'Read':'Unread'}</button></td>
+    </tr>`;}).join('');
+  $$('#rows .readtag').forEach(t=>t.addEventListener('click',()=>{
+    books[t.dataset.i].read=!books[t.dataset.i].read; markDirty(); renderLib(); renderHome();
+  }));
+  $$('#rows .c-author a').forEach(a=>a.addEventListener('click',()=>{resetFilters();$('#q').value=a.dataset.a;renderLib();}));
+  $$('#rows .c-title a.loc').forEach(a=>a.addEventListener('click',()=>{goMap(a.dataset.t);}));
+}
+['#q','#f-format','#f-read','#f-series','#f-award','#f-shelf'].forEach(s=>$(s).addEventListener('input',renderLib));
+$$('.lib th').forEach(th=>th.addEventListener('click',()=>{
+  const k=th.dataset.s; if(sortKey===k)sortDir*=-1; else {sortKey=k;sortDir=1;} renderLib();
+}));
+
+/* ---- import ---- */
+$('#do-import').addEventListener('click',()=>{
+  const msg=$('#import-msg'); msg.className='msg';
+  const lines=$('#paste').value.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
+  if(!lines.length){msg.textContent='Nothing to import — paste some rows first.';msg.className='msg err';return;}
+  let added=0,skipped=0;
+  const have=new Set(books.map(b=>(b.title+'|'+b.author).toLowerCase()));
+  lines.forEach((line,i)=>{
+    const cols=line.includes('\t')?line.split('\t'):line.split(/\s*,\s*/);
+    const [t,a='',y='',s='',aw='',f='',ru='',sh='']=cols.map(c=>c.trim());
+    if(!t) return;
+    if(i===0 && t.toLowerCase()==='title') return;
+    const key=(t+'|'+a).toLowerCase();
+    if(have.has(key)){skipped++;return;}
+    have.add(key);
+    const nb={title:t,author:a,year:parseInt(y)||null,series:s,awards:aw,
+      format:['Kindle','Audiobook','Paperback'].find(x=>x.toLowerCase()===f.toLowerCase())||f,
+      read:/^read$/i.test(ru),added:new Date().toISOString().slice(0,10)};
+    nb.shelf=sh||deriveShelf(nb);
+    books.push(nb);
+    added++;
+  });
+  msg.textContent=`Added ${added} book${added===1?'':'s'}${skipped?`, skipped ${skipped} duplicate${skipped===1?'':'s'}`:''}.`;
+  if(added){$('#paste').value='';markDirty();fillFilters();renderHome();renderLib();}
+});
+
+/* ---- save / export ---- */
+function markDirty(){dirty=true;$('#dirty').classList.add('on');}
+function download(name,text,type){
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),4000);
+}
+function saveData(){
+  const js='// Giles\u2019s Library \u2014 data file. Keep next to giles-library.html\nconst BOOKS = '+JSON.stringify(books,null,1)+';\n';
+  download('giles-library-data.js',js,'text/javascript');
+  dirty=false;$('#dirty').classList.remove('on');
+  if(document.getElementById('save-msg'))$('#save-msg').textContent='Data file downloaded \u2014 replace the old giles-library-data.js with it.';
+}
+$('#dl-html').addEventListener('click',saveData);
+$('#dirty-save').addEventListener('click',saveData);
+$('#dl-csv').addEventListener('click',()=>{
+  const q=v=>'"'+String(v??'').replace(/"/g,'""')+'"';
+  const csv=['Title,Author,Publication Year,Series,Awards,Format,Read / Unread,Shelf',
+    ...books.map(b=>[b.title,b.author,b.year??'',b.series,b.awards,b.format,b.read?'Read':'',b.shelf??''].map(q).join(','))].join('\n');
+  download('giles-library.csv',csv,'text/csv');
+  $('#save-msg').textContent='CSV downloaded.';
+});
+window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
+
+/* ---- reading log ---- */
+function renderReading(){
+  const el=$('#reading-body');
+  if(typeof READING_LOG==='undefined'){
+    el.innerHTML='<div class="panel"><h3>No reading log found</h3><p>This tab needs <code>giles-reading-log.js</code> in the same folder as the app. Add the file and reload.</p></div>';
+    return;
+  }
+  const L=READING_LOG, yrs=[...new Set(L.map(e=>e.year))].sort();
+  const by=(arr,f)=>{const m={};arr.forEach(e=>{const k=f(e)||'—';m[k]=(m[k]||0)+1});return m};
+  const pct=(n,t)=>t?Math.round(n/t*100):0;
+  const now=new Date(), curYear=now.getFullYear();
+  const doy=Math.max(1,Math.floor((now-new Date(curYear,0,0))/86400000));
+
+  /* pace */
+  const counts=yrs.map(y=>L.filter(e=>e.year===y).length);
+  const maxC=Math.max(...counts, ...(yrs.includes(curYear)?[Math.round(L.filter(e=>e.year===curYear).length*365/doy)]:[]));
+  let pace='';
+  yrs.forEach((y,i)=>{
+    const n=counts[i];
+    let proj='';
+    if(y===curYear && doy<350){
+      const est=Math.round(n*365/doy);
+      proj=`<i style="left:${n/maxC*100}%;width:${(est-n)/maxC*100}%" title="on pace for ~${est}"></i>`;
+    }
+    pace+=`<div class="hrow"><span class="lab">${y}</span><div class="bar"><b style="width:${n/maxC*100}%"></b>${proj}</div><span class="n">${n}${y===curYear&&doy<350?` &rarr;~${Math.round(n*365/doy)}`:''}</span></div>`;
+  });
+
+  /* passport */
+  const nat=by(L,e=>e.nat), natRank=Object.entries(nat).sort((a,b)=>b[1]-a[1]);
+  const maxN=natRank[0][1];
+  const passport=natRank.slice(0,14).map(([c,n])=>
+    `<div class="hrow"><span class="lab">${esc(c)}</span><div class="bar"><b style="width:${n/maxN*100}%"></b></div><span class="n">${n}</span></div>`).join('')
+    +(natRank.length>14?`<div class="sub" style="margin-top:8px">+ ${natRank.length-14} more countries</div>`:'');
+
+  /* archaeology heatmap */
+  const DECADES=['Pre20c','1900s','1910s','1920s','1930s','1940s','1950s','1960s','1970s','1980s','1990s','2000s','2010s','2020s'];
+  const decs=DECADES.filter(d=>L.some(e=>e.decade===d));
+  let maxCell=1; const cellv={};
+  yrs.forEach(y=>decs.forEach(d=>{const n=L.filter(e=>e.year===y&&e.decade===d).length;cellv[y+d]=n;if(n>maxCell)maxCell=n;}));
+  let hm=`<div class="hm" style="grid-template-columns:56px repeat(${decs.length},1fr)">`;
+  hm+='<div class="collab"></div>'+decs.map(d=>`<div class="collab">${d.replace('Pre20c','&lt;1900').replace('0s','0s')}</div>`).join('');
+  yrs.forEach(y=>{
+    hm+=`<div class="rowlab">${y}</div>`;
+    decs.forEach(d=>{const n=cellv[y+d];
+      hm+=`<div class="cell" style="background:rgba(21,23,28,${n?0.08+0.72*n/maxCell:0.04});color:${n/maxCell>0.55?'var(--paper)':'var(--ink)'}" title="${y} \u00d7 ${d}: ${n}">${n||''}</div>`;});
+  });
+  hm+='</div>';
+
+  /* stacked strips helper */
+  const PAL={'Kindle':'var(--orange)','Audiobook':'var(--blue)','Paperback':'var(--green)',
+    'Male':'#6B7280','Female':'var(--mustard)',
+    'Fiction':'#3D4451','Non Fiction':'var(--orange)','Short Stories':'var(--aw-nebula)',
+    'Debut':'var(--orange)','Returning':'#3D4451',
+    'Europe':'var(--blue)','North America':'var(--orange)','Asia':'var(--green)','Africa':'var(--mustard)',
+    'South America':'#A03060','Space':'var(--aw-hugo)','Middle East':'var(--aw-nebula)','—':'#B9B2A0'};
+  function strips(field,keys){
+    let html='';
+    yrs.forEach(y=>{
+      const yl=L.filter(e=>e.year===y), t=yl.length;
+      const m=by(yl,e=>e[field]);
+      html+=`<div class="striplab"><span>${y}</span><span>${keys.map(k=>m[k]?`${k} ${pct(m[k],t)}%`:'').filter(Boolean).join(' &middot; ')}</span></div>`;
+      html+='<div class="strip">'+keys.map(k=>m[k]?`<span style="width:${m[k]/t*100}%;background:${PAL[k]||'#B9B2A0'}" title="${k}: ${m[k]}"></span>`:'').join('')+'</div>';
+    });
+    return html;
+  }
+  const allKeys=f=>[...new Set(L.map(e=>e[f]||'—'))].sort((a,b)=>(by(L,e=>e[f])[b]||0)-(by(L,e=>e[f])[a]||0));
+  const leg=keys=>'<div class="rleg">'+keys.map(k=>`<span><i style="background:${PAL[k]||'#B9B2A0'}"></i>${esc(k)}</span>`).join('')+'</div>';
+
+  /* settings pie */
+  const setCounts=Object.entries(by(L,e=>e.setting)).sort((a,b)=>b[1]-a[1]);
+  const CX2=90,CY2=90,R2=84; let a0=-Math.PI/2, sp='', sl='';
+  setCounts.forEach(([k,n])=>{
+    const a1=a0+n/L.length*2*Math.PI;
+    const x1=CX2+R2*Math.cos(a0),y1=CY2+R2*Math.sin(a0),x2=CX2+R2*Math.cos(a1),y2=CY2+R2*Math.sin(a1);
+    sp+=`<path d="M${CX2} ${CY2} L${x1.toFixed(1)} ${y1.toFixed(1)} A${R2} ${R2} 0 ${(a1-a0)>Math.PI?1:0} 1 ${x2.toFixed(1)} ${y2.toFixed(1)} Z" fill="${PAL[k]||'#B9B2A0'}" stroke="var(--card)" stroke-width="1.5"><title>${esc(k)}: ${n} (${pct(n,L.length)}%)</title></path>`;
+    const mid=(a0+a1)/2, lr=(a1-a0)<0.42?R2*0.85:R2*0.62;
+    if(n/L.length>0.02) sl+=`<text x="${(CX2+lr*Math.cos(mid)).toFixed(1)}" y="${(CY2+lr*Math.sin(mid)+4).toFixed(1)}" text-anchor="middle" style="font-family:var(--mono);font-size:12px;fill:#fff">${n}</text>`;
+    a0=a1;
+  });
+  const setPie=`<div style="display:flex;justify-content:center;padding:6px 0"><svg width="180" height="180" viewBox="0 0 180 180" role="img" aria-label="Settings: ${setCounts.map(x=>x[0]+' '+x[1]).join(', ')}">${sp}${sl}</svg></div>`;
+
+  const debutPct=pct(L.filter(e=>e.debut==='Debut').length,L.length);
+  el.innerHTML=`
+  <div class="rgrid">
+    <div class="rpanel"><h3>Reading pace</h3><div class="sub">Books finished per year &middot; hatched = projection at current pace</div>${pace}
+      <div style="margin-top:14px"><span class="bignum">${L.length}</span> <span class="sub" style="display:inline">books logged since ${yrs[0]}</span></div></div>
+    <div class="rpanel"><h3>The passport</h3><div class="sub">${natRank.length} countries by author nationality</div>${passport}</div>
+  </div>
+  <div class="rpanel" style="margin-bottom:14px"><h3>Backlist archaeology</h3><div class="sub">When you read (rows) vs when it was published (columns)</div>${hm}</div>
+  <div class="rgrid">
+    <div class="rpanel"><h3>Explorer's ratio</h3><div class="sub">${debutPct}% of all reads were new-to-you authors</div>${strips('debut',['Debut','Returning'])}${leg(['Debut','Returning'])}</div>
+    <div class="rpanel"><h3>Formats</h3><div class="sub">How you read, year by year</div>${strips('format',['Kindle','Audiobook','Paperback'])}${leg(['Kindle','Audiobook','Paperback'])}</div>
+  </div>
+  <div class="rgrid">
+    <div class="rpanel"><h3>Author gender</h3><div class="sub">Share of books per year</div>${strips('gender',['Male','Female'])}${leg(['Male','Female'])}</div>
+    <div class="rpanel"><h3>Where the books took you</h3><div class="sub">Setting of every book logged &middot; hover a slice for the share</div>${setPie}${leg(setCounts.map(x=>x[0]))}</div>
+  </div>
+  <div class="rgrid">
+    <div class="rpanel"><h3>Genre mix</h3><div class="sub">Fiction vs the rest</div>${strips('genre',allKeys('genre'))}${leg(allKeys('genre'))}</div>
+  </div>`;
+}
+
+/* ---- map ---- */
+const normShelf=x=>String(x||'').toLowerCase().replace(/[^a-z0-9]/g,'');
+const CASES=[['Fiction A',8],['Fiction B',8],['Fiction C',7],['Non-Fiction',8]];
+function lastname(a){const t=String(a||'').replace(/\(.*?\)/g,'').trim().split(/\s+/);return (t[t.length-1]||'').toLowerCase();}
+function spineEl(b){
+  const w=b.pages?Math.max(7,Math.min(26,Math.round(b.pages/45))):11;
+  const h=40+hash(b.title)%14;
+  return `<span class="spine2 ${b.read?'read':'unread'}" data-t="${esc((b.title+' '+b.author).toLowerCase())}" data-title="${esc(b.title)}" style="width:${w}px;height:${h}px" title="${esc(b.title)} — ${esc(b.author)}${b.pages?' · '+b.pages+'pp':''}${b.read?' · read':''}">${b.awards?'<i></i>':''}</span>`;
+}
+function renderMap(){
+  const el=$('#map-body'); if(!el)return;
+  const phys=books.filter(b=>b.format==='Paperback');
+  let html=`<div class="plan"><svg viewBox="0 0 320 220">
+    <defs>
+      <linearGradient id="caseFace" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--paper)"/><stop offset="1" stop-color="var(--paper-2)"/>
+      </linearGradient>
+      <filter id="caseShadow" x="-20%" y="-20%" width="140%" height="150%">
+        <feDropShadow dx="0" dy="2.4" stdDeviation="2" flood-color="rgba(21,23,28,.42)"/>
+      </filter>
+    </defs>
+    <path d="M6 6 H314 M6 6 V214 M314 6 V214" stroke="var(--rule)" stroke-width="2" fill="none"/>
+    <text x="306" y="16" style="font-size:8px;opacity:.6">N &uarr;</text>
+    <rect class="unit" x="10" y="10" width="50" height="50" data-c="Fiction C"/><rect class="depth" x="10" y="6" width="50" height="4"/><text x="35" y="38" text-anchor="middle">FIC C</text>
+    <rect class="unit" x="10" y="62" width="24" height="60" data-c="Fiction B"/><rect class="depth" x="6" y="62" width="4" height="60"/><text x="22" y="92" text-anchor="middle" transform="rotate(-90 22 92)">FIC B</text>
+    <rect class="unit" x="10" y="124" width="24" height="60" data-c="Fiction A"/><rect class="depth" x="6" y="124" width="4" height="60"/><text x="22" y="154" text-anchor="middle" transform="rotate(-90 22 154)">FIC A</text>
+    <rect class="unit" x="62" y="10" width="60" height="24" data-c="Non-Fiction"/><rect class="depth" x="62" y="6" width="60" height="4"/><text x="92" y="25" text-anchor="middle">NON-FIC</text>
+    <rect class="unit" x="124" y="10" width="46" height="24" data-c="Prizewinners"/><rect class="depth" x="124" y="6" width="46" height="4"/><text x="147" y="25" text-anchor="middle">PRIZES</text>
+    <rect class="unit" x="286" y="130" width="24" height="64" data-c="Film"/><rect class="depth" x="310" y="130" width="4" height="64"/><text x="298" y="162" text-anchor="middle" transform="rotate(-90 298 162)">FILM</text>
+    <g opacity=".55">
+      <rect x="120" y="188" width="117" height="20" rx="3" fill="var(--paper-2)" stroke="var(--ink)" stroke-width="1.2"/>
+      <rect x="120" y="182" width="117" height="9" rx="3" fill="var(--paper-2)" stroke="var(--ink)" stroke-width="1.2"/>
+      <line x1="159" y1="189" x2="159" y2="207" stroke="var(--ink)" stroke-width="1"/>
+      <line x1="198" y1="189" x2="198" y2="207" stroke="var(--ink)" stroke-width="1"/>
+      <rect x="116" y="184" width="7" height="24" rx="2" fill="var(--paper-2)" stroke="var(--ink)" stroke-width="1.2"/>
+      <rect x="234" y="184" width="7" height="24" rx="2" fill="var(--paper-2)" stroke="var(--ink)" stroke-width="1.2"/>
+      <rect x="247" y="184" width="20" height="24" rx="2" fill="var(--paper-2)" stroke="var(--ink)" stroke-width="1.2"/>
+      <circle cx="257" cy="196" r="3.4" fill="none" stroke="var(--ink)" stroke-width="1"/>
+      <path d="M260 194 q3 0 3 2.4 t-3 2.2" fill="none" stroke="var(--ink)" stroke-width="1"/>
+    </g>
+    <text x="178" y="176" text-anchor="middle" style="font-size:7px;opacity:.5">the reading sofa</text>
+    <text x="150" y="115" text-anchor="middle" style="font-size:8px;opacity:.5">— the room, schematically —</text>
+  </svg></div>
+  <div class="mapleg"><span><i style="background:var(--green)"></i>read</span><span><i style="background:#CFC8B4"></i>unread</span><span><i style="background:var(--mustard)"></i>prize winner (gold cap)</span><span>spine width &asymp; page count</span></div>`;
+
+  CASES.forEach(([c,n])=>{
+    html+=`<div class="case" id="case-${normShelf(c)}"><h3>${esc(c)}</h3>`;
+    for(let i=1;i<=n;i++){
+      const key=normShelf(c+i);
+      const list=phys.filter(b=>normShelf(b.shelf)===key).sort((a,b)=>lastname(a.author).localeCompare(lastname(b.author))||(a.year||0)-(b.year||0));
+      const emptyKey=normShelf(c+i);
+      const RECLAIMED={'fictiona8':1}; // shelves currently given over to non-library use
+      html+=list.length
+        ? `<div class="shelfrow"><span class="slab">${i}</span>${list.map(spineEl).join('')}</div>`
+        : `<div class="shelfrow empty"><span class="slab">${i}</span>${RECLAIMED[emptyKey]?'':'<span class="await">awaiting photograph</span>'}</div>`;
+    }
+    html+='</div>';
+  });
+
+  const NOBEL_YEAR={'Rabindranath Tagore':1913,'Thomas Mann':1929,'Sinclair Lewis':1930,'John Galsworthy':1932,
+'William Faulkner':1949,'Ernest Hemingway':1954,'Albert Camus':1957,'Boris Pasternak':1958,'John Steinbeck':1962,
+'Aleksandr Solzhenitsyn':1970,'Gabriel Garc\u00eda M\u00e1rquez':1982,'Naguib Mahfouz':1988,'Octavio Paz':1990,
+'Jos\u00e9 Saramago':1998,'V.S. Naipaul':2001,'Orhan Pamuk':2006,'Doris Lessing':2007,'Mario Vargas Llosa':2010,
+'Kazuo Ishiguro':2017,'Abdulrazak Gurnah':2021};
+  const pw=phys.filter(b=>normShelf(b.shelf)==='prizewinners');
+  const aw=t=>pw.filter(b=>(b.awards||'').includes(t)).sort((a,b)=>
+    t==='Nobel' ? (NOBEL_YEAR[a.author]||a.year||0)-(NOBEL_YEAR[b.author]||b.year||0)||(a.year||0)-(b.year||0)
+                : (a.year||0)-(b.year||0));
+  html+=`<div class="case" id="case-prizewinners"><h3>Prizewinners</h3>
+    <div class="prow-lab">Nobel</div>
+    <div class="shelfrow">${aw('Nobel').map(spineEl).join('')||'<span class="await">—</span>'}</div>
+    <div class="prizesplit"><div><div class="prow-lab">Booker</div><div class="shelfrow">${aw('Booker').map(spineEl).join('')||'<span class="await">—</span>'}</div></div>
+    <div><div class="prow-lab">Pulitzer</div><div class="shelfrow">${aw('Pulitzer').map(spineEl).join('')||'<span class="await">—</span>'}</div></div></div>
+    <div class="sub" style="font-family:var(--mono);font-size:10px;color:var(--ink-soft)">Nobel ordered by prize year; Booker &amp; Pulitzer by publication year as proxy</div></div>`;
+
+  const film=phys.filter(b=>normShelf(b.shelf)==='film').sort((a,b)=>lastname(a.author).localeCompare(lastname(b.author)));
+  html+=`<div class="case" id="case-film"><h3>Film</h3><div class="shelfrow">${film.map(spineEl).join('')||'<span class="await">—</span>'}</div></div>`;
+
+  el.innerHTML=html;
+  $$('#map-body .spine2').forEach(sp=>sp.addEventListener('click',()=>{resetFilters();$('#q').value=sp.dataset.title;goLibrary();renderLib();}));
+  $$('#map-body .plan .unit').forEach(u=>u.addEventListener('click',()=>{
+    const t=document.getElementById('case-'+normShelf(u.dataset.c)); if(t)t.scrollIntoView({behavior:'smooth'});
+  }));
+}
+$('#mapq').addEventListener('input',()=>{
+  const q=$('#mapq').value.trim().toLowerCase();
+  let first=null;
+  $$('#map-body .spine2').forEach(sp=>{
+    const hit=q&&sp.dataset.t.includes(q);
+    sp.classList.toggle('hit',!!hit);
+    sp.classList.toggle('dim',!!q&&!hit);
+    if(hit&&!first)first=sp;
+  });
+  if(first)first.scrollIntoView({behavior:'smooth',block:'center'});
+});
+
+/* ---- boot ---- */
+function deriveShelf(b){
+  if(b.format==='Kindle'||b.format==='Audiobook')return 'Digital';
+  const aw=(b.awards||'').split(',').map(s=>s.trim());
+  if(aw.some(a=>a==='Pulitzer'||a==='Nobel'||a==='Booker'))return 'Prizewinners';
+  return '';
+}
+let derived=0;
+books.forEach(b=>{ if(!('shelf' in b)){ b.shelf=deriveShelf(b); derived++; } });
+if(derived){ markDirty(); }
+fillFilters();renderHome();renderLib();renderReading();renderMap();
+</script>
+</body>
+</html>
