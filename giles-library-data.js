@@ -200,7 +200,8 @@ const BOOKS = [
   "format": "Paperback",
   "read": true,
   "shelf": "Fiction A3",
-  "rating": 4
+  "rating": 4,
+  "pages": 255
  },
  {
   "title": "For Your Eyes Only",
@@ -211,7 +212,8 @@ const BOOKS = [
   "format": "Paperback",
   "read": true,
   "shelf": "Fiction A3",
-  "rating": 5
+  "rating": 5,
+  "pages": 238
  },
  {
   "title": "The Man with the Golden Gun",
@@ -221,7 +223,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 190
  },
  {
   "title": "Goldfinger",
@@ -231,7 +234,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 294
  },
  {
   "title": "The Mongolian Conspiracy",
@@ -320,7 +324,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 304
  },
  {
   "title": "Tomás Nevinson",
@@ -330,7 +335,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 680
  },
  {
   "title": "Damascus Station",
@@ -340,7 +346,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 426
  },
  {
   "title": "Cinema Speculation",
@@ -362,7 +369,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 324
  },
  {
   "title": "Silver Nitrate",
@@ -454,7 +462,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 271
  },
  {
   "title": "On Java Road:",
@@ -524,7 +533,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 156
  },
  {
   "title": "Standing by the Wall",
@@ -570,7 +580,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 406
  },
  {
   "title": "A Conflict of Visions",
@@ -580,7 +591,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 311
  },
  {
   "title": "This is How You Lose the Time War",
@@ -718,7 +730,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 416
  },
  {
   "title": "Stubborn Attachments",
@@ -903,7 +916,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 304
  },
  {
   "title": "Dept. of Speculation",
@@ -913,7 +927,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 186
  },
  {
   "title": "Moby Dick",
@@ -923,7 +938,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 452
  },
  {
   "title": "The Big Bounce",
@@ -981,7 +997,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 221
  },
  {
   "title": "The Catch",
@@ -1003,7 +1020,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 648
  },
  {
   "title": "The Dawn of Eurasia: On the Trail of the New World Order",
@@ -1143,7 +1161,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 314
  },
  {
   "title": "Joe Country",
@@ -1189,7 +1208,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 320
  },
  {
   "title": "Spook Street",
@@ -1234,7 +1254,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 332
  },
  {
   "title": "Girl Most Likely",
@@ -1244,7 +1265,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 272
  },
  {
   "title": "Creating Character Arcs",
@@ -1278,7 +1300,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 333
  },
  {
   "title": "The Snow Gypsy",
@@ -1288,7 +1311,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 326
  },
  {
   "title": "Gravesend",
@@ -1322,7 +1346,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 572
  },
  {
   "title": "The Frame-Up",
@@ -1332,7 +1357,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 304
  },
  {
   "title": "A Man With One of Those Faces",
@@ -1342,7 +1368,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 361
  },
  {
   "title": "Daughters of the Lake",
@@ -1352,7 +1379,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 362
  },
  {
   "title": "The Forgiven",
@@ -1374,7 +1402,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 273
  },
  {
   "title": "Intellectuals and Society",
@@ -1384,7 +1413,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 510
  },
  {
   "title": "Influence: The Psychology of Persuasion",
@@ -1438,7 +1468,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 488
  },
  {
   "title": "The King Tides",
@@ -1448,7 +1479,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 310
  },
  {
   "title": "The List: A Slough House novella",
@@ -1494,7 +1526,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 730
  },
  {
   "title": "The Soul of Viktor Tronko",
@@ -1540,7 +1573,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 432
  },
  {
   "title": "Slow Horses",
@@ -1562,7 +1596,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 624
  },
  {
   "title": "The Force",
@@ -1584,7 +1619,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 237
  },
  {
   "title": "Knockemstiff",
@@ -1641,7 +1677,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 316
  },
  {
   "title": "Rumi: Whispers of the Beloved",
@@ -1731,7 +1768,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 470
  },
  {
   "title": "Dead Drop",
@@ -1741,7 +1779,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 368
  },
  {
   "title": "Miss Kopp's Midnight Confessions",
@@ -1785,7 +1824,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 504
  },
  {
   "title": "When They Come for You",
@@ -1795,7 +1835,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 274
  },
  {
   "title": "Borderlines",
@@ -1828,7 +1869,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 400
  },
  {
   "title": "Invisible Planets",
@@ -1861,7 +1903,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 291
  },
  {
   "title": "Underground Airlines",
@@ -1975,7 +2018,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 329
  },
  {
   "title": "The Call of the Wild",
@@ -1997,7 +2041,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 504
  },
  {
   "title": "The Great Stagnation",
@@ -2007,7 +2052,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 109
  },
  {
   "title": "The Special Power of Restoring Lost Things",
@@ -2027,7 +2073,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 360
  },
  {
   "title": "Fever City: A Thriller",
@@ -2093,7 +2140,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 304
  },
  {
   "title": "Rain Dogs",
@@ -2146,7 +2194,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 471
  },
  {
   "title": "Meditations",
@@ -2156,7 +2205,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 203
  },
  {
   "title": "The Loney",
@@ -2189,7 +2239,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 296
  },
  {
   "title": "The First Bad Man",
@@ -2210,7 +2261,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 160
  },
  {
   "title": "The Prisoner of Zenda",
@@ -2267,7 +2319,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 207
  },
  {
   "title": "How to be Both",
@@ -2312,7 +2365,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 512
  },
  {
   "title": "Sword of Honour",
@@ -2344,7 +2398,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 457
  },
  {
   "title": "Watership Down",
@@ -2366,7 +2421,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 224
  },
  {
   "title": "Big Maria",
@@ -2376,7 +2432,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 319
  },
  {
   "title": "The Quest for a Moral Compass",
@@ -2386,7 +2443,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 390
  },
  {
   "title": "Station Eleven",
@@ -2454,7 +2512,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 311
  },
  {
   "title": "The Hungarian Tiger",
@@ -2476,7 +2535,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 288
  },
  {
   "title": "Childhood's End",
@@ -2508,7 +2568,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 330
  },
  {
   "title": "On The Beach",
@@ -2575,7 +2636,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 192
  },
  {
   "title": "The Hunter and Other Stories",
@@ -2640,7 +2702,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 456
  },
  {
   "title": "Bleak House",
@@ -2650,7 +2713,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 815
  },
  {
   "title": "How to Get Filthy Rich In Rising Asia",
@@ -2866,7 +2930,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 419
  },
  {
   "title": "Snowdrops",
@@ -2888,7 +2953,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 208
  },
  {
   "title": "The Pike",
@@ -2910,7 +2976,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 1050
  },
  {
   "title": "Portrait of a Turkish Family",
@@ -2942,7 +3009,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 353
  },
  {
   "title": "The Handmaid's Tale",
@@ -3012,7 +3080,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 264
  },
  {
   "title": "Beware of Pity",
@@ -3032,7 +3101,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 457
  },
  {
   "title": "Into The Woods",
@@ -3078,7 +3148,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 699
  },
  {
   "title": "If Greece goes…:",
@@ -3169,7 +3240,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 398
  },
  {
   "title": "The Sisters Brothers",
@@ -3226,7 +3298,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 144
  },
  {
   "title": "Four Max Carrados Detective Stories",
@@ -3236,7 +3309,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 112
  },
  {
   "title": "Plotto: The Master Book of All Plots",
@@ -3268,7 +3342,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 255
  },
  {
   "title": "Don Quixote",
@@ -3278,7 +3353,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 795
  },
  {
   "title": "Madame Bovary",
@@ -3288,7 +3364,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 351
  },
  {
   "title": "Uncle Vanya",
@@ -3298,7 +3375,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 408
  },
  {
   "title": "Beyond Good and Evil",
@@ -3308,7 +3386,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 173
  },
  {
   "title": "The Works of Benedict de Spinoza",
@@ -3318,7 +3397,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 460
  },
  {
   "title": "Carnacki, the Ghost Finder",
@@ -3350,7 +3430,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 482
  },
  {
   "title": "The Enemy (Kindle Single)",
@@ -3408,7 +3489,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 161
  },
  {
   "title": "Peter Schlemihl",
@@ -3418,7 +3500,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 122
  },
  {
   "title": "A Strange Manuscript Found in a Copper Cylinder",
@@ -3428,7 +3511,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 255
  },
  {
   "title": "The Devil's Elixir Vol. II (of 2)",
@@ -3472,7 +3556,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 38
  },
  {
   "title": "Middlemarch",
@@ -3482,7 +3567,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 795
  },
  {
   "title": "The Brick Moon and Other Stories",
@@ -3504,7 +3590,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 320
  },
  {
   "title": "The People of the Mist",
@@ -3514,7 +3601,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 372
  },
  {
   "title": "Caleb Williams Or Things as They Are",
@@ -3524,7 +3612,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 324
  },
  {
   "title": "Evelina",
@@ -3534,7 +3623,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 427
  },
  {
   "title": "The Fortunes and Misfortunes of the Famous Moll Flanders",
@@ -3544,7 +3634,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 350
  },
  {
   "title": "The Castle of Otranto",
@@ -3554,7 +3645,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 114
  },
  {
   "title": "The Life and Most Surprising Adventures of Robinson Crusoe, of York, Mariner (1801)",
@@ -3564,7 +3656,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 236
  },
  {
   "title": "History of Tom Jones, a Foundling",
@@ -3574,7 +3667,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 803
  },
  {
   "title": "The 7 Habits of Highly Effective People",
@@ -3596,7 +3690,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 317
  },
  {
   "title": "Tacitus: The Histories, Volumes I and II",
@@ -3628,7 +3723,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 144
  },
  {
   "title": "Boris Godunov: a drama in verse",
@@ -3638,7 +3734,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 112
  },
  {
   "title": "Red Plenty",
@@ -3672,7 +3769,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 389
  },
  {
   "title": "The Crisis of Islamic Civilization",
@@ -3682,7 +3780,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 304
  },
  {
   "title": "Sherlock Holmes: The Complete works",
@@ -3702,7 +3801,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 407
  },
  {
   "title": "The Exploits of Brigadier Gerard",
@@ -3712,7 +3812,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 232
  },
  {
   "title": "The Mysterious Island",
@@ -3722,7 +3823,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 656
  },
  {
   "title": "The Man Who Knew Too Much",
@@ -3742,7 +3844,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 111
  },
  {
   "title": "Grimm's Fairy Stories",
@@ -3752,7 +3855,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 140
  },
  {
   "title": "An Inquiry into the Nature and Causes of the Wealth of Nations",
@@ -3762,7 +3866,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 685
  },
  {
   "title": "The Prince",
@@ -3772,7 +3877,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 156
  },
  {
   "title": "Crime and Punishment",
@@ -4227,7 +4333,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 592
  },
  {
   "title": "Battles in the Desert",
@@ -4261,7 +4368,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 291
  },
  {
   "title": "Martyr",
@@ -4271,7 +4379,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 380
  },
  {
   "title": "My Friends",
@@ -4281,7 +4390,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 440
  },
  {
   "title": "Heaven",
@@ -4313,7 +4423,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 1032
  },
  {
   "title": "Sudden Death",
@@ -4417,7 +4528,8 @@ const BOOKS = [
   "awards": "Pulitzer",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 276
  },
  {
   "title": "The Age of Innocence",
@@ -4439,7 +4551,8 @@ const BOOKS = [
   "awards": "Pulitzer",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 144
  },
  {
   "title": "To Kill a Mockingbird",
@@ -4461,7 +4574,8 @@ const BOOKS = [
   "awards": "Pulitzer",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 413
  },
  {
   "title": "The Killer Angels",
@@ -4471,7 +4585,8 @@ const BOOKS = [
   "awards": "Pulitzer",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 374
  },
  {
   "title": "The Executioner's Song",
@@ -4481,7 +4596,8 @@ const BOOKS = [
   "awards": "Pulitzer",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 1056
  },
  {
   "title": "A Confederacy of Dunces",
@@ -4491,7 +4607,8 @@ const BOOKS = [
   "awards": "Pulitzer",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 391
  },
  {
   "title": "Beloved",
@@ -4501,7 +4618,8 @@ const BOOKS = [
   "awards": "Pulitzer",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 330
  },
  {
   "title": "The Color Purple",
@@ -4511,7 +4629,8 @@ const BOOKS = [
   "awards": "Pulitzer",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 262
  },
  {
   "title": "A Thousand Acres",
@@ -4521,7 +4640,8 @@ const BOOKS = [
   "awards": "Pulitzer",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 378
  },
  {
   "title": "The Shipping News",
@@ -4543,7 +4663,8 @@ const BOOKS = [
   "awards": "Pulitzer",
   "format": "Paperback",
   "read": true,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 361
  },
  {
   "title": "Interpreter of Maladies",
@@ -4577,7 +4698,8 @@ const BOOKS = [
   "awards": "Pulitzer",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 496
  },
  {
   "title": "Middlesex",
@@ -4587,7 +4709,8 @@ const BOOKS = [
   "awards": "Pulitzer",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 546
  },
  {
   "title": "Gilead",
@@ -4669,7 +4792,8 @@ const BOOKS = [
   "awards": "Pulitzer",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 544
  },
  {
   "title": "The Sympathizer",
@@ -4691,7 +4815,8 @@ const BOOKS = [
   "awards": "Pulitzer",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 378
  },
  {
   "title": "Heat and Dust",
@@ -4713,7 +4838,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 255
  },
  {
   "title": "Midnight's Children",
@@ -4723,7 +4849,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": true,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 556
  },
  {
   "title": "Life & Times of Michael K",
@@ -4745,7 +4872,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 339
  },
  {
   "title": "The Famished Road",
@@ -4755,7 +4883,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 504
  },
  {
   "title": "Paddy Clarke Ha Ha Ha",
@@ -4777,7 +4906,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 373
  },
  {
   "title": "The God of Small Things",
@@ -4787,7 +4917,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 357
  },
  {
   "title": "Amsterdam",
@@ -4820,7 +4951,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 376
  },
  {
   "title": "Life of Pi",
@@ -4830,7 +4962,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 349
  },
  {
   "title": "Vernon God Little",
@@ -4852,7 +4985,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 501
  },
  {
   "title": "The Sea",
@@ -4886,7 +5020,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 653
  },
  {
   "title": "Bring Up the Bodies",
@@ -4896,7 +5031,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 432
  },
  {
   "title": "The Narrow Road to the Deep North",
@@ -4906,7 +5042,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 445
  },
  {
   "title": "A Brief History of Seven Killings",
@@ -4916,7 +5053,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 704
  },
  {
   "title": "The Sellout",
@@ -4926,7 +5064,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 304
  },
  {
   "title": "Lincoln in the Bardo",
@@ -4936,7 +5075,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 426
  },
  {
   "title": "Milkman",
@@ -4946,7 +5086,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 408
  },
  {
   "title": "The Testaments",
@@ -4956,7 +5097,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 475
  },
  {
   "title": "Shuggie Bain",
@@ -5001,7 +5143,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 545
  },
  {
   "title": "Arrowsmith",
@@ -5011,7 +5154,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 462
  },
  {
   "title": "The Forsyte Saga",
@@ -5021,7 +5165,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 878
  },
  {
   "title": "The Sound and the Fury",
@@ -5031,7 +5176,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 358
  },
  {
   "title": "Death in the Afternoon",
@@ -5041,7 +5187,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 397
  },
  {
   "title": "A Farewell to Arms",
@@ -5051,7 +5198,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 332
  },
  {
   "title": "A Moveable Feast",
@@ -5061,7 +5209,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 209
  },
  {
   "title": "The Outsider",
@@ -5081,7 +5230,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 77
  },
  {
   "title": "Of Mice and Men",
@@ -5091,7 +5241,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 119
  },
  {
   "title": "One Day in the Life of Ivan Denisovich",
@@ -5113,7 +5264,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 722
  },
  {
   "title": "One Hundred Years of Solitude",
@@ -5123,7 +5275,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 417
  },
  {
   "title": "The Nightwatchman's Occurrence Book",
@@ -5133,7 +5286,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 560
  },
  {
   "title": "The Mimic Men",
@@ -5187,7 +5341,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": true,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 236
  },
  {
   "title": "A Bend in the River",
@@ -5219,7 +5374,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 404
  },
  {
   "title": "The Golden Notebook",
@@ -5229,7 +5385,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 592
  },
  {
   "title": "Alfred & Emily",
@@ -5239,7 +5396,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 288
  },
  {
   "title": "The Cleft",
@@ -5249,7 +5407,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 260
  },
  {
   "title": "A Ripple from the Storm",
@@ -5259,7 +5418,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 300
  },
  {
   "title": "The Feast of the Goat",
@@ -5365,7 +5525,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 309
  },
  {
   "title": "The Real Life of Alejandro Mayta",
@@ -5397,7 +5558,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": true,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 368
  },
  {
   "title": "A Pale View of Hills",
@@ -5407,7 +5569,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 192
  },
  {
   "title": "When We Were Orphans",
@@ -5417,7 +5580,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 348
  },
  {
   "title": "By the Sea",
@@ -5427,7 +5591,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": true,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 245
  },
  {
   "title": "The Beggar / The Thief and the Dogs / Autumn Quail",
@@ -5437,7 +5602,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 474
  },
  {
   "title": "Palace Walk",
@@ -5477,7 +5643,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 212
  },
  {
   "title": "The Stone Raft",
@@ -5487,7 +5654,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 272
  },
  {
   "title": "Blindness",
@@ -5519,7 +5687,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 521
  },
  {
   "title": "In a Free State",
@@ -5573,7 +5742,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 351
  },
  {
   "title": "Illywhacker",
@@ -5583,7 +5753,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 600
  },
  {
   "title": "What We Talk About When We Talk About Love",
@@ -5593,7 +5764,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 159
  },
  {
   "title": "The Big Sleep",
@@ -5603,7 +5775,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 229
  },
  {
   "title": "Farewell, My Lovely",
@@ -5613,7 +5786,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 266
  },
  {
   "title": "The Long Good-bye",
@@ -5623,7 +5797,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 414
  },
  {
   "title": "Endless Night",
@@ -5633,7 +5808,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 239
  },
  {
   "title": "The Mysterious Affair at Styles",
@@ -5643,7 +5819,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 204
  },
  {
   "title": "The Murder of Roger Ackroyd",
@@ -5665,7 +5842,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 220
  },
  {
   "title": "Rendezvous with Rama",
@@ -5675,7 +5853,8 @@ const BOOKS = [
   "awards": "Hugo, Nebula",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 256
  },
  {
   "title": "The Girls",
@@ -5685,7 +5864,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 352
  },
  {
   "title": "The Spy",
@@ -5695,7 +5875,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 190
  },
  {
   "title": "Together",
@@ -5705,7 +5886,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 341
  },
  {
   "title": "Mr Wilder & Me",
@@ -5715,7 +5897,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 292
  },
  {
   "title": "I Am Still the Greatest Says Johnny Angelo",
@@ -5737,7 +5920,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 143
  },
  {
   "title": "The First Quarry",
@@ -5747,7 +5931,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 204
  },
  {
   "title": "Heart of Darkness",
@@ -5757,7 +5942,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 136
  },
  {
   "title": "No Name",
@@ -5767,7 +5953,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 553
  },
  {
   "title": "Nostromo",
@@ -5777,7 +5964,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 469
  },
  {
   "title": "The Last of the Mohicans",
@@ -5787,7 +5975,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 418
  },
  {
   "title": "The Jokers",
@@ -5809,7 +5998,8 @@ const BOOKS = [
   "awards": "Hugo",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 574
  },
  {
   "title": "The Last Good Kiss",
@@ -5831,7 +6021,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 461
  },
  {
   "title": "My Uncle Oswald",
@@ -5862,7 +6053,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 223
  },
  {
   "title": "Eyeless in Gaza",
@@ -5872,7 +6064,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 619
  },
  {
   "title": "Brave New World",
@@ -5882,7 +6075,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 240
  },
  {
   "title": "A High Wind in Jamaica",
@@ -5892,7 +6086,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 399
  },
  {
   "title": "The Lottery and Other Stories",
@@ -5902,7 +6097,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 827
  },
  {
   "title": "No One Belongs Here More Than You",
@@ -5912,7 +6108,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 224
  },
  {
   "title": "Blind Man with a Pistol",
@@ -5934,7 +6131,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 352
  },
  {
   "title": "Fever Pitch",
@@ -5944,7 +6142,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 247
  },
  {
   "title": "The Finkler Question",
@@ -5954,7 +6153,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 307
  },
  {
   "title": "The Successor",
@@ -5964,7 +6164,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 207
  },
  {
   "title": "The Collected Short Stories of Franz Kafka",
@@ -5984,7 +6185,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 264
  },
  {
   "title": "Memed, My Hawk",
@@ -5994,7 +6196,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 351
  },
  {
   "title": "Gridiron",
@@ -6004,7 +6207,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 384
  },
  {
   "title": "Burial Rites",
@@ -6026,7 +6230,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 698
  },
  {
   "title": "The Stand",
@@ -6036,7 +6241,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 1153
  },
  {
   "title": "Skeleton Crew",
@@ -6046,7 +6252,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 573
  },
  {
   "title": "The Magus",
@@ -6056,7 +6263,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 656
  },
  {
   "title": "The French Lieutenant's Woman",
@@ -6066,7 +6274,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 445
  },
  {
   "title": "The Corrections",
@@ -6076,7 +6285,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 582
  },
  {
   "title": "All That I Have",
@@ -6086,7 +6296,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 164
  },
  {
   "title": "Avenger",
@@ -6106,7 +6317,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 564
  },
  {
   "title": "No Comebacks",
@@ -6116,7 +6328,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 318
  },
  {
   "title": "The Negotiator",
@@ -6126,7 +6339,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 410
  },
  {
   "title": "Icon",
@@ -6148,7 +6362,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 441
  },
  {
   "title": "The Panda Theory",
@@ -6182,7 +6397,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 452
  },
  {
   "title": "Cranford",
@@ -6192,7 +6408,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 244
  },
  {
   "title": "Idoru",
@@ -6298,7 +6515,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 231
  },
  {
   "title": "The Quilt",
@@ -6308,7 +6526,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 225
  },
  {
   "title": "Island",
@@ -6318,7 +6537,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 295
  },
  {
   "title": "The Remake",
@@ -6328,7 +6548,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 224
  },
  {
   "title": "Madame Bovary",
@@ -6338,7 +6559,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 351
  },
  {
   "title": "The Moonshine War",
@@ -6348,7 +6570,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 220
  },
  {
   "title": "Touch",
@@ -6358,7 +6581,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 245
  },
  {
   "title": "Be Cool",
@@ -6368,7 +6592,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 304
  },
  {
   "title": "Split Images",
@@ -6378,7 +6603,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 282
  },
  {
   "title": "The Hot Kid",
@@ -6400,7 +6626,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 272
  },
  {
   "title": "Unknown Man #89",
@@ -6422,7 +6649,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 263
  },
  {
   "title": "Tishomingo Blues",
@@ -6456,7 +6684,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 345
  },
  {
   "title": "Cuba Libre",
@@ -6490,7 +6719,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 528
  },
  {
   "title": "Chronic City",
@@ -6500,7 +6730,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 480
  },
  {
   "title": "A Kiss Before Dying",
@@ -6522,7 +6753,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 234
  },
  {
   "title": "The Stepford Wives",
@@ -6544,7 +6776,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 208
  },
  {
   "title": "Out of the Silent Planet",
@@ -6554,7 +6787,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 174
  },
  {
   "title": "A Short History of Tractors in Ukrainian",
@@ -6564,7 +6798,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 336
  },
  {
   "title": "Charm City",
@@ -6574,7 +6809,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 298
  },
  {
   "title": "Baltimore Blues",
@@ -6584,7 +6820,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 304
  },
  {
   "title": "Young Philby",
@@ -6594,7 +6831,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 357
  },
  {
   "title": "Harsh Times",
@@ -6626,7 +6864,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 287
  },
  {
   "title": "Costalegre",
@@ -6636,7 +6875,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 240
  },
  {
   "title": "Bel-Ami",
@@ -6646,7 +6886,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 412
  },
  {
   "title": "A Girl is a Half-formed Thing",
@@ -6656,7 +6897,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 228
  },
  {
   "title": "Deacon King Kong",
@@ -6678,7 +6920,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C4"
+  "shelf": "Fiction C4",
+  "pages": 455
  },
  {
   "title": "Are Snakes Necessary?",
@@ -6708,7 +6951,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C4"
+  "shelf": "Fiction C4",
+  "pages": 224
  },
  {
   "title": "Djibouti",
@@ -6917,7 +7161,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 416
  },
  {
   "title": "If the Dead Rise Not",
@@ -6927,7 +7172,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 455
  },
  {
   "title": "Field Grey",
@@ -6937,7 +7183,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 503
  },
  {
   "title": "Prague Fatale",
@@ -6947,7 +7194,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 563
  },
  {
   "title": "A Man Without Breath",
@@ -6957,7 +7205,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 496
  },
  {
   "title": "The Lady from Zagreb",
@@ -6967,7 +7216,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 421
  },
  {
   "title": "The Other Side of Silence",
@@ -6977,7 +7227,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 400
  },
  {
   "title": "Prussian Blue",
@@ -6987,7 +7238,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 528
  },
  {
   "title": "Greeks Bearing Gifts",
@@ -6997,7 +7249,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 279
  },
  {
   "title": "Metropolis",
@@ -7007,7 +7260,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 440
  },
  {
   "title": "American Tabloid",
@@ -7017,7 +7271,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C2"
+  "shelf": "Fiction C2",
+  "pages": 592
  },
  {
   "title": "The Cold Six Thousand",
@@ -7027,7 +7282,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C2"
+  "shelf": "Fiction C2",
+  "pages": 688
  },
  {
   "title": "Blood's a Rover",
@@ -7049,7 +7305,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C2"
+  "shelf": "Fiction C2",
+  "pages": 303
  },
  {
   "title": "White Jazz",
@@ -7059,7 +7316,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C2"
+  "shelf": "Fiction C2",
+  "pages": 416
  },
  {
   "title": "Light in August",
@@ -7069,7 +7327,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C2"
+  "shelf": "Fiction C2",
+  "pages": 480
  },
  {
   "title": "Young Turk",
@@ -7091,7 +7350,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C2"
+  "shelf": "Fiction C2",
+  "pages": 256
  },
  {
   "title": "Tom Jones (two-volume set)",
@@ -7111,7 +7371,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C2"
+  "shelf": "Fiction C2",
+  "pages": 304
  },
  {
   "title": "The Great Gatsby",
@@ -7143,7 +7404,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C5"
+  "shelf": "Fiction C5",
+  "pages": 185
  },
  {
   "title": "Fireflies",
@@ -7165,7 +7427,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C5"
+  "shelf": "Fiction C5",
+  "pages": 424
  },
  {
   "title": "The Chip-Chip Gatherers",
@@ -7175,7 +7438,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C5"
+  "shelf": "Fiction C5",
+  "pages": 320
  },
  {
   "title": "The Ramayana",
@@ -7216,7 +7480,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C5"
+  "shelf": "Fiction C5",
+  "pages": 437
  },
  {
   "title": "Straight White Male",
@@ -7226,7 +7491,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C5"
+  "shelf": "Fiction C5",
+  "pages": 384
  },
  {
   "title": "Kill 'Em All",
@@ -7284,7 +7550,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C5"
+  "shelf": "Fiction C5",
+  "pages": 199
  },
  {
   "title": "A Case of Exploding Mangoes",
@@ -7317,7 +7584,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C3"
+  "shelf": "Fiction C3",
+  "pages": 304
  },
  {
   "title": "The Art of Fielding",
@@ -7338,7 +7606,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C3"
+  "shelf": "Fiction C3",
+  "pages": 470
  },
  {
   "title": "Far from the Madding Crowd",
@@ -7348,7 +7617,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C3"
+  "shelf": "Fiction C3",
+  "pages": 424
  },
  {
   "title": "Heartbreak and Vine",
@@ -7358,7 +7628,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C3"
+  "shelf": "Fiction C3",
+  "pages": 312
  },
  {
   "title": "The Dead Women of Juárez",
@@ -7378,7 +7649,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C3"
+  "shelf": "Fiction C3",
+  "pages": 360
  },
  {
   "title": "Catch-22",
@@ -7388,7 +7660,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C3"
+  "shelf": "Fiction C3",
+  "pages": 463
  },
  {
   "title": "Selected Stories",
@@ -7398,7 +7671,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C3"
+  "shelf": "Fiction C3",
+  "pages": 433
  },
  {
   "title": "Cogan's Trade",
@@ -7420,7 +7694,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C3"
+  "shelf": "Fiction C3",
+  "pages": 214
  },
  {
   "title": "The Rat on Fire",
@@ -7430,7 +7705,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C3"
+  "shelf": "Fiction C3",
+  "pages": 183
  },
  {
   "title": "Wonderful Years, Wonderful Years",
@@ -7452,7 +7728,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C1"
+  "shelf": "Fiction C1",
+  "pages": 310
  },
  {
   "title": "The Master and Margarita",
@@ -7474,7 +7751,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C1"
+  "shelf": "Fiction C1",
+  "pages": 364
  },
  {
   "title": "The Muse",
@@ -7484,7 +7762,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C1"
+  "shelf": "Fiction C1",
+  "pages": 405
  },
  {
   "title": "The Miniaturist",
@@ -7494,7 +7773,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C1"
+  "shelf": "Fiction C1",
+  "pages": 424
  },
  {
   "title": "Breakfast at Tiffany's",
@@ -7504,7 +7784,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C1"
+  "shelf": "Fiction C1",
+  "pages": 160
  },
  {
   "title": "The Girl With All the Gifts",
@@ -7526,7 +7807,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C1"
+  "shelf": "Fiction C1",
+  "pages": 432
  },
  {
   "title": "The Kingdom of This World",
@@ -7559,7 +7841,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C7"
+  "shelf": "Fiction C7",
+  "pages": 396
  },
  {
   "title": "The Devil Wears Prada",
@@ -7569,7 +7852,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C7"
+  "shelf": "Fiction C7",
+  "pages": 384
  },
  {
   "title": "The Axe",
@@ -7579,7 +7863,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C7"
+  "shelf": "Fiction C7",
+  "pages": 332
  },
  {
   "title": "The Comedy is Finished",
@@ -7589,7 +7874,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C7"
+  "shelf": "Fiction C7",
+  "pages": 351
  },
  {
   "title": "Kahawa",
@@ -7599,7 +7885,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C7"
+  "shelf": "Fiction C7",
+  "pages": 483
  },
  {
   "title": "Don't Ask",
@@ -7609,7 +7896,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C7"
+  "shelf": "Fiction C7",
+  "pages": 346
  },
  {
   "title": "Jimmy the Kid",
@@ -7665,7 +7953,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C7"
+  "shelf": "Fiction C7",
+  "pages": 261
  },
  {
   "title": "Transgressions",
@@ -7675,7 +7964,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C7"
+  "shelf": "Fiction C7",
+  "pages": 784
  },
  {
   "title": "The Dawn Patrol",
@@ -7685,7 +7975,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C7"
+  "shelf": "Fiction C7",
+  "pages": 312
  },
  {
   "title": "The Once and Future King",
@@ -7695,7 +7986,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C7"
+  "shelf": "Fiction C7",
+  "pages": 654
  },
  {
   "title": "The Mark of Vishnu",
@@ -7705,7 +7997,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C6"
+  "shelf": "Fiction C6",
+  "pages": 122
  },
  {
   "title": "American Wife",
@@ -7715,7 +8008,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C6"
+  "shelf": "Fiction C6",
+  "pages": 558
  },
  {
   "title": "Trick Baby",
@@ -7749,7 +8043,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C6"
+  "shelf": "Fiction C6",
+  "pages": 288
  },
  {
   "title": "Fer-de-Lance",
@@ -7759,7 +8054,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C6"
+  "shelf": "Fiction C6",
+  "pages": 285
  },
  {
   "title": "The Golden Spiders",
@@ -7769,7 +8065,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C6"
+  "shelf": "Fiction C6",
+  "pages": 192
  },
  {
   "title": "Out Goes She",
@@ -7779,7 +8076,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C6"
+  "shelf": "Fiction C6",
+  "pages": 194
  },
  {
   "title": "Trouble in Triplicate",
@@ -7789,7 +8087,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C6"
+  "shelf": "Fiction C6",
+  "pages": 221
  },
  {
   "title": "Might As Well Be Dead",
@@ -7799,7 +8098,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C6"
+  "shelf": "Fiction C6",
+  "pages": 192
  },
  {
   "title": "The Mother Hunt",
@@ -7809,7 +8109,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C6"
+  "shelf": "Fiction C6",
+  "pages": 182
  },
  {
   "title": "Over My Dead Body",
@@ -7819,7 +8120,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C6"
+  "shelf": "Fiction C6",
+  "pages": 201
  },
  {
   "title": "How to be Both",
@@ -7840,7 +8142,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C6"
+  "shelf": "Fiction C6",
+  "pages": 337
  },
  {
   "title": "On Beauty",
@@ -7850,7 +8153,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C6"
+  "shelf": "Fiction C6",
+  "pages": 464
  },
  {
   "title": "White Teeth",
@@ -7860,7 +8164,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C6"
+  "shelf": "Fiction C6",
+  "pages": 528
  },
  {
   "title": "Champagne for One",
@@ -7882,7 +8187,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 506
  },
  {
   "title": "Just Tell Me When to Cry",
@@ -7892,7 +8198,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 351
  },
  {
   "title": "Which Lie Did I Tell?",
@@ -7902,7 +8209,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 489
  },
  {
   "title": "The Big Picture",
@@ -7912,7 +8220,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 283
  },
  {
   "title": "Hype and Glory",
@@ -7922,7 +8231,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 306
  },
  {
   "title": "Writing Screenplays That Sell",
@@ -7932,7 +8242,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 321
  },
  {
   "title": "Lee: A Romance",
@@ -7952,7 +8263,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 560
  },
  {
   "title": "Imagining Reality",
@@ -7962,7 +8274,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 452
  },
  {
   "title": "A Siegel Film",
@@ -7972,7 +8285,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 500
  },
  {
   "title": "The Moon's a Balloon",
@@ -7982,7 +8296,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 327
  },
  {
   "title": "Bring on the Empty Horses",
@@ -7992,7 +8307,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 360
  },
  {
   "title": "Crucified Heroes: The Films of Sam Peckinpah",
@@ -8022,7 +8338,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 282
  },
  {
   "title": "Passion & Poetry: Sam Peckinpah in Pictures",
@@ -8052,7 +8369,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 257
  },
  {
   "title": "Gary Cooper: American Hero",
@@ -8062,7 +8380,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 379
  },
  {
   "title": "Goldwyn: A Biography",
@@ -8082,7 +8401,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 466
  },
  {
   "title": "The Gross",
@@ -8092,7 +8412,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 337
  },
  {
   "title": "Peckinpah: A Portrait in Montage",
@@ -8102,7 +8423,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 260
  },
  {
   "title": "Doing It Right: The Best Criticism on Sam Peckinpah's The Wild Bunch",
@@ -8152,7 +8474,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 195
  },
  {
   "title": "Callan: Under the Red File",
@@ -8172,7 +8495,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 288
  },
  {
   "title": "Inside the Magic Rectangle",
@@ -8182,7 +8506,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 256
  },
  {
   "title": "Seeing is Believing",
@@ -8192,7 +8517,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 371
  },
  {
   "title": "O.K. You Mugs: Writers on Movie Actors",
@@ -8212,7 +8538,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 300
  },
  {
   "title": "Fade Out: The Calamitous Final Days of MGM",
@@ -8232,7 +8559,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 176
  },
  {
   "title": "Breaker Morant (ACMI Study Guide)",
@@ -8272,7 +8600,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 432
  },
  {
   "title": "The Hand That First Held Mine",
@@ -8282,7 +8611,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 368
  },
  {
   "title": "Inside the Whale and Other Essays",
@@ -8292,7 +8622,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 202
  },
  {
   "title": "Decline of the English Murder",
@@ -8302,7 +8633,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 188
  },
  {
   "title": "Homage to Catalonia",
@@ -8312,7 +8644,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 246
  },
  {
   "title": "A Clergyman's Daughter",
@@ -8322,7 +8655,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 317
  },
  {
   "title": "Animal Farm",
@@ -8332,7 +8666,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 128
  },
  {
   "title": "Keep the Aspidistra Flying",
@@ -8342,7 +8677,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 276
  },
  {
   "title": "The Road to Wigan Pier",
@@ -8352,7 +8688,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 230
  },
  {
   "title": "Down and Out in Paris and London",
@@ -8362,7 +8699,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 224
  },
  {
   "title": "Nineteen Eighty-Four",
@@ -8372,7 +8710,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 318
  },
  {
   "title": "Burmese Days",
@@ -8382,7 +8721,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 288
  },
  {
   "title": "The Buddha in the Attic",
@@ -8392,7 +8732,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 129
  },
  {
   "title": "King Suckerman",
@@ -8402,7 +8743,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 288
  },
  {
   "title": "Shame the Devil",
@@ -8412,7 +8754,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 320
  },
  {
   "title": "Hell to Pay",
@@ -8422,7 +8765,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 368
  },
  {
   "title": "Life: A User's Manual",
@@ -8442,7 +8786,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 336
  },
  {
   "title": "Fugue for a Darkening Island",
@@ -8452,7 +8797,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 147
  },
  {
   "title": "Freedomland",
@@ -8462,7 +8808,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 672
  },
  {
   "title": "The Whites",
@@ -8472,7 +8819,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 181
  },
  {
   "title": "Postcards",
@@ -8482,7 +8830,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 346
  },
  {
   "title": "That Old Ace in the Hole",
@@ -8492,7 +8841,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 384
  },
  {
   "title": "Bad Dirt",
@@ -8502,7 +8852,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 240
  },
  {
   "title": "Knots & Crosses",
@@ -8512,7 +8863,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 253
  },
  {
   "title": "In the Beginning",
@@ -8522,7 +8874,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 360
  },
  {
   "title": "The Seven Husbands of Evelyn Hugo",
@@ -8532,7 +8885,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 400
  },
  {
   "title": "The Lost Art of Keeping Secrets",
@@ -8542,7 +8896,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 477
  },
  {
   "title": "The Dice Man",
@@ -8552,7 +8907,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 431
  },
  {
   "title": "NW",
@@ -8562,7 +8918,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 384
  },
  {
   "title": "The Autograph Man",
@@ -8572,7 +8929,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 395
  },
  {
   "title": "The Damsel",
@@ -8582,7 +8940,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 184
  },
  {
   "title": "The Dame",
@@ -8592,7 +8951,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 183
  },
  {
   "title": "The Blackbird",
@@ -8602,7 +8962,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 184
  },
  {
   "title": "Lemons Never Lie",
@@ -8612,7 +8973,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 152
  },
  {
   "title": "Point Blank",
@@ -8622,7 +8984,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 198
  },
  {
   "title": "The Hunter",
@@ -8632,7 +8995,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 198
  },
  {
   "title": "The Outfit",
@@ -8642,7 +9006,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 157
  },
  {
   "title": "The Mourner",
@@ -8652,7 +9017,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 160
  },
  {
   "title": "The Jugger",
@@ -8662,7 +9028,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 160
  },
  {
   "title": "The Rare Coin Score",
@@ -8672,7 +9039,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 152
  },
  {
   "title": "The Green Eagle Score",
@@ -8682,7 +9050,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 173
  },
  {
   "title": "The Black Ice Score",
@@ -8692,7 +9061,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 154
  },
  {
   "title": "The Sour Lemon Score",
@@ -8702,7 +9072,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 160
  },
  {
   "title": "Deadly Edge",
@@ -8712,7 +9083,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 308
  },
  {
   "title": "Slayground",
@@ -8722,7 +9094,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 183
  },
  {
   "title": "Plunder Squad",
@@ -8732,7 +9105,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 182
  },
  {
   "title": "Butcher's Moon",
@@ -8742,7 +9116,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 306
  },
  {
   "title": "Backflash",
@@ -8752,7 +9127,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 292
  },
  {
   "title": "Firebreak",
@@ -8762,7 +9138,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 297
  },
  {
   "title": "Breakout",
@@ -8772,7 +9149,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 304
  },
  {
   "title": "Nobody Runs Forever",
@@ -8782,7 +9160,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 304
  },
  {
   "title": "Ask the Parrot",
@@ -8792,7 +9171,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 283
  },
  {
   "title": "Dirty Money",
@@ -8802,7 +9182,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 282
  },
  {
   "title": "Richard Stark's Parker: The Hunter",
@@ -8812,7 +9193,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 140
  },
  {
   "title": "The Works of Stevenson",
@@ -8822,7 +9204,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 26
  },
  {
   "title": "Dr Jekyll and Mr Hyde",
@@ -8832,7 +9215,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 130
  },
  {
   "title": "Chang & Eng",
@@ -8842,7 +9226,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 348
  },
  {
   "title": "The Light Between Oceans",
@@ -8852,7 +9237,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 352
  },
  {
   "title": "Samaritan",
@@ -8862,7 +9248,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 377
  },
  {
   "title": "The Crying of Lot 49",
@@ -8872,7 +9259,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 174
  },
  {
   "title": "The Adventures of Feluda",
@@ -8882,7 +9270,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 95
  },
  {
   "title": "Comeback",
@@ -8892,7 +9281,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 292
  },
  {
   "title": "Flashfire",
@@ -8902,7 +9292,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 288
  },
  {
   "title": "The Score",
@@ -8912,7 +9303,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 180
  },
  {
   "title": "The Split",
@@ -8932,7 +9324,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 160
  },
  {
   "title": "The Thousand Nights and One Night (4 vols.)",
@@ -8952,7 +9345,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 196
  },
  {
   "title": "Things Fall Apart",
@@ -8962,7 +9356,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 192
  },
  {
   "title": "The Hitch Hiker's Guide to the Galaxy",
@@ -8972,7 +9367,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 216
  },
  {
   "title": "Half of a Yellow Sun",
@@ -8982,7 +9378,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 500
  },
  {
   "title": "Amnesty",
@@ -8992,7 +9389,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 272
  },
  {
   "title": "Between the Assassinations",
@@ -9002,7 +9400,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 339
  },
  {
   "title": "Last Man in Tower",
@@ -9012,7 +9411,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 421
  },
  {
   "title": "The Wandering Falcon",
@@ -9022,7 +9422,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 243
  },
  {
   "title": "Disobedience",
@@ -9032,7 +9433,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 240
  },
  {
   "title": "The Power",
@@ -9042,7 +9444,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 352
  },
  {
   "title": "The House of the Spirits",
@@ -9062,7 +9465,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 253
  },
  {
   "title": "The Light of Day",
@@ -9072,7 +9476,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 238
  },
  {
   "title": "The Mask of Dimitrios",
@@ -9082,7 +9487,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 226
  },
  {
   "title": "Epitaph for a Spy",
@@ -9092,7 +9498,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 253
  },
  {
   "title": "Lucky Jim",
@@ -9102,7 +9509,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 256
  },
  {
   "title": "Time's Arrow",
@@ -9112,7 +9520,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 176
  },
  {
   "title": "Success",
@@ -9122,7 +9531,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 224
  },
  {
   "title": "London Fields",
@@ -9132,7 +9542,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 480
  },
  {
   "title": "Life After Life",
@@ -9142,7 +9553,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 529
  },
  {
   "title": "Pride and Prejudice",
@@ -9152,7 +9564,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 351
  },
  {
   "title": "Sense and Sensibility",
@@ -9162,7 +9575,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 352
  },
  {
   "title": "The New York Trilogy",
@@ -9172,7 +9586,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 364
  },
  {
   "title": "4 3 2 1",
@@ -9182,7 +9597,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 960
  },
  {
   "title": "The Last Sherlock Holmes Story",
@@ -9192,7 +9608,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 72
  },
  {
   "title": "Paris Trout",
@@ -9202,7 +9619,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 327
  },
  {
   "title": "I Used to Be Charming",
@@ -9212,7 +9630,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 360
  },
  {
   "title": "L.A. Woman",
@@ -9222,7 +9641,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 160
  },
  {
   "title": "The Drowned World",
@@ -9252,7 +9672,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 194
  },
  {
   "title": "The Crow Road",
@@ -9262,7 +9683,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 501
  },
  {
   "title": "Complicity",
@@ -9272,7 +9694,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 313
  },
  {
   "title": "Consider Phlebas",
@@ -9282,7 +9705,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 471
  },
  {
   "title": "The Silence of the Girls",
@@ -9292,7 +9716,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 315
  },
  {
   "title": "Arthur & George",
@@ -9302,7 +9727,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 445
  },
  {
   "title": "The Japanese Wife",
@@ -9312,7 +9738,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 202
  },
  {
   "title": "Feminist Fight Club",
@@ -9322,7 +9749,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 336
  },
  {
   "title": "Moxyland",
@@ -9332,7 +9760,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 320
  },
  {
   "title": "Zoo City",
@@ -9342,7 +9771,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 384
  },
  {
   "title": "The Shining Girls",
@@ -9352,7 +9782,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 375
  },
  {
   "title": "Broken Monsters",
@@ -9362,7 +9793,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 453
  },
  {
   "title": "Lorna Doone",
@@ -9372,7 +9804,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 517
  },
  {
   "title": "The Iraqi Christ",
@@ -9392,7 +9825,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 344
  },
  {
   "title": "The 7th Function of Language",
@@ -9412,7 +9846,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 352
  },
  {
   "title": "The Collected Mystery Stories",
@@ -9422,7 +9857,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 754
  },
  {
   "title": "Grifter's Game",
@@ -9432,7 +9868,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 205
  },
  {
   "title": "Any Human Heart",
@@ -9442,7 +9879,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 503
  },
  {
   "title": "Fictions",
@@ -9452,7 +9890,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 571
  },
  {
   "title": "The Aleph",
@@ -9462,7 +9901,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 248
  },
  {
   "title": "Lady Audley's Secret",
@@ -9472,7 +9912,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 238
  },
  {
   "title": "Jane Eyre",
@@ -9482,7 +9923,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 480
  },
  {
   "title": "Wuthering Heights",
@@ -9492,7 +9934,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 318
  },
  {
   "title": "World War Z",
@@ -9502,7 +9945,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 422
  },
  {
   "title": "A Good Place to Die",
@@ -9522,7 +9966,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 312
  },
  {
   "title": "Twinkle, Twinkle, Little Spy",
@@ -9532,7 +9977,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 278
  },
  {
   "title": "Winter",
@@ -9542,7 +9988,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 544
  },
  {
   "title": "Berlin Game",
@@ -9552,7 +9999,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 336
  },
  {
   "title": "Mexico Set",
@@ -9562,7 +10010,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 392
  },
  {
   "title": "London Match",
@@ -9572,7 +10021,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 422
  },
  {
   "title": "XPD",
@@ -9582,7 +10032,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 450
  },
  {
   "title": "The Hare with Amber Eyes",
@@ -9592,7 +10043,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 368
  },
  {
   "title": "Undermajordomo Minor",
@@ -9602,7 +10054,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 356
  },
  {
   "title": "This is How You Lose Her",
@@ -9612,7 +10065,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 240
  },
  {
   "title": "Nicholas Nickleby",
@@ -9622,7 +10076,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 738
  },
  {
   "title": "David Copperfield",
@@ -9632,7 +10087,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 742
  },
  {
   "title": "Great Expectations",
@@ -9642,7 +10098,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 482
  },
  {
   "title": "Little Dorrit",
@@ -9652,7 +10109,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 784
  },
  {
   "title": "The Truth About the Harry Quebert Affair",
@@ -9672,7 +10130,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 208
  },
  {
   "title": "The Wonder",
@@ -9682,7 +10141,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 304
  },
  {
   "title": "Slammerkin",
@@ -9692,7 +10152,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 406
  },
  {
   "title": "Room",
@@ -9702,7 +10163,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 370
  },
  {
   "title": "The Brothers Karamazov",
@@ -9712,7 +10174,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 867
  },
  {
   "title": "Crime and Punishment",
@@ -9722,7 +10185,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 551
  },
  {
   "title": "The Colonel",
@@ -9742,7 +10206,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 658
  },
  {
   "title": "City of Girls",
@@ -9752,7 +10217,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 496
  },
  {
   "title": "Kalimantaan",
@@ -9782,7 +10248,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 266
  },
  {
   "title": "Oblomov",
@@ -9792,7 +10259,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 164
  },
  {
   "title": "Claire DeWitt and the Bohemian Highway",
@@ -9802,7 +10270,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 288
  },
  {
   "title": "Poor Things",
@@ -9812,7 +10281,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 317
  },
  {
   "title": "The Man Within",
@@ -9822,7 +10292,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 230
  },
  {
   "title": "Stamboul Train",
@@ -9832,7 +10303,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 224
  },
  {
   "title": "It's a Battlefield",
@@ -9842,7 +10314,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 216
  },
  {
   "title": "England Made Me",
@@ -9852,7 +10325,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 827
  },
  {
   "title": "A Gun for Sale",
@@ -9862,7 +10336,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 240
  },
  {
   "title": "Brighton Rock",
@@ -9872,7 +10347,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 311
  },
  {
   "title": "The Power and the Glory",
@@ -9882,7 +10358,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 254
  },
  {
   "title": "The End of the Affair",
@@ -9892,7 +10369,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 296
  },
  {
   "title": "The Quiet American",
@@ -9902,7 +10380,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 232
  },
  {
   "title": "A Burnt-Out Case",
@@ -9912,7 +10391,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 248
  },
  {
   "title": "The Comedians",
@@ -9922,7 +10402,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 309
  },
  {
   "title": "May We Borrow Your Husband?",
@@ -9932,7 +10413,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 144
  },
  {
   "title": "Monsignor Quixote",
@@ -9942,7 +10424,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 232
  },
  {
   "title": "The Tenth Man",
@@ -9952,7 +10435,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 157
  },
  {
   "title": "Dirty Havana Trilogy",
@@ -9962,7 +10446,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 400
  },
  {
   "title": "War Trash",
@@ -9972,7 +10457,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 352
  },
  {
   "title": "The Curious Incident of the Dog in the Night-Time",
@@ -9982,7 +10468,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 256
  },
  {
   "title": "King Solomon's Mines",
@@ -9992,7 +10479,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 220
  },
  {
   "title": "She",
@@ -10002,7 +10490,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 282
  },
  {
   "title": "The Midnight Library",
@@ -10012,7 +10501,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 304
  },
  {
   "title": "Return of the Spirit",
@@ -10022,7 +10512,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 288
  },
  {
   "title": "Red Harvest",
@@ -10032,7 +10523,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 224
  },
  {
   "title": "The Dain Curse",
@@ -10042,7 +10534,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 231
  },
  {
   "title": "The Maltese Falcon",
@@ -10052,7 +10545,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 254
  },
  {
   "title": "The Glass Key",
@@ -10062,7 +10556,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 257
  },
  {
   "title": "Woman in the Dark",
@@ -10072,7 +10567,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 90
  },
  {
   "title": "The Continental Op",
@@ -10082,7 +10578,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 288
  },
  {
   "title": "The Big Knockover",
@@ -10092,7 +10589,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 355
  },
  {
   "title": "Moth Smoke",
@@ -10102,7 +10600,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 256
  },
  {
   "title": "Exit West",
@@ -10112,7 +10611,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 231
  },
  {
   "title": "The Last White Man",
@@ -10122,7 +10622,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 160
  },
  {
   "title": "The Prisoner",
@@ -10132,7 +10633,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 324
  },
  {
   "title": "The Poisonwood Bible",
@@ -10142,7 +10644,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 576
  },
  {
   "title": "The Lacuna",
@@ -10152,7 +10655,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 528
  },
  {
   "title": "Redeployment",
@@ -10162,7 +10666,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 291
  },
  {
   "title": "Darkness at Noon",
@@ -10172,7 +10677,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 288
  },
  {
   "title": "Satantango",
@@ -10182,7 +10688,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 287
  },
  {
   "title": "The Flamethrowers",
@@ -10192,7 +10699,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 432
  },
  {
   "title": "The Mars Room",
@@ -10202,7 +10710,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 352
  },
  {
   "title": "Crazy Rich Asians",
@@ -10212,7 +10721,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 527
  },
  {
   "title": "Unaccustomed Earth",
@@ -10222,7 +10732,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 352
  },
  {
   "title": "The Lowland",
@@ -10232,7 +10743,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 388
  },
  {
   "title": "In Other Words",
@@ -10242,7 +10754,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 148
  },
  {
   "title": "Fragrant Harbour",
@@ -10252,7 +10765,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 396
  },
  {
   "title": "Savage Season",
@@ -10262,7 +10776,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 192
  },
  {
   "title": "Mucho Mojo",
@@ -10272,7 +10787,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 308
  },
  {
   "title": "Bad Chili",
@@ -10282,7 +10798,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 298
  },
  {
   "title": "Freezer Burn",
@@ -10292,7 +10809,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 250
  },
  {
   "title": "The Red Notebook",
@@ -10302,7 +10820,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 168
  },
  {
   "title": "Sons and Lovers",
@@ -10312,7 +10831,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 491
  },
  {
   "title": "Lady Chatterley's Lover",
@@ -10322,7 +10842,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 364
  },
  {
   "title": "Shotguns v. Cthulhu",
@@ -10342,7 +10863,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 336
  },
  {
   "title": "The Honourable Schoolboy",
@@ -10352,7 +10874,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 576
  },
  {
   "title": "The Little Drummer Girl",
@@ -10362,7 +10885,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 572
  },
  {
   "title": "A Perfect Spy",
@@ -10372,7 +10896,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 576
  },
  {
   "title": "Our Game",
@@ -10382,7 +10907,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 376
  },
  {
   "title": "Cider with Rosie",
@@ -10392,7 +10918,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 256
  },
  {
   "title": "As I Walked Out One Midsummer Morning",
@@ -10402,7 +10929,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 192
  },
  {
   "title": "A Wizard of Earthsea",
@@ -10412,7 +10940,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 205
  },
  {
   "title": "The Lathe of Heaven",
@@ -10422,7 +10951,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 184
  },
  {
   "title": "The Heart is a Lonely Hunter",
@@ -10432,7 +10962,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 320
  },
  {
   "title": "Blue Genes",
@@ -10442,7 +10973,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 240
  },
  {
   "title": "The Child in Time",
@@ -10452,7 +10984,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 263
  },
  {
   "title": "Black Dogs",
@@ -10462,7 +10995,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 176
  },
  {
   "title": "Solar",
@@ -10472,7 +11006,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 347
  },
  {
   "title": "Sweet Tooth",
@@ -10482,7 +11017,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 378
  },
  {
   "title": "Brightness Falls",
@@ -10492,7 +11028,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 415
  },
  {
   "title": "How It Ended",
@@ -10502,7 +11039,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 264
  },
  {
   "title": "The Chain",
@@ -10512,7 +11050,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 384
  },
  {
   "title": "The Shadow King",
@@ -10522,7 +11061,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 448
  },
  {
   "title": "The Seven-Per-Cent Solution",
@@ -10532,7 +11072,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 237
  },
  {
   "title": "The Song of Achilles",
@@ -10542,7 +11083,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 385
  },
  {
   "title": "Thirst for Love",
@@ -10552,7 +11094,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 153
  },
  {
   "title": "Ghostwritten",
@@ -10562,7 +11105,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 436
  },
  {
   "title": "number9dream",
@@ -10572,7 +11116,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 400
  },
  {
   "title": "Cloud Atlas",
@@ -10582,7 +11127,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 537
  },
  {
   "title": "Black Swan Green",
@@ -10592,7 +11138,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 384
  },
  {
   "title": "The Thousand Autumns of Jacob de Zoet",
@@ -10602,7 +11149,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 480
  },
  {
   "title": "The Bone Clocks",
@@ -10612,7 +11160,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 656
  },
  {
   "title": "Slade House",
@@ -10622,7 +11171,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 247
  },
  {
   "title": "Utopia Avenue",
@@ -10632,7 +11182,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 605
  },
  {
   "title": "The Pursuit of Love",
@@ -10642,7 +11193,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 247
  },
  {
   "title": "How to Build a Girl",
@@ -10652,7 +11204,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 341
  },
  {
   "title": "The Tattooist of Auschwitz",
@@ -10662,7 +11215,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 304
  },
  {
   "title": "Fearless Jones",
@@ -10672,7 +11226,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 321
  },
  {
   "title": "Six Easy Pieces",
@@ -10682,7 +11237,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 288
  },
  {
   "title": "In Other Rooms, Other Wonders",
@@ -10692,7 +11248,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 247
  },
  {
   "title": "The Wind-Up Bird Chronicle",
@@ -10722,7 +11279,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 940
  },
  {
   "title": "The Mountain Shadow",
@@ -10732,7 +11290,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 880
  },
  {
   "title": "The Red Right Hand",
@@ -10742,7 +11301,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 219
  },
  {
   "title": "The Killer Elite",
@@ -10752,7 +11312,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 518
  },
  {
   "title": "The Plot Against America",
@@ -10762,7 +11323,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 400
  },
  {
   "title": "Pedro Páramo",
@@ -10772,7 +11334,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 130
  },
  {
   "title": "On Broadway",
@@ -10782,7 +11345,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 720
  },
  {
   "title": "From First to Last",
@@ -10792,7 +11356,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 477
  },
  {
   "title": "Trials and Tribulations",
@@ -10802,7 +11367,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 285
  },
  {
   "title": "The Ground Beneath Her Feet",
@@ -10812,7 +11378,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 575
  },
  {
   "title": "Raiders from the North",
@@ -10822,7 +11389,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 448
  },
  {
   "title": "Brothers at War",
@@ -10832,7 +11400,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 448
  },
  {
   "title": "Ruler of the World",
@@ -10842,7 +11411,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 416
  },
  {
   "title": "Dominion",
@@ -10852,7 +11422,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 592
  },
  {
   "title": "Bulldog Drummond",
@@ -10862,7 +11433,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 280
  },
  {
   "title": "Persepolis",
@@ -10872,7 +11444,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 352
  },
  {
   "title": "The Far Empty",
@@ -10882,7 +11455,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 456
  },
  {
   "title": "Great Apes",
@@ -10892,7 +11466,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 410
  },
  {
   "title": "Beastly Tales",
@@ -10902,7 +11477,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 140
  },
  {
   "title": "Romeo and Juliet",
@@ -10912,7 +11488,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 169
  },
  {
   "title": "Best of Friends",
@@ -10922,7 +11499,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 288
  },
  {
   "title": "The Post-Birthday World",
@@ -10942,7 +11520,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 390
  },
  {
   "title": "Saturday Night and Sunday Morning",
@@ -10952,7 +11531,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 239
  },
  {
   "title": "Travels in Nihilon",
@@ -10962,7 +11542,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 254
  },
  {
   "title": "On Chesil Beach",
@@ -10972,7 +11553,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 178
  },
  {
   "title": "The Sailor Who Fell from Grace with the Sea",
@@ -10982,7 +11564,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 262
  },
  {
   "title": "The Quantity Theory of Insanity",
@@ -10992,7 +11575,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 211
  },
  {
   "title": "The Bastard of Istanbul",
@@ -11002,7 +11586,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 368
  },
  {
   "title": "Seveneves",
@@ -11012,7 +11597,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 861
  },
  {
   "title": "The Glass Hotel",
@@ -11022,7 +11608,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 328
  },
  {
   "title": "Olive, Again",
@@ -11032,7 +11619,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 304
  },
  {
   "title": "Amy & Isabelle",
@@ -11042,7 +11630,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 384
  },
  {
   "title": "Gulliver's Travels",
@@ -11052,7 +11641,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 278
  },
  {
   "title": "Pereira Maintains",
@@ -11072,7 +11662,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 311
  },
  {
   "title": "The Makioka Sisters",
@@ -11092,7 +11683,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 616
  },
  {
   "title": "The Elephanta Suite",
@@ -11102,7 +11694,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 288
  },
  {
   "title": "After Dark, My Sweet",
@@ -11112,7 +11705,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 133
  },
  {
   "title": "A Hell of a Woman",
@@ -11122,7 +11716,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 184
  },
  {
   "title": "Savage Night",
@@ -11132,7 +11727,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 160
  },
  {
   "title": "Pop. 1280",
@@ -11142,7 +11738,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 215
  },
  {
   "title": "My Life as Emperor",
@@ -11152,7 +11749,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 288
  },
  {
   "title": "The Consul's File",
@@ -11162,7 +11760,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 202
  },
  {
   "title": "A Gentleman in Moscow",
@@ -11172,7 +11771,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 511
  },
  {
   "title": "Galapagos",
@@ -11182,7 +11782,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 295
  },
  {
   "title": "The Slap",
@@ -11192,7 +11793,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 498
  },
  {
   "title": "Fathers and Sons",
@@ -11202,7 +11804,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 214
  },
  {
   "title": "Don't Skip Out on Me",
@@ -11212,7 +11815,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 304
  },
  {
   "title": "Vile Bodies",
@@ -11222,7 +11826,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 255
  },
  {
   "title": "Black Mischief",
@@ -11232,7 +11837,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 239
  },
  {
   "title": "Beautiful Ruins",
@@ -11242,7 +11848,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 368
  },
  {
   "title": "Stoner",
@@ -11252,7 +11859,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 293
  },
  {
   "title": "Scoop",
@@ -11262,7 +11870,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 254
  },
  {
   "title": "Vanity Fair",
@@ -11272,7 +11881,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 699
  },
  {
   "title": "Blandings Castle",
@@ -11282,7 +11892,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 274
  },
  {
   "title": "The Code of the Woosters",
@@ -11292,7 +11903,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 231
  },
  {
   "title": "Very Good, Jeeves",
@@ -11302,7 +11914,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 256
  },
  {
   "title": "The Inimitable Jeeves",
@@ -11312,7 +11925,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 224
  },
  {
   "title": "Uncle Fred in the Springtime",
@@ -11322,7 +11936,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 224
  },
  {
   "title": "The Mating Season",
@@ -11332,7 +11947,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 246
  },
  {
   "title": "Jeeves in the Offing",
@@ -11342,7 +11958,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 188
  },
  {
   "title": "Young Men in Spats",
@@ -11352,7 +11969,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 256
  },
  {
   "title": "Aunts Aren't Gentlemen",
@@ -11362,7 +11980,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 190
  },
  {
   "title": "Right Ho, Jeeves",
@@ -11372,7 +11991,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 263
  },
  {
   "title": "Much Obliged, Jeeves",
@@ -11382,7 +12002,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 192
  },
  {
   "title": "Thank You, Jeeves",
@@ -11392,7 +12013,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 192
  },
  {
   "title": "Jeeves and the Feudal Spirit",
@@ -11402,7 +12024,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 176
  },
  {
   "title": "Carry On, Jeeves",
@@ -11412,7 +12035,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 256
  },
  {
   "title": "Joy in the Morning",
@@ -11422,7 +12046,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 272
  },
  {
   "title": "Ring for Jeeves",
@@ -11432,7 +12057,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 214
  },
  {
   "title": "To the Lighthouse",
@@ -11442,7 +12068,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 242
  },
  {
   "title": "Mrs Dalloway",
@@ -11452,7 +12079,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 224
  },
  {
   "title": "Orlando",
@@ -11462,7 +12090,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 226
  },
  {
   "title": "Mrs. Hemingway",
@@ -11472,7 +12101,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 347
  },
  {
   "title": "Six Four",
@@ -11482,7 +12112,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 600
  },
  {
   "title": "L'Assommoir",
@@ -11492,7 +12123,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 480
  },
  {
   "title": "Nana",
@@ -11502,7 +12134,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 469
  },
  {
   "title": "Germinal",
@@ -11512,7 +12145,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 498
  },
  {
   "title": "The Masterpiece",
@@ -11522,7 +12156,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 408
  },
  {
   "title": "The Debacle",
@@ -11532,7 +12167,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 481
  },
  {
   "title": "Money",
@@ -11542,7 +12178,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 89
  },
  {
   "title": "Chocky",
@@ -11552,7 +12189,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 184
  },
  {
   "title": "The Day of the Triffids",
@@ -11562,7 +12200,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 270
  },
  {
   "title": "Stowaway to Mars",
@@ -11572,7 +12211,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 190
  },
  {
   "title": "The Midwich Cuckoos",
@@ -11582,7 +12222,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 220
  },
  {
   "title": "The Outward Urge",
@@ -11592,7 +12233,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 192
  },
  {
   "title": "Trouble with Lichen",
@@ -11602,7 +12244,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 190
  },
  {
   "title": "Web",
@@ -11612,7 +12255,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 143
  },
  {
   "title": "The Kraken Wakes",
@@ -11622,7 +12266,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 240
  },
  {
   "title": "The Seeds of Time",
@@ -11632,7 +12277,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 224
  },
  {
   "title": "Jizzle",
@@ -11642,7 +12288,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 192
  },
  {
   "title": "Plan for Chaos",
@@ -11652,7 +12299,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B8"
+  "shelf": "Fiction B8",
+  "pages": 256
  },
  {
   "title": "Rabbit, Run",
@@ -11662,7 +12310,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 308
  },
  {
   "title": "Rabbit Redux",
@@ -11672,7 +12321,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 395
  },
  {
   "title": "Rabbit Is Rich",
@@ -11682,7 +12332,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 467
  },
  {
   "title": "Ma'am Darling",
@@ -11692,7 +12343,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 438
  },
  {
   "title": "Among the Thugs",
@@ -11702,7 +12354,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 317
  },
  {
   "title": "The Diary of a Bookseller",
@@ -11712,7 +12365,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 314
  },
  {
   "title": "The Power Broker",
@@ -11722,7 +12376,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 1263
  },
  {
   "title": "The Songlines",
@@ -11732,7 +12387,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 335
  },
  {
   "title": "A Nation of Enemies",
@@ -11752,7 +12408,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 400
  },
  {
   "title": "I Wanna Be Yours",
@@ -11762,7 +12419,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 480
  },
  {
   "title": "Belfast",
@@ -11782,7 +12440,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 370
  },
  {
   "title": "The Real Mad Men",
@@ -11792,7 +12451,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 224
  },
  {
   "title": "Empires of the Sea",
@@ -11802,7 +12462,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 352
  },
  {
   "title": "Feminists Don't Wear Pink and Other Lies",
@@ -11812,7 +12473,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 384
  },
  {
   "title": "The Anarchy",
@@ -11822,7 +12484,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 576
  },
  {
   "title": "Unholy Babylon",
@@ -11842,7 +12505,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 304
  },
  {
   "title": "The Selfish Gene",
@@ -11852,7 +12516,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 352
  },
  {
   "title": "Guns, Germs and Steel",
@@ -11862,7 +12527,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 528
  },
  {
   "title": "Faithfull",
@@ -11872,7 +12538,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 320
  },
  {
   "title": "Black Skin, White Masks",
@@ -11892,7 +12559,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 304
  },
  {
   "title": "Between the Woods and the Water",
@@ -11902,7 +12570,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 259
  },
  {
   "title": "The Great War for Civilisation",
@@ -11912,7 +12581,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 1145
  },
  {
   "title": "Pity the Nation",
@@ -11922,7 +12592,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 703
  },
  {
   "title": "The Outsider",
@@ -11932,7 +12603,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 332
  },
  {
   "title": "A World Without Islam",
@@ -11942,7 +12614,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 336
  },
  {
   "title": "Stasiland",
@@ -11952,7 +12625,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 288
  },
  {
   "title": "On Grand Strategy",
@@ -11962,7 +12636,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 384
  },
  {
   "title": "The Vory",
@@ -11972,7 +12647,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 164
  },
  {
   "title": "Punjab: A History from Aurangzeb to Mountbatten",
@@ -11992,7 +12668,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 272
  },
  {
   "title": "Outliers",
@@ -12002,7 +12679,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 320
  },
  {
   "title": "The Art of Happiness",
@@ -12012,7 +12690,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 314
  },
  {
   "title": "Ancient Wisdom, Modern World",
@@ -12022,7 +12701,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 251
  },
  {
   "title": "The Great Commanders",
@@ -12032,7 +12712,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 192
  },
  {
   "title": "Killers of the Flower Moon",
@@ -12042,7 +12723,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 350
  },
  {
   "title": "Liberty in the Age of Terror",
@@ -12062,7 +12744,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 238
  },
  {
   "title": "America's Boy",
@@ -12072,7 +12755,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 463
  },
  {
   "title": "The Road to Serfdom",
@@ -12082,7 +12766,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 272
  },
  {
   "title": "Economics in One Lesson",
@@ -12092,7 +12777,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 205
  },
  {
   "title": "The Samson Option",
@@ -12102,7 +12788,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 359
  },
  {
   "title": "Love, Poverty and War",
@@ -12112,7 +12799,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 475
  },
  {
   "title": "For the Sake of Argument",
@@ -12122,7 +12810,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 361
  },
  {
   "title": "Unacknowledged Legislation",
@@ -12132,7 +12821,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 358
  },
  {
   "title": "The Trial of Henry Kissinger",
@@ -12142,7 +12832,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 159
  },
  {
   "title": "Why Orwell Matters",
@@ -12152,7 +12843,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 211
  },
  {
   "title": "Bad Blood",
@@ -12162,7 +12854,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 352
  },
  {
   "title": "The 7 Habits of Highly Effective People",
@@ -12172,7 +12865,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 374
  },
  {
   "title": "The Porto Alegre Alternative",
@@ -12182,7 +12876,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 161
  },
  {
   "title": "Separated at Birth",
@@ -12212,7 +12907,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 245
  },
  {
   "title": "Regime Change",
@@ -12222,7 +12918,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 104
  },
  {
   "title": "Napoleon Hill's Think and Grow Rich",
@@ -12232,7 +12929,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 300
  },
  {
   "title": "Big Deal",
@@ -12242,7 +12940,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 359
  },
  {
   "title": "Small Earthquake in Chile",
@@ -12252,7 +12951,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 370
  },
  {
   "title": "The Fatal Shore",
@@ -12262,7 +12962,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 688
  },
  {
   "title": "Godless Morality",
@@ -12272,7 +12973,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 163
  },
  {
   "title": "The Travels of Ibn Battutah",
@@ -12282,7 +12984,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 400
  },
  {
   "title": "Virtual War",
@@ -12292,7 +12995,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 248
  },
  {
   "title": "The Warrior's Honor",
@@ -12312,7 +13016,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 208
  },
  {
   "title": "When China Rules the World",
@@ -12322,7 +13027,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 699
  },
  {
   "title": "Cultural Amnesia",
@@ -12332,7 +13038,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 896
  },
  {
   "title": "Falling Towards England",
@@ -12342,7 +13049,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 192
  },
  {
   "title": "The Black Jacobins",
@@ -12352,7 +13060,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 398
  },
  {
   "title": "Me",
@@ -12362,7 +13071,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 376
  },
  {
   "title": "The Ends of the Earth",
@@ -12372,7 +13082,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 498
  },
  {
   "title": "Thinking, Fast and Slow",
@@ -12382,7 +13093,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 528
  },
  {
   "title": "The Emperor",
@@ -12402,7 +13114,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 320
  },
  {
   "title": "Lessons of a Lipstick Queen",
@@ -12412,7 +13125,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 256
  },
  {
   "title": "Good Vibes, Good Life",
@@ -12422,7 +13136,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 304
  },
  {
   "title": "Armageddon Averted",
@@ -12432,7 +13147,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 280
  },
  {
   "title": "Seven Pillars of Wisdom",
@@ -12442,7 +13158,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 646
  },
  {
   "title": "Fighting Method: Self-Defense Techniques",
@@ -12462,7 +13179,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 88
  },
  {
   "title": "You Got Nothing Coming",
@@ -12472,7 +13190,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 416
  },
  {
   "title": "The Undoing Project",
@@ -12482,7 +13201,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 362
  },
  {
   "title": "Liar's Poker",
@@ -12492,7 +13212,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 304
  },
  {
   "title": "The New New Thing",
@@ -12502,7 +13223,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 268
  },
  {
   "title": "Will",
@@ -12512,7 +13234,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 416
  },
  {
   "title": "Coup d'Etat: A Practical Handbook",
@@ -12532,7 +13255,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 661
  },
  {
   "title": "The Armies of the Night",
@@ -12542,7 +13266,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 302
  },
  {
   "title": "Advertisements for Myself",
@@ -12552,7 +13277,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 493
  },
  {
   "title": "Dictionary of Classical Mythology",
@@ -12572,7 +13298,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 387
  },
  {
   "title": "The Entrepreneurial State",
@@ -12582,7 +13309,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 266
  },
  {
   "title": "More from Less",
@@ -12592,7 +13320,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 337
  },
  {
   "title": "The Ottoman Endgame",
@@ -12602,7 +13331,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 576
  },
  {
   "title": "Truman",
@@ -12612,7 +13342,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 1117
  },
  {
   "title": "Maximum City",
@@ -12622,7 +13353,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 542
  },
  {
   "title": "I Am the Law",
@@ -12632,7 +13364,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 368
  },
  {
   "title": "1421: The Year China Discovered the World",
@@ -12652,7 +13385,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 995
  },
  {
   "title": "Jerusalem: The Biography",
@@ -12682,7 +13416,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 288
  },
  {
   "title": "Black and White",
@@ -12692,7 +13427,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 336
  },
  {
   "title": "North of South",
@@ -12702,7 +13438,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 349
  },
  {
   "title": "The Two Koreas",
@@ -12712,7 +13449,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 496
  },
  {
   "title": "Lost White Tribes",
@@ -12722,7 +13460,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 270
  },
  {
   "title": "Talk of the Devil",
@@ -12732,7 +13471,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 256
  },
  {
   "title": "The True Believer",
@@ -12742,7 +13482,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 176
  },
  {
   "title": "The Big Short",
@@ -12752,7 +13493,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 291
  },
  {
   "title": "The Life of My Choice",
@@ -12762,7 +13504,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 459
  },
  {
   "title": "Moments: The Pulitzer Prize-Winning Photographs",
@@ -12782,7 +13525,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 192
  },
  {
   "title": "Roxy Music: Under Exposed",
@@ -12812,7 +13556,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 46
  },
  {
   "title": "London Under London",
@@ -12822,7 +13567,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 224
  },
  {
   "title": "The Private Life of Palaces",
@@ -12852,7 +13598,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 529
  },
  {
   "title": "Saddam Hussein",
@@ -12862,7 +13609,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 416
  },
  {
   "title": "Open: An Autobiography",
@@ -12882,7 +13630,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 403
  },
  {
   "title": "Experience",
@@ -12892,7 +13641,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 416
  },
  {
   "title": "Iron Curtain: The Crushing of Eastern Europe 1944-1956",
@@ -12922,7 +13672,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 615
  },
  {
   "title": "Stalingrad",
@@ -12932,7 +13683,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 536
  },
  {
   "title": "Putin's People",
@@ -12942,7 +13694,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 647
  },
  {
   "title": "Freedom and its Betrayal",
@@ -12952,7 +13705,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 256
  },
  {
   "title": "The Yogi Book",
@@ -12962,7 +13716,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 128
  },
  {
   "title": "Terror and Liberalism",
@@ -12972,7 +13727,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 240
  },
  {
   "title": "In Defense of Globalization",
@@ -12982,7 +13738,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 320
  },
  {
   "title": "The Good Spy",
@@ -12992,7 +13749,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 448
  },
  {
   "title": "A Journey",
@@ -13002,7 +13760,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 700
  },
  {
   "title": "Dr Echener's Dream Machine",
@@ -13022,7 +13781,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 336
  },
  {
   "title": "Give War a Chance",
@@ -13032,7 +13792,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 256
  },
  {
   "title": "Age and Guile",
@@ -13062,7 +13823,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 320
  },
  {
   "title": "Do Your Om Thing",
@@ -13072,7 +13834,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 276
  },
  {
   "title": "The Blank Slate",
@@ -13082,7 +13845,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 528
  },
  {
   "title": "Zen and the Art of Motorcycle Maintenance",
@@ -13092,7 +13856,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 421
  },
  {
   "title": "Nothing is True and Everything is Possible",
@@ -13102,7 +13867,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 288
  },
  {
   "title": "Fifty Major Economists",
@@ -13112,7 +13878,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 224
  },
  {
   "title": "Fall",
@@ -13122,7 +13889,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 384
  },
  {
   "title": "The Virtue of Selfishness",
@@ -13132,7 +13900,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 162
  },
  {
   "title": "The Origins of Virtue",
@@ -13142,7 +13911,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 295
  },
  {
   "title": "The Rational Optimist",
@@ -13152,7 +13922,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 438
  },
  {
   "title": "The Lean Startup",
@@ -13162,7 +13933,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 336
  },
  {
   "title": "The Oxford Illustrated History of the Crusades",
@@ -13172,7 +13944,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 436
  },
  {
   "title": "The Seven Wonders of the World",
@@ -13182,7 +13955,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 244
  },
  {
   "title": "Factfulness",
@@ -13192,7 +13966,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 352
  },
  {
   "title": "Public Servant, Secret Agent",
@@ -13202,7 +13977,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 392
  },
  {
   "title": "The Battle of Dien Bien Phu",
@@ -13222,7 +13998,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 398
  },
  {
   "title": "The Perfect Weapon",
@@ -13232,7 +14009,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 379
  },
  {
   "title": "Bismarck: A Life",
@@ -13242,7 +14020,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 608
  },
  {
   "title": "Zen: The Art of Simple Living",
@@ -13272,7 +14051,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 344
  },
  {
   "title": "Economic Facts and Fallacies",
@@ -13282,7 +14062,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 272
  },
  {
   "title": "Everyone Loves You When You're Dead",
@@ -13292,7 +14073,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 517
  },
  {
   "title": "Sam Peckinpah (Pocket Essentials)",
@@ -13322,7 +14104,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 322
  },
  {
   "title": "Fooled by Randomness",
@@ -13332,7 +14115,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 312
  },
  {
   "title": "Superforecasting",
@@ -13342,7 +14126,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 338
  },
  {
   "title": "Hard Times",
@@ -13352,7 +14137,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 462
  },
  {
   "title": "Sir Vidia's Shadow",
@@ -13362,7 +14148,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 382
  },
  {
   "title": "The Great Railway Bazaar",
@@ -13372,7 +14159,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 354
  },
  {
   "title": "Walden and Civil Disobedience",
@@ -13382,7 +14170,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 336
  },
  {
   "title": "On Justice, Power, and Human Nature",
@@ -13392,7 +14181,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 172
  },
  {
   "title": "What You See Is What You Get",
@@ -13402,7 +14192,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 610
  },
  {
   "title": "Alchemy",
@@ -13412,7 +14203,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 384
  },
  {
   "title": "Margaret Thatcher: The Downing Street Years",
@@ -13432,7 +14224,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 422
  },
  {
   "title": "Future Shock",
@@ -13442,7 +14235,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 561
  },
  {
   "title": "The Rising Sun: The Decline and Fall of the Japanese Empire 1936-1945",
@@ -13483,7 +14277,8 @@ const BOOKS = [
   "format": "Paperback",
   "read": false,
   "added": "2026-07-06",
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 264
  },
  {
   "title": "Daily Guidance from Your Angels",
@@ -13493,7 +14288,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 392
  },
  {
   "title": "The Diaries of Auberon Waugh",
@@ -13503,7 +14299,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 207
  },
  {
   "title": "Stealing Fire",
@@ -13513,7 +14310,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 304
  },
  {
   "title": "The Agenda",
@@ -13523,7 +14321,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 403
  },
  {
   "title": "Hooking Up",
@@ -13533,7 +14332,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 304
  },
  {
   "title": "In the Footsteps of Mr Kurtz",
@@ -13543,7 +14343,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 353
  },
  {
   "title": "The Private Life of Chairman Mao",
@@ -13553,7 +14354,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 682
  },
  {
   "title": "Rage",
@@ -13625,7 +14427,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 352
  },
  {
   "title": "The Last Tycoon",
@@ -13635,7 +14438,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 198
  },
  {
   "title": "This Side of Paradise",
@@ -13645,7 +14449,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 270
  },
  {
   "title": "The Beautiful and Damned",
@@ -13655,7 +14460,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 439
  },
  {
   "title": "The Thirty-Nine Steps",
@@ -13665,7 +14471,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C1"
+  "shelf": "Fiction C1",
+  "pages": 116
  },
  {
   "title": "Greenmantle",
@@ -13675,7 +14482,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C1"
+  "shelf": "Fiction C1",
+  "pages": 252
  },
  {
   "title": "Mr Standfast",
@@ -13685,7 +14493,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C1"
+  "shelf": "Fiction C1",
+  "pages": 316
  },
  {
   "title": "The Three Hostages",
@@ -13695,7 +14504,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C1"
+  "shelf": "Fiction C1",
+  "pages": 319
  },
  {
   "title": "The Island of Sheep",
@@ -13705,7 +14515,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C1"
+  "shelf": "Fiction C1",
+  "pages": 251
  },
  {
   "title": "The Power-House",
@@ -13715,7 +14526,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C1"
+  "shelf": "Fiction C1",
+  "pages": 118
  },
  {
   "title": "John Macnab",
@@ -13725,7 +14537,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C1"
+  "shelf": "Fiction C1",
+  "pages": 279
  },
  {
   "title": "The Dancing Floor",
@@ -13735,7 +14548,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C1"
+  "shelf": "Fiction C1",
+  "pages": 269
  },
  {
   "title": "Sick Heart River",
@@ -13745,7 +14559,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C1"
+  "shelf": "Fiction C1",
+  "pages": 276
  },
  {
   "title": "I, the Jury",
@@ -13755,7 +14570,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 176
  },
  {
   "title": "My Gun Is Quick",
@@ -13765,7 +14581,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 184
  },
  {
   "title": "Vengeance Is Mine!",
@@ -13775,7 +14592,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 158
  },
  {
   "title": "One Lonely Night",
@@ -13785,7 +14603,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 254
  },
  {
   "title": "The Big Kill",
@@ -13795,7 +14614,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 163
  },
  {
   "title": "Kiss Me, Deadly",
@@ -13805,7 +14625,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 160
  },
  {
   "title": "The Girl Hunters",
@@ -13815,7 +14636,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 205
  },
  {
   "title": "The Snake",
@@ -13825,7 +14647,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 191
  },
  {
   "title": "The Twisted Thing",
@@ -13835,7 +14658,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 219
  },
  {
   "title": "The Clouds",
@@ -13845,7 +14669,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 255
  },
  {
   "title": "The Birds",
@@ -13855,7 +14680,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 360
  },
  {
   "title": "Lysistrata",
@@ -13865,7 +14691,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 114
  },
  {
   "title": "The Frogs",
@@ -13875,7 +14702,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 224
  },
  {
   "title": "The Wasps",
@@ -13885,7 +14713,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 243
  },
  {
   "title": "Thesmophoriazusae",
@@ -13895,7 +14724,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 195
  },
  {
   "title": "The Acharnians",
@@ -13905,7 +14735,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 255
  },
  {
   "title": "The Knights",
@@ -13915,7 +14746,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 335
  },
  {
   "title": "The Iliad",
@@ -13937,7 +14769,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 352
  },
  {
   "title": "Forty Lashes Less One",
@@ -13947,7 +14780,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 272
  },
  {
   "title": "Gunsights",
@@ -13957,7 +14791,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 301
  },
  {
   "title": "City of Gold",
@@ -13967,7 +14802,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 407
  },
  {
   "title": "MAMista",
@@ -13977,7 +14813,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 410
  },
  {
   "title": "Legs",
@@ -13987,7 +14824,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 317
  },
  {
   "title": "Billy Phelan's Greatest Game",
@@ -13997,7 +14835,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 336
  },
  {
   "title": "Ironweed",
@@ -14007,7 +14846,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 240
  },
  {
   "title": "Mr Norris Changes Trains",
@@ -14017,7 +14857,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 211
  },
  {
   "title": "Goodbye to Berlin",
@@ -14027,7 +14868,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 256
  },
  {
   "title": "Tourist Season",
@@ -14037,7 +14879,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 381
  },
  {
   "title": "Double Whammy",
@@ -14047,7 +14890,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 408
  },
  {
   "title": "Skin Tight",
@@ -14057,7 +14901,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 384
  },
  {
   "title": "Some Buried Caesar",
@@ -14067,7 +14912,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C6"
+  "shelf": "Fiction C6",
+  "pages": 263
  },
  {
   "title": "The Golden Spiders",
@@ -14077,6 +14923,7 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C6"
+  "shelf": "Fiction C6",
+  "pages": 192
  }
 ];
