@@ -7228,6 +7228,18 @@ const BOOKS = [
   "shelf": "Fiction C5"
  },
  {
+  "title": "Fireflies",
+  "author": "Shiva Naipaul",
+  "year": 1970,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "pages": 411,
+  "added": "2026-07-06",
+  "shelf": "Fiction C5"
+ },
+ {
   "title": "Beyond the Dragon's Mouth",
   "author": "Shiva Naipaul",
   "year": 1984,
@@ -13645,6 +13657,17 @@ const BOOKS = [
   "shelf": "Non-Fiction 7"
  },
  {
+  "title": "Hippo: The Human Focused Digital Book",
+  "author": "Pete Trainor",
+  "year": 2021,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "added": "2026-07-06",
+  "shelf": "Non-Fiction 7"
+ },
+ {
   "title": "Daily Guidance from Your Angels",
   "author": "Doreen Virtue",
   "year": 2006,
@@ -13713,5 +13736,17 @@ const BOOKS = [
   "format": "Paperback",
   "read": true,
   "shelf": "Non-Fiction 7"
+ },
+ {
+  "title": "Rage",
+  "author": "Zygmunt Miloszewski",
+  "year": 2014,
+  "series": "",
+  "awards": "",
+  "format": "Kindle",
+  "read": true,
+  "added": "2026-07-06",
+  "pages": 428,
+  "shelf": "Digital"
  }
 ];

@@ -45,6 +45,7 @@ section.view.on{display:block}
 @keyframes freshpulse{0%,100%{box-shadow:0 0 0 1px var(--mustard),0 0 5px 0 var(--mustard)}50%{box-shadow:0 0 0 1px var(--mustard),0 0 9px 2px var(--mustard)}}
 .newbadge:empty{display:none}
 .newbadge{color:var(--mustard);font-weight:600}
+.who .alias{display:block;font-family:var(--mono);font-size:10px;color:var(--ink-soft);margin-top:3px}
 .freshdot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--mustard);margin-right:5px;transform:translateY(.5px)}
 .strip-label{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:10px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 .legend{display:flex;gap:14px}
@@ -86,7 +87,8 @@ h2.sec::after{content:"";flex:1;height:1px;background:var(--rule)}
 .shelf:hover{transform:translateY(-3px)}
 .shelf .stack{display:flex;align-items:flex-end;gap:3px;height:66px;border-bottom:3px solid var(--ink);padding:0 3px}
 .shelf .stack i{width:11px;display:block}
-.shelf .who{display:flex;justify-content:space-between;align-items:baseline;margin-top:10px;gap:8px}
+.shelf .who{margin-top:10px}
+.shelf .who-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
 .shelf .who .a{font-family:var(--disp);font-weight:600;font-size:14px;letter-spacing:.02em}
 .shelf .who .c{font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);white-space:nowrap}
 
@@ -165,7 +167,7 @@ input.shelf-edit{font-family:var(--mono);font-size:12px;width:120px;border:1px s
 .spine2.unread{background:#CFC8B4}
 .spine2 i{position:absolute;top:0;left:0;right:0;height:4px;background:var(--mustard)}
 .spine2.dim{opacity:.22}
-.spine2.hit{outline:2px solid var(--orange);outline-offset:1px;transform:translateY(-6px)}
+.spine2.fresh2{box-shadow:0 0 0 1px var(--mustard),0 0 7px 1px var(--mustard);animation:freshpulse 2.4s ease-in-out infinite;z-index:2}.spine2.hit{outline:2px solid var(--orange);outline-offset:1px;transform:translateY(-6px)}
 .prizesplit{display:flex;gap:14px}
 .prow-lab{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:2px 0 6px}
 .prizesplit>div{flex:1}
@@ -203,6 +205,7 @@ textarea{width:100%;min-height:170px;font-family:var(--mono);font-size:12.5px;pa
   <button data-v="library">Library</button>
   <button data-v="reading">Reading</button>
   <button data-v="map">Map</button>
+  <button data-v="add">Add &amp; export</button>
 </nav>
 
 <main>
@@ -227,6 +230,12 @@ textarea{width:100%;min-height:170px;font-family:var(--mono);font-size:12.5px;pa
   <h2 class="sec">Try something new</h2>
   <div class="sec-sub">Eight unread books from the shelves &middot; refresh the page for a new hand</div>
   <div class="recent" id="recent"></div>
+
+  <div id="latest-wrap" style="display:none">
+    <h2 class="sec">Latest additions</h2>
+    <div class="sec-sub">Books added in the last month</div>
+    <div class="recent" id="latest"></div>
+  </div>
 
   <h2 class="sec">Most collected authors</h2>
   <div class="sec-sub">Tap a shelf to browse that author</div>
@@ -354,7 +363,7 @@ function renderHome(){
   const fmts=['Kindle','Audiobook','Paperback'].map(f=>({f,n:fmt(f)})).filter(x=>x.n>0);
   const other=total-fmts.reduce((s,x)=>s+x.n,0);
   if(other>0)fmts.push({f:'Other',n:other});
-  const R=56,CX=60,CY=60;let ang=-Math.PI/2,paths='',labels='';
+  const R=70,CX=75,CY=75;let ang=-Math.PI/2,paths='',labels='';
   fmts.forEach(({f,n})=>{
     const a2=ang+n/total*2*Math.PI;
     const x1=CX+R*Math.cos(ang),y1=CY+R*Math.sin(ang),x2=CX+R*Math.cos(a2),y2=CY+R*Math.sin(a2);
@@ -364,7 +373,7 @@ function renderHome(){
     labels+=`<text x="${(CX+lr*Math.cos(mid)).toFixed(1)}" y="${(CY+lr*Math.sin(mid)+4).toFixed(1)}" text-anchor="middle">${n}</text>`;
     ang=a2;
   });
-  const pie=`<svg width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Formats: ${fmts.map(x=>x.f+' '+x.n).join(', ')}">${paths}${labels}</svg>`;
+  const pie=`<svg width="150" height="150" viewBox="0 0 150 150" role="img" aria-label="Formats: ${fmts.map(x=>x.f+' '+x.n).join(', ')}">${paths}${labels}</svg>`;
   const catOf=b=>{const s=b.shelf||'';return s.indexOf('Fiction')===0?'Fiction':(s.indexOf('Non-Fiction')===0||s==='Prizewinners')?'Non-Fiction':s==='Film'?'Film':'Digital';};
   const catPct=c=>{const l=books.filter(b=>catOf(b)===c);return l.length?{n:l.length,r:l.filter(b=>b.read).length,p:Math.round(l.filter(b=>b.read).length/l.length*100)}:null;};
   const cats=['Fiction','Non-Fiction','Film','Digital'].map(c=>[c,catPct(c)]).filter(x=>x[1]);
@@ -423,13 +432,30 @@ function renderHome(){
     c.addEventListener('keydown',e=>{if(e.key==='Enter')open();});
   });
 
+  const mAgo=new Date(Date.now()-30*864e5).toISOString().slice(0,10);
+  const latest=books.filter(b=>b.added&&b.added>=mAgo).sort((a,b)=>b.added.localeCompare(a.added));
+  const lw=$('#latest-wrap');
+  if(latest.length){
+    lw.style.display='';
+    const fmtDate=d=>{const [y,m,day]=d.split('-');return `${day} ${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m-1]}`;};
+    $('#latest').innerHTML=latest.map(b=>`
+      <div class="rcard" style="border-top-color:${FMT_COLOR[b.format]||'var(--ink)'}" data-t="${esc(b.title)}" tabindex="0" role="button" aria-label="Find ${esc(b.title)} in library">
+        <span class="yr">added ${fmtDate(b.added)}</span><span class="tt">${esc(b.title)}${chip(b)}</span><span class="au">${esc(b.author)}</span>
+      </div>`).join('');
+    $$('#latest .rcard').forEach(c=>{
+      const open=()=>{ $('#q').value=c.dataset.t; goLibrary(); renderLib(); };
+      c.addEventListener('click',open);
+      c.addEventListener('keydown',e=>{if(e.key==='Enter')open();});
+    });
+  } else { lw.style.display='none'; }
+
   const byAuthor={};
   books.forEach(b=>{if(b.author){const c=ALIAS[b.author]||b.author;(byAuthor[c]=byAuthor[c]||[]).push(b);}});
   const top=Object.entries(byAuthor).sort((a,b)=>b[1].length-a[1].length).slice(0,8);
   $('#shelves').innerHTML=top.map(([a,list])=>`
     <div class="shelf" data-a="${esc(a)}" tabindex="0" role="button" aria-label="Browse ${esc(a)}">
       <div class="stack">${list.map(b=>`<i style="background:${FMT_COLOR[b.format]||'var(--ink-soft)'};height:${b.pages?Math.round(30+32*Math.min(1,Math.max(0,(b.pages-80)/920))):34+hash(b.title)%28}px" title="${esc(b.title)}${b.pages?' \u00b7 '+b.pages+'pp':''}"></i>`).join('')}</div>
-      <div class="who"><span class="a">${esc(a)}${[...new Set(list.map(b=>b.author))].filter(x=>x!==a).map(x=>` <span style="font-weight:400;color:var(--ink-soft)">&middot; incl. ${esc(x)}</span>`).join('')}</span><span class="c">${list.length} books &middot; ${list.filter(b=>b.read).length} read</span></div>
+      <div class="who"><div class="who-top"><span class="a">${esc(a)}</span><span class="c">${list.length} books &middot; ${list.filter(b=>b.read).length} read</span></div>${[...new Set(list.map(b=>b.author))].filter(x=>x!==a).length?`<span class="alias">incl. ${[...new Set(list.map(b=>b.author))].filter(x=>x!==a).map(esc).join(', ')}</span>`:''}</div>
     </div>`).join('');
   $$('#shelves .shelf').forEach(s=>{
     const open=()=>{ resetFilters(); $('#q').value=s.dataset.a; goLibrary(); renderLib(); };
@@ -653,7 +679,9 @@ function lastname(a){const t=String(a||'').replace(/\(.*?\)/g,'').trim().split(/
 function spineEl(b){
   const w=b.pages?Math.max(7,Math.min(26,Math.round(b.pages/45))):11;
   const h=40+hash(b.title)%14;
-  return `<span class="spine2 ${b.read?'read':'unread'}" data-t="${esc((b.title+' '+b.author).toLowerCase())}" data-title="${esc(b.title)}" style="width:${w}px;height:${h}px" title="${esc(b.title)} — ${esc(b.author)}${b.pages?' · '+b.pages+'pp':''}${b.read?' · read':''}">${b.awards?'<i></i>':''}</span>`;
+  const monthAgo=new Date(Date.now()-30*864e5).toISOString().slice(0,10);
+  const fresh=b.added&&b.added>=monthAgo;
+  return `<span class="spine2 ${b.read?'read':'unread'}${fresh?' fresh2':''}" data-t="${esc((b.title+' '+b.author).toLowerCase())}" data-title="${esc(b.title)}" style="width:${w}px;height:${h}px" title="${esc(b.title)} — ${esc(b.author)}${b.pages?' · '+b.pages+'pp':''}${b.read?' · read':''}${fresh?' · newly added':''}">${b.awards?'<i></i>':''}</span>`;
 }
 function renderMap(){
   const el=$('#map-body'); if(!el)return;
