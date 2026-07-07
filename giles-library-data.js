@@ -597,7 +597,7 @@ const BOOKS = [
  {
   "title": "The Complete Smoking Diaries",
   "author": "Simon Gray",
-  "year": null,
+  "year": 2004,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -655,7 +655,7 @@ const BOOKS = [
  {
   "title": "Judge Dredd: Year One Omnibus",
   "author": "Michael Carroll",
-  "year": null,
+  "year": 2013,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -1511,7 +1511,7 @@ const BOOKS = [
  {
   "title": "The Final Bet: A Modern Arabic Novel",
   "author": "Abdelilah Hamdouchi",
-  "year": null,
+  "year": 2001,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -1646,7 +1646,7 @@ const BOOKS = [
  {
   "title": "Rumi: Whispers of the Beloved",
   "author": "Rumi",
-  "year": null,
+  "year": 1250,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -1716,7 +1716,7 @@ const BOOKS = [
  {
   "title": "The Complete Works of James Joyce",
   "author": "James Joyce",
-  "year": null,
+  "year": 1914,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -1735,8 +1735,8 @@ const BOOKS = [
  },
  {
   "title": "Dead Drop",
-  "author": "",
-  "year": null,
+  "author": "Jeremy Duns",
+  "year": 2013,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -2151,7 +2151,7 @@ const BOOKS = [
  {
   "title": "Meditations",
   "author": "Marcus Aurelius",
-  "year": null,
+  "year": 180,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -2459,7 +2459,7 @@ const BOOKS = [
  {
   "title": "The Hungarian Tiger",
   "author": "Tibor Fischer",
-  "year": null,
+  "year": 2005,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -2725,7 +2725,7 @@ const BOOKS = [
  {
   "title": "The Collected Works of Ivan Turgenev: 63 Novels and Short Stories",
   "author": "Ivan Turgenev",
-  "year": null,
+  "year": 1862,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -2782,7 +2782,7 @@ const BOOKS = [
  {
   "title": "The Trespassers (Kindle Single)",
   "author": "Elmore Leonard",
-  "year": null,
+  "year": 2012,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -2840,7 +2840,7 @@ const BOOKS = [
  {
   "title": "Roman Dalton - Werewolf PI",
   "author": "Paul D. Brazill",
-  "year": null,
+  "year": 2013,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -2995,7 +2995,7 @@ const BOOKS = [
  {
   "title": "The Jacques Futrelle Megapack",
   "author": "Jacques Futrelle",
-  "year": null,
+  "year": 1907,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -3105,8 +3105,8 @@ const BOOKS = [
  },
  {
   "title": "The Life & Death of Henry Black",
-  "author": "",
-  "year": null,
+  "author": "Mark King",
+  "year": 2014,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -3313,7 +3313,7 @@ const BOOKS = [
  {
   "title": "The Works of Benedict de Spinoza",
   "author": "Benedict de Spinoza",
-  "year": null,
+  "year": 1677,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -3335,7 +3335,7 @@ const BOOKS = [
  {
   "title": "The Illustrated Complete Works",
   "author": "H.P. Lovecraft",
-  "year": null,
+  "year": 1928,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -3390,8 +3390,8 @@ const BOOKS = [
  },
  {
   "title": "Prime Minister Boris",
-  "author": "",
-  "year": null,
+  "author": "Duncan Brack (ed.)",
+  "year": 2011,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -3591,7 +3591,7 @@ const BOOKS = [
  {
   "title": "Thoughts of Marcus Aurelius",
   "author": "Marcus Aurelius",
-  "year": null,
+  "year": 180,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -3601,7 +3601,7 @@ const BOOKS = [
  {
   "title": "Tacitus: The Histories, Volumes I and II",
   "author": "Tacitus",
-  "year": null,
+  "year": 105,
   "series": "",
   "awards": "",
   "format": "Kindle",
@@ -3687,7 +3687,7 @@ const BOOKS = [
  {
   "title": "Sherlock Holmes: The Complete works",
   "author": "Arthur Conan Doyle",
-  "year": null,
+  "year": 1887,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -3894,7 +3894,7 @@ const BOOKS = [
  {
   "title": "The Complete Ghost Stories Collection",
   "author": "M.R. James",
-  "year": null,
+  "year": 1904,
   "series": "",
   "awards": "",
   "format": "Audiobook",
@@ -5865,28 +5865,6 @@ const BOOKS = [
   "shelf": "Fiction A2"
  },
  {
-  "title": "The Iliad",
-  "author": "Homer",
-  "year": null,
-  "series": "",
-  "awards": "",
-  "format": "Paperback",
-  "read": true,
-  "shelf": "Fiction A4",
-  "pages": 704,
-  "rating": 5
- },
- {
-  "title": "The Odyssey",
-  "author": "Homer",
-  "year": null,
-  "series": "",
-  "awards": "",
-  "format": "Paperback",
-  "read": true,
-  "shelf": "Fiction A4"
- },
- {
   "title": "Eyeless in Gaza",
   "author": "Aldous Huxley",
   "year": 1936,
@@ -5937,16 +5915,6 @@ const BOOKS = [
   "shelf": "Fiction A4"
  },
  {
-  "title": "The Carl Hiaasen Omnibus: Tourist Season / Double Whammy / Skin Tight",
-  "author": "Carl Hiaasen",
-  "year": null,
-  "series": "",
-  "awards": "",
-  "format": "Paperback",
-  "read": false,
-  "shelf": "Fiction A4"
- },
- {
   "title": "Blind Man with a Pistol",
   "author": "Chester Himes",
   "year": 1969,
@@ -5979,16 +5947,6 @@ const BOOKS = [
   "shelf": "Fiction A4"
  },
  {
-  "title": "The Berlin Novels",
-  "author": "Christopher Isherwood",
-  "year": null,
-  "series": "",
-  "awards": "",
-  "format": "Paperback",
-  "read": false,
-  "shelf": "Fiction A4"
- },
- {
   "title": "The Finkler Question",
   "author": "Howard Jacobson",
   "year": 2010,
@@ -6011,7 +5969,7 @@ const BOOKS = [
  {
   "title": "The Collected Short Stories of Franz Kafka",
   "author": "Franz Kafka",
-  "year": null,
+  "year": 1919,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -6061,16 +6019,6 @@ const BOOKS = [
   "rating": 3
  },
  {
-  "title": "An Albany Trio",
-  "author": "William Kennedy",
-  "year": null,
-  "series": "",
-  "awards": "",
-  "format": "Paperback",
-  "read": false,
-  "shelf": "Fiction A4"
- },
- {
   "title": "Needful Things",
   "author": "Stephen King",
   "year": 1991,
@@ -6099,26 +6047,6 @@ const BOOKS = [
   "format": "Paperback",
   "read": true,
   "shelf": "Fiction A4"
- },
- {
-  "title": "Tender is the Night & The Last Tycoon",
-  "author": "F. Scott Fitzgerald",
-  "year": null,
-  "series": "",
-  "awards": "",
-  "format": "Paperback",
-  "read": false,
-  "shelf": "Fiction A3"
- },
- {
-  "title": "This Side of Paradise & The Beautiful and Damned",
-  "author": "F. Scott Fitzgerald",
-  "year": null,
-  "series": "",
-  "awards": "",
-  "format": "Paperback",
-  "read": false,
-  "shelf": "Fiction A3"
  },
  {
   "title": "The Magus",
@@ -6436,16 +6364,6 @@ const BOOKS = [
   "title": "Be Cool",
   "author": "Elmore Leonard",
   "year": 1999,
-  "series": "",
-  "awards": "",
-  "format": "Paperback",
-  "read": false,
-  "shelf": "Fiction A5"
- },
- {
-  "title": "Gunsights / Forty Lashes Less One (Two Novels)",
-  "author": "Elmore Leonard",
-  "year": null,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -7210,7 +7128,7 @@ const BOOKS = [
  {
   "title": "The Collected Short Stories of Saki",
   "author": "Saki",
-  "year": null,
+  "year": 1911,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -7475,7 +7393,7 @@ const BOOKS = [
  {
   "title": "Selected Stories",
   "author": "O. Henry",
-  "year": null,
+  "year": 1906,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -7525,26 +7443,6 @@ const BOOKS = [
   "shelf": "Fiction C3",
   "pages": 400,
   "rating": 2
- },
- {
-  "title": "The Complete Richard Hannay",
-  "author": "John Buchan",
-  "year": null,
-  "series": "Richard Hannay",
-  "awards": "",
-  "format": "Paperback",
-  "read": true,
-  "shelf": "Fiction C1"
- },
- {
-  "title": "The Leithen Stories",
-  "author": "John Buchan",
-  "year": null,
-  "series": "",
-  "awards": "",
-  "format": "Paperback",
-  "read": false,
-  "shelf": "Fiction C1"
  },
  {
   "title": "The Heart of a Dog",
@@ -7924,16 +7822,6 @@ const BOOKS = [
   "shelf": "Fiction C6"
  },
  {
-  "title": "Some Buried Caesar / The Golden Spiders",
-  "author": "Rex Stout",
-  "year": null,
-  "series": "Nero Wolfe",
-  "awards": "",
-  "format": "Paperback",
-  "read": false,
-  "shelf": "Fiction C6"
- },
- {
   "title": "How to be Both",
   "author": "Ali Smith",
   "year": 2014,
@@ -8139,7 +8027,7 @@ const BOOKS = [
  {
   "title": "Passion & Poetry: Sam Peckinpah in Pictures",
   "author": "Mike Siegel",
-  "year": null,
+  "year": 2005,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -8269,7 +8157,7 @@ const BOOKS = [
  {
   "title": "Callan: Under the Red File",
   "author": "Andrew Pixley",
-  "year": null,
+  "year": 2015,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -8347,9 +8235,9 @@ const BOOKS = [
   "shelf": "Film"
  },
  {
-  "title": "Breaker Morant (BFI Study Guide)",
-  "author": "",
-  "year": null,
+  "title": "Breaker Morant (ACMI Study Guide)",
+  "author": "Gary Simmons",
+  "year": 2003,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -8687,36 +8575,6 @@ const BOOKS = [
   "shelf": "Fiction A7"
  },
  {
-  "title": "The Mike Hammer Collection, Volume 1",
-  "author": "Mickey Spillane",
-  "year": null,
-  "series": "Mike Hammer",
-  "awards": "",
-  "format": "Paperback",
-  "read": true,
-  "shelf": "Fiction A7"
- },
- {
-  "title": "The Mike Hammer Collection, Volume 2",
-  "author": "Mickey Spillane",
-  "year": null,
-  "series": "Mike Hammer",
-  "awards": "",
-  "format": "Paperback",
-  "read": false,
-  "shelf": "Fiction A7"
- },
- {
-  "title": "The Mike Hammer Collection, Volume 3",
-  "author": "Mickey Spillane",
-  "year": null,
-  "series": "Mike Hammer",
-  "awards": "",
-  "format": "Paperback",
-  "read": false,
-  "shelf": "Fiction A7"
- },
- {
   "title": "The Damsel",
   "author": "Richard Stark",
   "year": 1967,
@@ -8959,7 +8817,7 @@ const BOOKS = [
  {
   "title": "The Works of Stevenson",
   "author": "Robert Louis Stevenson",
-  "year": null,
+  "year": 1886,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -9019,7 +8877,7 @@ const BOOKS = [
  {
   "title": "The Adventures of Feluda",
   "author": "Satyajit Ray",
-  "year": null,
+  "year": 1965,
   "series": "Feluda",
   "awards": "",
   "format": "Paperback",
@@ -9270,36 +9128,6 @@ const BOOKS = [
   "title": "London Fields",
   "author": "Martin Amis",
   "year": 1989,
-  "series": "",
-  "awards": "",
-  "format": "Paperback",
-  "read": false,
-  "shelf": "Fiction A1"
- },
- {
-  "title": "Four Plays: The Clouds / The Birds / Lysistrata / The Frogs",
-  "author": "Aristophanes",
-  "year": null,
-  "series": "",
-  "awards": "",
-  "format": "Paperback",
-  "read": true,
-  "shelf": "Fiction A1"
- },
- {
-  "title": "The Wasps / The Poet and the Women / The Frogs",
-  "author": "Aristophanes",
-  "year": null,
-  "series": "",
-  "awards": "",
-  "format": "Paperback",
-  "read": true,
-  "shelf": "Fiction A1"
- },
- {
-  "title": "Lysistrata and Other Plays",
-  "author": "Aristophanes",
-  "year": null,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -9589,7 +9417,7 @@ const BOOKS = [
  {
   "title": "The Collected Mystery Stories",
   "author": "Lawrence Block",
-  "year": null,
+  "year": 1994,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -9700,16 +9528,6 @@ const BOOKS = [
   "title": "Twinkle, Twinkle, Little Spy",
   "author": "Len Deighton",
   "year": 1976,
-  "series": "",
-  "awards": "",
-  "format": "Paperback",
-  "read": false,
-  "shelf": "Fiction B2"
- },
- {
-  "title": "City of Gold / MAMista",
-  "author": "Len Deighton",
-  "year": null,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -9849,7 +9667,7 @@ const BOOKS = [
  {
   "title": "My Part of Her",
   "author": "Javad Djavahery",
-  "year": null,
+  "year": 2016,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -10959,7 +10777,7 @@ const BOOKS = [
  {
   "title": "On Broadway",
   "author": "Damon Runyon",
-  "year": null,
+  "year": 1930,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -10969,7 +10787,7 @@ const BOOKS = [
  {
   "title": "From First to Last",
   "author": "Damon Runyon",
-  "year": null,
+  "year": 1904,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -10979,7 +10797,7 @@ const BOOKS = [
  {
   "title": "Trials and Tribulations",
   "author": "Damon Runyon",
-  "year": null,
+  "year": 1935,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -12969,7 +12787,7 @@ const BOOKS = [
  {
   "title": "Roxy Music: Under Exposed",
   "author": "Jocelyn Fiske",
-  "year": null,
+  "year": 2002,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -12979,7 +12797,7 @@ const BOOKS = [
  {
   "title": "Images of Scotland",
   "author": "Lomond",
-  "year": null,
+  "year": 2007,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -12989,7 +12807,7 @@ const BOOKS = [
  {
   "title": "Kings & Queens",
   "author": "Various",
-  "year": null,
+  "year": 2004,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -13017,9 +12835,9 @@ const BOOKS = [
   "shelf": "Non-Fiction 1"
  },
  {
-  "title": "Experiences the Tower of London",
+  "title": "Experience the Tower of London",
   "author": "Historic Royal Palaces",
-  "year": null,
+  "year": 2007,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -13189,7 +13007,7 @@ const BOOKS = [
  {
   "title": "Dr Echener's Dream Machine",
   "author": "Douglas Botting",
-  "year": null,
+  "year": 1997,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -13569,7 +13387,7 @@ const BOOKS = [
  {
   "title": "On Justice, Power, and Human Nature",
   "author": "Thucydides",
-  "year": null,
+  "year": -431,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -13649,7 +13467,7 @@ const BOOKS = [
  {
   "title": "Calling All the Dreamers",
   "author": "Pete Trainor",
-  "year": null,
+  "year": 2018,
   "series": "",
   "awards": "",
   "format": "Paperback",
@@ -13798,5 +13616,467 @@ const BOOKS = [
   "format": "Paperback",
   "read": false,
   "shelf": "Film"
+ },
+ {
+  "title": "Tender is the Night",
+  "author": "F. Scott Fitzgerald",
+  "year": 1934,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A3"
+ },
+ {
+  "title": "The Last Tycoon",
+  "author": "F. Scott Fitzgerald",
+  "year": 1941,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A3"
+ },
+ {
+  "title": "This Side of Paradise",
+  "author": "F. Scott Fitzgerald",
+  "year": 1920,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A3"
+ },
+ {
+  "title": "The Beautiful and Damned",
+  "author": "F. Scott Fitzgerald",
+  "year": 1922,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A3"
+ },
+ {
+  "title": "The Thirty-Nine Steps",
+  "author": "John Buchan",
+  "year": 1915,
+  "series": "Richard Hannay",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction C1"
+ },
+ {
+  "title": "Greenmantle",
+  "author": "John Buchan",
+  "year": 1916,
+  "series": "Richard Hannay",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction C1"
+ },
+ {
+  "title": "Mr Standfast",
+  "author": "John Buchan",
+  "year": 1919,
+  "series": "Richard Hannay",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction C1"
+ },
+ {
+  "title": "The Three Hostages",
+  "author": "John Buchan",
+  "year": 1924,
+  "series": "Richard Hannay",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction C1"
+ },
+ {
+  "title": "The Island of Sheep",
+  "author": "John Buchan",
+  "year": 1936,
+  "series": "Richard Hannay",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction C1"
+ },
+ {
+  "title": "The Power-House",
+  "author": "John Buchan",
+  "year": 1916,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction C1"
+ },
+ {
+  "title": "John Macnab",
+  "author": "John Buchan",
+  "year": 1925,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction C1"
+ },
+ {
+  "title": "The Dancing Floor",
+  "author": "John Buchan",
+  "year": 1926,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction C1"
+ },
+ {
+  "title": "Sick Heart River",
+  "author": "John Buchan",
+  "year": 1941,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction C1"
+ },
+ {
+  "title": "I, the Jury",
+  "author": "Mickey Spillane",
+  "year": 1947,
+  "series": "Mike Hammer",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A7"
+ },
+ {
+  "title": "My Gun Is Quick",
+  "author": "Mickey Spillane",
+  "year": 1950,
+  "series": "Mike Hammer",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A7"
+ },
+ {
+  "title": "Vengeance Is Mine!",
+  "author": "Mickey Spillane",
+  "year": 1950,
+  "series": "Mike Hammer",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A7"
+ },
+ {
+  "title": "One Lonely Night",
+  "author": "Mickey Spillane",
+  "year": 1951,
+  "series": "Mike Hammer",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A7"
+ },
+ {
+  "title": "The Big Kill",
+  "author": "Mickey Spillane",
+  "year": 1951,
+  "series": "Mike Hammer",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A7"
+ },
+ {
+  "title": "Kiss Me, Deadly",
+  "author": "Mickey Spillane",
+  "year": 1952,
+  "series": "Mike Hammer",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A7"
+ },
+ {
+  "title": "The Girl Hunters",
+  "author": "Mickey Spillane",
+  "year": 1962,
+  "series": "Mike Hammer",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A7"
+ },
+ {
+  "title": "The Snake",
+  "author": "Mickey Spillane",
+  "year": 1964,
+  "series": "Mike Hammer",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A7"
+ },
+ {
+  "title": "The Twisted Thing",
+  "author": "Mickey Spillane",
+  "year": 1966,
+  "series": "Mike Hammer",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A7"
+ },
+ {
+  "title": "The Clouds",
+  "author": "Aristophanes",
+  "year": -423,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A1"
+ },
+ {
+  "title": "The Birds",
+  "author": "Aristophanes",
+  "year": -414,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A1"
+ },
+ {
+  "title": "Lysistrata",
+  "author": "Aristophanes",
+  "year": -411,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A1"
+ },
+ {
+  "title": "The Frogs",
+  "author": "Aristophanes",
+  "year": -405,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A1"
+ },
+ {
+  "title": "The Wasps",
+  "author": "Aristophanes",
+  "year": -422,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A1"
+ },
+ {
+  "title": "Thesmophoriazusae",
+  "author": "Aristophanes",
+  "year": -411,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A1"
+ },
+ {
+  "title": "The Acharnians",
+  "author": "Aristophanes",
+  "year": -425,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A1"
+ },
+ {
+  "title": "The Knights",
+  "author": "Aristophanes",
+  "year": -424,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A1"
+ },
+ {
+  "title": "The Iliad",
+  "author": "Homer",
+  "year": -762,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A4",
+  "pages": 704,
+  "rating": 5
+ },
+ {
+  "title": "The Odyssey",
+  "author": "Homer",
+  "year": -725,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A4"
+ },
+ {
+  "title": "Forty Lashes Less One",
+  "author": "Elmore Leonard",
+  "year": 1972,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A5"
+ },
+ {
+  "title": "Gunsights",
+  "author": "Elmore Leonard",
+  "year": 1979,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A5"
+ },
+ {
+  "title": "City of Gold",
+  "author": "Len Deighton",
+  "year": 1992,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction B2"
+ },
+ {
+  "title": "MAMista",
+  "author": "Len Deighton",
+  "year": 1991,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction B2"
+ },
+ {
+  "title": "Legs",
+  "author": "William Kennedy",
+  "year": 1975,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A4"
+ },
+ {
+  "title": "Billy Phelan's Greatest Game",
+  "author": "William Kennedy",
+  "year": 1978,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A4"
+ },
+ {
+  "title": "Ironweed",
+  "author": "William Kennedy",
+  "year": 1983,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A4"
+ },
+ {
+  "title": "Mr Norris Changes Trains",
+  "author": "Christopher Isherwood",
+  "year": 1935,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A4"
+ },
+ {
+  "title": "Goodbye to Berlin",
+  "author": "Christopher Isherwood",
+  "year": 1939,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A4"
+ },
+ {
+  "title": "Tourist Season",
+  "author": "Carl Hiaasen",
+  "year": 1986,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A4"
+ },
+ {
+  "title": "Double Whammy",
+  "author": "Carl Hiaasen",
+  "year": 1987,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A4"
+ },
+ {
+  "title": "Skin Tight",
+  "author": "Carl Hiaasen",
+  "year": 1989,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A4"
+ },
+ {
+  "title": "Some Buried Caesar",
+  "author": "Rex Stout",
+  "year": 1939,
+  "series": "Nero Wolfe",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction C6"
+ },
+ {
+  "title": "The Golden Spiders",
+  "author": "Rex Stout",
+  "year": 1953,
+  "series": "Nero Wolfe",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction C6"
  }
 ];
