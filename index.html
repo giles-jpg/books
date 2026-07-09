@@ -52,9 +52,12 @@ section.view.on{display:block}
 #hist .col .tip{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:10px;padding:5px 8px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .12s;margin-bottom:4px;z-index:5;border-radius:2px}
 #hist .col:hover .tip{opacity:1}
 .spine-strip i.fresh{box-shadow:0 0 0 1px var(--mustard),0 0 6px 1px var(--mustard);animation:freshpulse 2.4s ease-in-out infinite;position:relative;z-index:1}
+.spine-strip i.loaned{opacity:.25;filter:grayscale(.7)}
 @keyframes freshpulse{0%,100%{box-shadow:0 0 0 1px var(--mustard),0 0 5px 0 var(--mustard)}50%{box-shadow:0 0 0 1px var(--mustard),0 0 9px 2px var(--mustard)}}
 .newbadge:empty{display:none}
 .newbadge{color:var(--mustard);font-weight:600}
+.rcard.loan{opacity:.9}
+.rcard.loan .yr{color:var(--ink-soft);font-style:italic}
 .who .alias{display:block;font-family:var(--mono);font-size:10px;color:var(--ink-soft);margin-top:3px}
 .freshdot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--mustard);margin-right:5px;transform:translateY(.5px)}
 .strip-label{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:10px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
@@ -177,7 +180,9 @@ input.shelf-edit{font-family:var(--mono);font-size:12px;width:120px;border:1px s
 .spine2.unread{background:#CFC8B4}
 .spine2 i{position:absolute;top:0;left:0;right:0;height:4px;background:var(--mustard)}
 .spine2.dim{opacity:.22}
-.spine2.fresh2{box-shadow:0 0 0 1px var(--mustard),0 0 7px 1px var(--mustard);animation:freshpulse 2.4s ease-in-out infinite;z-index:2}.spine2.hit{outline:2px solid var(--orange);outline-offset:1px;transform:translateY(-6px)}
+.spine2.fresh2{box-shadow:0 0 0 1px var(--mustard),0 0 7px 1px var(--mustard);animation:freshpulse 2.4s ease-in-out infinite;z-index:2}
+.spine2.loaned{opacity:.28;filter:grayscale(.6);border:1px dashed var(--ink-soft)}
+.spine2.loaned.read,.spine2.loaned.unread{background:repeating-linear-gradient(45deg,var(--paper-2),var(--paper-2) 3px,transparent 3px,transparent 6px)}.spine2.hit{outline:2px solid var(--orange);outline-offset:1px;transform:translateY(-6px)}
 .prizesplit{display:flex;gap:14px}
 .prow-lab{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:2px 0 6px}
 .prizesplit>div{flex:1}
@@ -206,7 +211,7 @@ textarea{width:100%;min-height:170px;font-family:var(--mono);font-size:12.5px;pa
 <div class="triband" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
 
 <header class="mast">
-  <h1>Giles&rsquo; Library</h1>
+  <h1 id="masthead">Giles&rsquo; Library</h1>
   <p id="mast-line"></p>
 </header>
 
@@ -250,6 +255,12 @@ textarea{width:100%;min-height:170px;font-family:var(--mono);font-size:12.5px;pa
     <h2 class="sec">Latest additions</h2>
     <div class="sec-sub">Books added in the last month</div>
     <div class="recent" id="latest"></div>
+  </div>
+
+  <div id="loan-wrap" style="display:none">
+    <h2 class="sec">On loan</h2>
+    <div class="sec-sub">Books that belong here but are currently elsewhere</div>
+    <div class="recent" id="loans"></div>
   </div>
 
   <h2 class="sec">Most collected authors</h2>
@@ -336,12 +347,33 @@ textarea{width:100%;min-height:170px;font-family:var(--mono);font-size:12.5px;pa
 </style>
 <script>
 "use strict";
+/* ============================================================
+   CONFIG  —  edit these lines to make this library your own.
+   Everything personal lives here; nothing else needs changing.
+   ============================================================ */
+const CONFIG = {
+  // Name shown in the masthead and browser tab. The possessive is added
+  // automatically: "Giles" -> "Giles'", "Dave" -> "Dave's".
+  owner: "Giles",
+
+  // Pen-name merges: map an alias to the writer's main name so both fold
+  // into one author shelf and one leaderboard entry. Add as many as needed.
+  //   "alias seen on the spine": "the name to file them all under"
+  aliases: {
+    "Richard Stark": "Donald E. Westlake"
+    // e.g.  "Barbara Vine": "Ruth Rendell",
+    //       "Benjamin Black": "John Banville",
+  },
+
+  // (room layout for the Map tab will live here later)
+};
+
 const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
 if(typeof BOOKS==='undefined'){document.body.innerHTML='<div style="font-family:monospace;padding:60px 24px;max-width:60ch;margin:auto;line-height:1.7"><b>Data file not found.</b><br>This app needs <code>giles-library-data.js</code> in the same folder as this HTML file. Move the two files back together and reload.</div>';throw new Error('no data');}
 let books=BOOKS;
 let dirty=false;
 const FMT_COLOR={Kindle:'var(--orange)',Audiobook:'var(--blue)',Paperback:'var(--green)'};
-const ALIAS={'Richard Stark':'Donald E. Westlake'}; // pen names fold into one writer on the shelves
+const ALIAS=CONFIG.aliases||{}; // pen names fold into one writer on the shelves
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const hash=s=>{let h=0;for(let i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))|0}return Math.abs(h)};
 
@@ -360,7 +392,12 @@ function goMap(t){ $$('.tabs button').forEach(x=>x.classList.toggle('on',x.datas
 function renderHome(){
   const total=books.length, read=books.filter(b=>b.read).length;
   const fmt=f=>books.filter(b=>b.format===f).length;
-  $('#mast-line').innerHTML=`A private catalogue &middot; <b>${total}</b> titles &middot; <b>${read}</b> read &middot; four centuries of print`;
+  const yrsAll=books.map(b=>b.year).filter(y=>typeof y==='number');
+  const spanTxt=(()=>{ if(!yrsAll.length)return ''; const lo=Math.min(...yrsAll), hi=Math.max(...yrsAll); const span=hi-lo;
+    if(span>=2000)return `${Math.floor(span/1000)} millennia of print`;
+    if(span>=1000)return `over a millennium of print`;
+    return `${Math.round(span/100)} centuries of print`; })();
+  $('#mast-line').innerHTML=`A private catalogue &middot; <b>${total}</b> titles &middot; <b>${read}</b> read${spanTxt?' &middot; '+spanTxt:''}`;
 
   const spineH=b=>b.pages?Math.round(26+36*Math.min(1,Math.max(0,(b.pages-80)/920))):(30+hash(b.title)%32);
   const monthAgo=new Date(Date.now()-30*864e5).toISOString().slice(0,10);
@@ -370,7 +407,8 @@ function renderHome(){
     i.style.background=FMT_COLOR[b.format]||'var(--ink-soft)';
     i.style.height=spineH(b)+'px';
     if(isNew(b))i.className='fresh';
-    i.title=b.title+(b.author?' — '+b.author:'')+(b.year?' ('+b.year+')':'')+(b.pages?' · '+b.pages+'pp':'')+(isNew(b)?' · newly added':''); strip.appendChild(i);});
+    if(b.loan){i.className=(i.className?i.className+' ':'')+'loaned';}
+    i.title=b.title+(b.author?' — '+b.author:'')+(b.year?' ('+b.year+')':'')+(b.pages?' · '+b.pages+'pp':'')+(b.loan?' · on loan':(isNew(b)?' · newly added':'')); strip.appendChild(i);});
   const nNew=books.filter(isNew).length;
   const nb=$('#newbadge'); if(nb){nb.innerHTML=nNew?`<span class="freshdot"></span>${nNew} added this month`:'';}
 
@@ -481,6 +519,26 @@ function renderHome(){
       c.addEventListener('keydown',e=>{if(e.key==='Enter')open();});
     });
   } else { lw.style.display='none'; }
+
+  // On loan: books with a loan field, listed with whom/where/since
+  const loans=books.filter(b=>b.loan);
+  const lnw=$('#loan-wrap');
+  if(loans.length){
+    lnw.style.display='';
+    const fmtSince=d=>{ if(!d)return ''; const [y,m]=d.split('-'); return m?`${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m-1]} ${y}`:y; };
+    $('#loans').innerHTML=loans.map(b=>{
+      const to=(b.loan.to||'').trim(), where=(b.loan.where||'').trim(), since=fmtSince(b.loan.since);
+      const bits=[to&&('to '+to), where&&('at '+where), since&&('since '+since)].filter(Boolean).join(' &middot; ');
+      return `<div class="rcard loan" style="border-top-color:var(--ink-soft)" data-t="${esc(b.title)}" tabindex="0" role="button" aria-label="Find ${esc(b.title)} in library">
+        <span class="yr">${bits||'on loan'}</span><span class="tt">${esc(b.title)}${chip(b)}</span><span class="au">${esc(b.author)}</span>
+      </div>`;
+    }).join('');
+    $$('#loans .rcard').forEach(c=>{
+      const open=()=>{ $('#q').value=c.dataset.t; goLibrary(); renderLib(); };
+      c.addEventListener('click',open);
+      c.addEventListener('keydown',e=>{if(e.key==='Enter')open();});
+    });
+  } else { lnw.style.display='none'; }
 
   const byAuthor={};
   books.forEach(b=>{if(b.author){const c=ALIAS[b.author]||b.author;(byAuthor[c]=byAuthor[c]||[]).push(b);}});
@@ -714,7 +772,10 @@ function spineEl(b){
   const h=40+hash(b.title)%14;
   const monthAgo=new Date(Date.now()-30*864e5).toISOString().slice(0,10);
   const fresh=b.added&&b.added>=monthAgo;
-  return `<span class="spine2 ${b.read?'read':'unread'}${fresh?' fresh2':''}" data-t="${esc((b.title+' '+b.author).toLowerCase())}" data-title="${esc(b.title)}" style="width:${w}px;height:${h}px" title="${esc(b.title)} — ${esc(b.author)}${b.pages?' · '+b.pages+'pp':''}${b.read?' · read':''}${fresh?' · newly added':''}">${b.awards?'<i></i>':''}</span>`;
+  const loaned=!!b.loan;
+  const cls=`spine2 ${b.read?'read':'unread'}${fresh&&!loaned?' fresh2':''}${loaned?' loaned':''}`;
+  const note=loaned?` · on loan${b.loan.to?' to '+b.loan.to:''}`:(fresh?' · newly added':'');
+  return `<span class="${cls}" data-t="${esc((b.title+' '+b.author).toLowerCase())}" data-title="${esc(b.title)}" style="width:${w}px;height:${h}px" title="${esc(b.title)} — ${esc(b.author)}${b.pages?' · '+b.pages+'pp':''}${b.read?' · read':''}${note}">${b.awards?'<i></i>':''}</span>`;
 }
 function renderMap(){
   const el=$('#map-body'); if(!el)return;
@@ -813,6 +874,10 @@ function deriveShelf(b){
 let derived=0;
 books.forEach(b=>{ if(!('shelf' in b)){ b.shelf=deriveShelf(b); derived++; } });
 if(derived){ markDirty(); }
+/* apply owner name to masthead + tab title (possessive added automatically) */
+(function(){ const o=(CONFIG.owner||'My').trim(); const poss=o+(/s$/i.test(o)?'\u2019':'\u2019s');
+  const h=$('#masthead'); if(h)h.innerHTML=poss+' Library';
+  document.title=poss+' Library'; })();
 fillFilters();renderHome();renderLib();renderReading();renderMap();
 </script>
 </body>

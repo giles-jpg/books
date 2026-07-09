@@ -14925,5 +14925,21 @@ const BOOKS = [
   "read": false,
   "shelf": "Fiction C6",
   "pages": 192
+ },
+ {
+  "title": "Kitchen Confidential",
+  "author": "Anthony Bourdain",
+  "year": 2000,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Non-Fiction 2",
+  "pages": 352,
+  "loan": {
+   "to": "(a friend)",
+   "where": "",
+   "since": ""
+  }
  }
 ];
