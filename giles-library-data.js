@@ -1,4 +1,4 @@
-// Giles' Library — data file. Keep next to giles-library.html
+// Giles’s Library — data file. Keep next to giles-library.html
 const BOOKS = [
  {
   "title": "Loitering with Intent",
@@ -235,6 +235,7 @@ const BOOKS = [
   "format": "Kindle",
   "read": false,
   "shelf": "Digital",
+  "added": "2026-07-10",
   "pages": 294
  },
  {
@@ -281,7 +282,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 204
  },
  {
   "title": "Harlem Shuffle",
@@ -388,11 +390,12 @@ const BOOKS = [
   "title": "A Spy Alone",
   "author": "Charles Beaumont",
   "year": 2023,
-  "series": "",
+  "series": "Oxford Spy",
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 370
  },
  {
   "title": "Piranesi",
@@ -614,7 +617,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 1006
  },
  {
   "title": "We Are Bellingcat",
@@ -801,7 +805,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 369
  },
  {
   "title": "The Fall of the Red Wall: 'The Labour Party no longer represents people like us'",
@@ -847,7 +852,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 432
  },
  {
   "title": "The Master Key",
@@ -1275,7 +1281,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 215,
   "rating": 4
@@ -1287,7 +1293,7 @@ const BOOKS = [
   "series": "Catesby",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 262,
   "rating": 3
@@ -1443,7 +1449,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 290,
   "rating": 4
@@ -1501,7 +1507,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 161,
   "rating": 3
@@ -1536,7 +1542,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 480,
   "rating": 3
@@ -1548,7 +1554,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 145,
   "rating": 2
@@ -1709,7 +1715,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 484,
   "rating": 4
@@ -1801,7 +1807,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 368,
   "rating": 4
@@ -1814,7 +1820,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 354
  },
  {
   "title": "The Personal MBA",
@@ -2084,7 +2091,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 432
  },
  {
   "title": "Nothing is True and Everything is Possible: Adventures in Modern Russia",
@@ -2369,16 +2377,6 @@ const BOOKS = [
   "pages": 512
  },
  {
-  "title": "Sword of Honour",
-  "author": "Evelyn Waugh",
-  "year": 1965,
-  "series": "",
-  "awards": "",
-  "format": "Kindle",
-  "read": true,
-  "shelf": "Digital"
- },
- {
   "title": "Freaky Deaky",
   "author": "Elmore Leonard",
   "year": 1988,
@@ -2466,7 +2464,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 320
  },
  {
   "title": "City Primeval",
@@ -2487,7 +2486,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 86,
   "rating": 5
@@ -2679,7 +2678,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 32,
   "rating": 5
@@ -2772,7 +2771,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 416
  },
  {
   "title": "Fifty Grand",
@@ -2826,7 +2826,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 416,
   "rating": 3
@@ -3158,7 +3158,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 73,
   "rating": 5
@@ -3191,7 +3191,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 180,
   "rating": 3
@@ -3329,7 +3329,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 330,
   "rating": 5
@@ -3464,7 +3464,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 353,
   "rating": 4
@@ -3710,7 +3710,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 96,
   "rating": 3
@@ -3756,7 +3756,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 1162,
   "rating": 5
@@ -3784,14 +3784,104 @@ const BOOKS = [
   "pages": 304
  },
  {
-  "title": "Sherlock Holmes: The Complete works",
+  "title": "A Study in Scarlet ",
   "author": "Arthur Conan Doyle",
   "year": 1887,
   "series": "",
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 93
+ },
+  {
+  "title": "The Sign of the Four",
+  "author": "Arthur Conan Doyle",
+  "year": 1890,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A3",
+  "pages": 170
+ },
+  {
+  "title": "The Adventures of Sherlock Holmes",
+  "author": "Arthur Conan Doyle",
+  "year": 1892,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A3",
+  "pages": 228
+ },
+  {
+  "title": "The Memoirs of Sherlock Holmes",
+  "author": "Arthur Conan Doyle",
+  "year": 1894,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A3",
+  "pages": 180
+ },
+
+  {
+  "title": "The Hound of the Baskervilles",
+  "author": "Arthur Conan Doyle",
+  "year": 1902,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A3",
+  "pages": 140
+ },
+  {
+  "title": "The Return of Sherlock Holmes",
+  "author": "Arthur Conan Doyle",
+  "year": 1905,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A3",
+  "pages": 220
+ },
+  {
+  "title": "The Valley of Fear",
+  "author": "Arthur Conan Doyle",
+  "year": 1915,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction A3",
+  "pages": 120
+ },
+  {
+  "title": "His Last Bow",
+  "author": "Arthur Conan Doyle",
+  "year": 1917,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A3",
+  "pages": 130
+ },
+   {
+  "title": "The Case-Book of Sherlock Holmes",
+  "author": "Arthur Conan Doyle",
+  "year": 1927,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction A3",
+  "pages": 165
  },
  {
   "title": "The White Company",
@@ -3922,7 +4012,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Audiobook",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 368,
   "rating": 5
@@ -3934,7 +4024,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Audiobook",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 126,
   "rating": 5
@@ -3983,7 +4073,8 @@ const BOOKS = [
   "awards": "",
   "format": "Audiobook",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 461
  },
  {
   "title": "Solaris",
@@ -4228,7 +4319,8 @@ const BOOKS = [
   "format": "Audiobook",
   "read": true,
   "shelf": "Digital",
-  "rating": 4
+  "rating": 4,
+  "pages": 214
  },
  {
   "title": "Woman at Point Zero",
@@ -5677,7 +5769,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 512
  },
  {
   "title": "India: A Million Mutinies Now",
@@ -5941,7 +6034,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Fiction A2",
   "pages": 136
  },
@@ -6307,7 +6400,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A3"
+  "shelf": "Fiction A3",
+  "pages": 416
  },
  {
   "title": "The Veteran",
@@ -6931,7 +7025,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C4"
+  "shelf": "Fiction C4",
+  "pages": 240
  },
  {
   "title": "The Star Diaries",
@@ -7337,7 +7432,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Fiction C2",
   "pages": 391,
   "rating": 2
@@ -8130,7 +8225,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Fiction C6",
   "pages": 376
  },
@@ -8284,7 +8379,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Film",
   "pages": 500
  },
@@ -8558,12 +8653,12 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Film",
   "pages": 176
  },
  {
-  "title": "Breaker Morant (ACMI Study Guide)",
+  "title": "Breaking the Breaker (ACMI Study Guide)",
   "author": "Gary Simmons",
   "year": 2003,
   "series": "",
@@ -9956,7 +10051,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 352
  },
  {
   "title": "Funeral in Berlin",
@@ -10326,7 +10422,7 @@ const BOOKS = [
   "format": "Paperback",
   "read": true,
   "shelf": "Fiction B3",
-  "pages": 827
+  "pages": 207
  },
  {
   "title": "A Gun for Sale",
@@ -10698,7 +10794,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Fiction B4",
   "pages": 432
  },
@@ -11476,7 +11572,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Fiction B6",
   "pages": 140
  },
@@ -11704,7 +11800,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Fiction B7",
   "pages": 133
  },
@@ -11819,6 +11915,50 @@ const BOOKS = [
   "pages": 304
  },
  {
+  "title": "Beautiful Ruins",
+  "author": "Jess Walter",
+  "year": 2012,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction B7",
+  "pages": 368
+ },
+ {
+  "title": "Men at Arms",
+  "author": "Evelyn Waugh",
+  "year": 1952,
+  "series": "Sword of Honour",
+  "awards": "",
+  "format": "Kindle",
+  "read": true,
+  "shelf": "Digital",
+  "pages": 314
+ },
+ {
+  "title": "Officers and Gentlemen ",
+  "author": "Evelyn Waugh",
+  "year": 1955,
+  "series": "Sword of Honour",
+  "awards": "",
+  "format": "Kindle",
+  "read": true,
+  "shelf": "Digital",
+  "pages": 335
+ },
+ {
+  "title": "Unconditional Surrender",
+  "author": "Evelyn Waugh",
+  "year": 1961,
+  "series": "Sword of Honour",
+  "awards": "",
+  "format": "Kindle",
+  "read": true,
+  "shelf": "Digital",
+  "pages": 311
+ },
+ {
   "title": "Vile Bodies",
   "author": "Evelyn Waugh",
   "year": 1930,
@@ -11841,15 +11981,15 @@ const BOOKS = [
   "pages": 239
  },
  {
-  "title": "Beautiful Ruins",
-  "author": "Jess Walter",
-  "year": 2012,
+  "title": "Scoop",
+  "author": "Evelyn Waugh",
+  "year": 1938,
   "series": "",
   "awards": "",
   "format": "Paperback",
   "read": true,
   "shelf": "Fiction B7",
-  "pages": 368
+  "pages": 254
  },
  {
   "title": "Stoner",
@@ -11861,17 +12001,6 @@ const BOOKS = [
   "read": true,
   "shelf": "Fiction B7",
   "pages": 293
- },
- {
-  "title": "Scoop",
-  "author": "Evelyn Waugh",
-  "year": 1938,
-  "series": "",
-  "awards": "",
-  "format": "Paperback",
-  "read": true,
-  "shelf": "Fiction B7",
-  "pages": 254
  },
  {
   "title": "Vanity Fair",
@@ -12059,6 +12188,17 @@ const BOOKS = [
   "read": true,
   "shelf": "Fiction B8",
   "pages": 214
+ },
+ {
+  "title": "The Clicking of Cuthbert",
+  "author": "P.G. Wodehouse",
+  "year": 1922,
+  "series": "Golf Stories",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction B8",
+  "pages": 174
  },
  {
   "title": "To the Lighthouse",
@@ -13375,7 +13515,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 491
  },
  {
   "title": "The Mitrokhin Archive",
@@ -13813,7 +13954,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 368
  },
  {
   "title": "A Collection of Essays",
@@ -13990,6 +14132,17 @@ const BOOKS = [
   "read": true,
   "shelf": "Non-Fiction 6"
  },
+  {
+  "title": "Snowblind",
+  "author": "Robert Sabbag",
+  "year": 1998,
+  "series": "",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Non-Fiction 6",
+  "pages": 304
+ },
  {
   "title": "Orientalism",
   "author": "Edward W. Said",
@@ -14083,7 +14236,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Film"
  },
  {
@@ -14365,7 +14518,6 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "added": "2026-07-06",
   "pages": 428,
   "shelf": "Digital"
  },
@@ -14376,7 +14528,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Film"
  },
  {
@@ -14396,7 +14548,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Film"
  },
  {
@@ -14492,7 +14644,7 @@ const BOOKS = [
   "series": "Richard Hannay",
   "awards": "",
   "format": "Paperback",
-  "read": true,
+  "read": false,
   "shelf": "Fiction C1",
   "pages": 316
  },
@@ -14525,7 +14677,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Fiction C1",
   "pages": 118
  },
@@ -14536,7 +14688,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Fiction C1",
   "pages": 279
  },
@@ -14547,7 +14699,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Fiction C1",
   "pages": 269
  },
@@ -14635,7 +14787,7 @@ const BOOKS = [
   "series": "Mike Hammer",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Fiction A7",
   "pages": 205
  },
@@ -14834,7 +14986,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Fiction A4",
   "pages": 336
  },
@@ -14941,5 +15093,74 @@ const BOOKS = [
    "where": "",
    "since": ""
   }
+ },
+ {
+  "title": "Orbital",
+  "author": "Samantha Harvey",
+  "year": 2024,
+  "series": "",
+  "awards": "Booker",
+  "format": "Audiobook",
+  "read": true,
+  "shelf": "Digital",
+  "pages": 138,
+  "added": "2026-07-09"
+ },
+ {
+  "title": "The Bee Sting",
+  "author": "Paul Murray",
+  "year": 2023,
+  "series": "",
+  "awards": "",
+  "format": "Audiobook",
+  "read": false,
+  "shelf": "Digital",
+  "pages": 638,
+  "added": "2026-07-09"
+ },
+ {
+  "title": "The Autobiography of Benvenuto Cellini",
+  "author": "Benvenuto Cellini",
+  "year": 1887,
+  "series": "",
+  "awards": "",
+  "format": "Kindle",
+  "read": false,
+  "shelf": "Digital",
+  "pages": 526,
+  "added": "2026-07-10"
+ },
+ {
+  "title": "Heart, Be at Peace",
+  "author": "Donal Ryan",
+  "year": 2025,
+  "series": "Rust",
+  "awards": "",
+  "format": "Kindle",
+  "read": true,
+  "pages": 224,
+  "shelf": "Digital"
+ },
+ {
+  "title": "Alanbrooke War Diaries 1939-1945",
+  "author": "Lord Alanbrooke",
+  "year": 1957,
+  "series": "",
+  "awards": "",
+  "format": "Kindle",
+  "read": false,
+  "pages": 721,
+  "shelf": "Digital"
+ },
+ {
+  "title": "Under the Yoke",
+  "author": "Ivan Vazov",
+  "year": 1894,
+  "series": "",
+  "awards": "",
+  "format": "Kindle",
+  "read": true,
+  "pages": 247,
+  "shelf": "Digital"
  }
 ];
