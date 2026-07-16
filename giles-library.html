@@ -16,6 +16,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+html,body{transition:background-color .4s ease,color .4s ease}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
 a{color:inherit}
 button{font-family:var(--disp);cursor:pointer}
@@ -41,18 +42,31 @@ section.view.on{display:block}
 
 /* ---------- HOME ---------- */
 .strip-wrap{margin:6px 0 8px}
+.hist-wrap{margin:26px 0 8px}
+#hist{display:flex;align-items:flex-end;gap:5px;height:180px;border-bottom:2px solid var(--ink);padding-top:8px}
+#hist .col{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:3px;height:100%;position:relative}
+#hist .stackwrap{width:100%;max-width:44px;display:flex;flex-direction:column;justify-content:flex-end;flex:1}
+#hist .seg{width:100%;transition:opacity .12s}
+#hist .col:hover .seg{opacity:.72}
+#hist .cnt{font-family:var(--mono);font-size:10px;color:var(--ink);font-weight:600;min-height:12px}
+#hist .dec{font-family:var(--mono);font-size:9.5px;color:var(--ink-soft);letter-spacing:.04em;transform:rotate(0);white-space:nowrap;margin-top:5px}
+#hist .col .tip{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:10px;padding:5px 8px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .12s;margin-bottom:4px;z-index:5;border-radius:2px}
+#hist .col:hover .tip{opacity:1}
 .spine-strip i.fresh{box-shadow:0 0 0 1px var(--mustard),0 0 6px 1px var(--mustard);animation:freshpulse 2.4s ease-in-out infinite;position:relative;z-index:1}
+.spine-strip i.loaned{opacity:.25;filter:grayscale(.7)}
 @keyframes freshpulse{0%,100%{box-shadow:0 0 0 1px var(--mustard),0 0 5px 0 var(--mustard)}50%{box-shadow:0 0 0 1px var(--mustard),0 0 9px 2px var(--mustard)}}
 .newbadge:empty{display:none}
 .newbadge{color:var(--mustard);font-weight:600}
+.rcard.loan{opacity:.9}
+.rcard.loan .yr{color:var(--ink-soft);font-style:italic}
 .who .alias{display:block;font-family:var(--mono);font-size:10px;color:var(--ink-soft);margin-top:3px}
 .freshdot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--mustard);margin-right:5px;transform:translateY(.5px)}
 .strip-label{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:10px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 .legend{display:flex;gap:14px}
 .legend i{display:inline-block;width:9px;height:9px;margin-right:5px;transform:translateY(.5px)}
 .legend .k{background:var(--orange)}.legend .a{background:var(--blue)}.legend .p{background:var(--green)}
-.spine-strip{display:flex;align-items:flex-end;gap:1px;height:64px;padding:0 2px;border-bottom:3px solid var(--ink);overflow:hidden}
-.spine-strip i{flex:1 0 auto;min-width:1px;max-width:5px;display:block;transition:transform .12s}
+.spine-strip{display:flex;align-items:flex-end;gap:1px;height:64px;padding:0 2px;border-bottom:3px solid var(--ink);overflow-x:auto;overflow-y:hidden;scrollbar-width:thin}
+.spine-strip i{flex:0 0 auto;width:3px;display:block;transition:transform .12s}
 .spine-strip i:hover{transform:translateY(-6px)}
 
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:34px 0}
@@ -126,6 +140,15 @@ input.shelf-edit{font-family:var(--mono);font-size:12px;width:120px;border:1px s
 
 /* ---------- AWARDS ---------- */
 :root{--aw-nobel:#B8890B;--aw-booker:#15171C;--aw-pulitzer:#5F7186;--aw-hugo:#6B4FA0;--aw-nebula:#0B7285}
+:root[data-theme="night"]{
+  --paper:#16181D; --paper-2:#1E2128; --ink:#E7E3D6; --ink-soft:#9A9587;
+  --orange:#F06A2E; --blue:#6D9BE0; --green:#3FB58C; --mustard:#E0B84C;
+  --rule:#33363E; --card:#1B1E24;
+  --aw-nobel:#E0B84C; --aw-booker:#C7C0AE; --aw-pulitzer:#8AA0BC; --aw-hugo:#A98FD0; --aw-nebula:#3FB58C;
+}
+.theme-toggle{position:absolute;right:16px;top:50%;transform:translateY(-50%);background:none;border:1px solid var(--rule);color:var(--ink-soft);cursor:pointer;font-size:15px;line-height:1;padding:4px 9px;border-radius:3px;transition:color .15s,border-color .15s}
+.theme-toggle:hover{border-color:var(--ink-soft);color:var(--ink)}
+:root[data-theme="night"] .theme-toggle{color:var(--mustard);border-color:var(--mustard)}
 .chip{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--aw-other,var(--mustard));color:var(--aw-other,var(--mustard));padding:2px 6px 1px;margin-left:8px;vertical-align:2px;white-space:nowrap}
 .chip.nobel{border-color:var(--aw-nobel);color:var(--aw-nobel)}
 .chip.booker{border-color:var(--aw-booker);color:var(--aw-booker)}
@@ -167,7 +190,9 @@ input.shelf-edit{font-family:var(--mono);font-size:12px;width:120px;border:1px s
 .spine2.unread{background:#CFC8B4}
 .spine2 i{position:absolute;top:0;left:0;right:0;height:4px;background:var(--mustard)}
 .spine2.dim{opacity:.22}
-.spine2.fresh2{box-shadow:0 0 0 1px var(--mustard),0 0 7px 1px var(--mustard);animation:freshpulse 2.4s ease-in-out infinite;z-index:2}.spine2.hit{outline:2px solid var(--orange);outline-offset:1px;transform:translateY(-6px)}
+.spine2.fresh2{box-shadow:0 0 0 1px var(--mustard),0 0 7px 1px var(--mustard);animation:freshpulse 2.4s ease-in-out infinite;z-index:2}
+.spine2.loaned{opacity:.28;filter:grayscale(.6);border:1px dashed var(--ink-soft)}
+.spine2.loaned.read,.spine2.loaned.unread{background:repeating-linear-gradient(45deg,var(--paper-2),var(--paper-2) 3px,transparent 3px,transparent 6px)}.spine2.hit{outline:2px solid var(--orange);outline-offset:1px;transform:translateY(-6px)}
 .prizesplit{display:flex;gap:14px}
 .prow-lab{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:2px 0 6px}
 .prizesplit>div{flex:1}
@@ -196,7 +221,7 @@ textarea{width:100%;min-height:170px;font-family:var(--mono);font-size:12.5px;pa
 <div class="triband" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
 
 <header class="mast">
-  <h1>Giles&rsquo; Library</h1>
+  <h1 id="masthead">Giles&rsquo; Library</h1>
   <p id="mast-line"></p>
 </header>
 
@@ -206,6 +231,7 @@ textarea{width:100%;min-height:170px;font-family:var(--mono);font-size:12.5px;pa
   <button data-v="reading">Reading</button>
   <button data-v="map">Map</button>
   <button data-v="add">Add &amp; export</button>
+  <button id="themeBtn" class="theme-toggle" title="Toggle day / night" aria-label="Toggle day or night mode">&#9789;</button>
 </nav>
 
 <main>
@@ -213,13 +239,19 @@ textarea{width:100%;min-height:170px;font-family:var(--mono);font-size:12.5px;pa
 <section class="view on" id="v-home">
   <div class="strip-wrap">
     <div class="strip-label">
-      <span>The whole collection, spine by spine &middot; oldest to newest &middot; height &asymp; length where known</span>
+      <span>The whole collection, spine by spine &middot; oldest to newest &middot; height &asymp; length &middot; scroll &rarr; for the modern era</span>
       <span class="legend"><span id="newbadge" class="newbadge"></span><span><i class="k"></i>Kindle</span><span><i class="a"></i>Audiobook</span><span><i class="p"></i>Paperback</span></span>
     </div>
     <div class="spine-strip" id="strip" aria-hidden="true"></div>
   </div>
 
   <div class="stats" id="stats"></div>
+
+  <div class="hist-wrap">
+    <div class="strip-label"><span>Books by decade of publication &middot; stacked by format &middot; hover for detail</span>
+      <span class="legend"><span><i class="k"></i>Kindle</span><span><i class="a"></i>Audiobook</span><span><i class="p"></i>Paperback</span></span></div>
+    <div id="hist"></div>
+  </div>
 
   <h2 class="sec">The prize cabinet</h2>
   <div class="sec-sub">Tap a prize to browse its winners &middot; the timeline plots each winner by decade of publication</div>
@@ -235,6 +267,12 @@ textarea{width:100%;min-height:170px;font-family:var(--mono);font-size:12.5px;pa
     <h2 class="sec">Latest additions</h2>
     <div class="sec-sub">Books added in the last month</div>
     <div class="recent" id="latest"></div>
+  </div>
+
+  <div id="loan-wrap" style="display:none">
+    <h2 class="sec">On loan</h2>
+    <div class="sec-sub">Books that belong here but are currently elsewhere</div>
+    <div class="recent" id="loans"></div>
   </div>
 
   <h2 class="sec">Most collected authors</h2>
@@ -321,23 +359,65 @@ textarea{width:100%;min-height:170px;font-family:var(--mono);font-size:12.5px;pa
 </style>
 <script>
 "use strict";
+/* ============================================================
+   CONFIG  —  edit these lines to make this library your own.
+   Everything personal lives here; nothing else needs changing.
+   ============================================================ */
+const CONFIG = {
+  // Name shown in the masthead and browser tab. The possessive is added
+  // automatically: "Giles" -> "Giles'", "Dave" -> "Dave's".
+  owner: "Giles",
+
+  // Pen-name merges: map an alias to the writer's main name so both fold
+  // into one author shelf and one leaderboard entry. Add as many as needed.
+  //   "alias seen on the spine": "the name to file them all under"
+  aliases: {
+    "Richard Stark": "Donald E. Westlake"
+    // e.g.  "Barbara Vine": "Ruth Rendell",
+    //       "Benjamin Black": "John Banville",
+  },
+
+  // (room layout for the Map tab will live here later)
+};
+
 const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+
+/* ---- day / night theme ----
+   Auto: night between 19:00 and 07:00, day otherwise.
+   The toggle flips to the opposite of whatever is showing, and that manual
+   choice sticks for the rest of the session (until the page is reloaded,
+   when it reverts to following the clock). */
+let themeManual = null;   // null = follow clock; 'day' or 'night' = user override
+function autoTheme(){ const h=new Date().getHours(); return (h>=19||h<7)?'night':'day'; }
+function currentTheme(){ return themeManual || autoTheme(); }
+function applyTheme(){
+  const t=currentTheme();
+  document.documentElement.setAttribute('data-theme', t==='night'?'night':'day');
+  const btn=$('#themeBtn');
+  if(btn){ btn.innerHTML = t==='night' ? '\u263C' : '\u263D';   // sun when night (tap for day), moon when day
+           btn.title = t==='night' ? 'Switch to day mode' : 'Switch to night mode'; }
+}
+function toggleTheme(){ themeManual = (currentTheme()==='night') ? 'day' : 'night'; applyTheme(); }
+applyTheme();
+// re-check the clock every 5 min so it flips at 7 while left open (unless overridden)
+setInterval(()=>{ if(!themeManual) applyTheme(); }, 300000);
 if(typeof BOOKS==='undefined'){document.body.innerHTML='<div style="font-family:monospace;padding:60px 24px;max-width:60ch;margin:auto;line-height:1.7"><b>Data file not found.</b><br>This app needs <code>giles-library-data.js</code> in the same folder as this HTML file. Move the two files back together and reload.</div>';throw new Error('no data');}
 let books=BOOKS;
 let dirty=false;
 const FMT_COLOR={Kindle:'var(--orange)',Audiobook:'var(--blue)',Paperback:'var(--green)'};
-const ALIAS={'Richard Stark':'Donald E. Westlake'}; // pen names fold into one writer on the shelves
+const ALIAS=CONFIG.aliases||{}; // pen names fold into one writer on the shelves
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const hash=s=>{let h=0;for(let i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))|0}return Math.abs(h)};
 
 /* ---- tabs ---- */
-$$('.tabs button').forEach(b=>b.addEventListener('click',()=>{
-  $$('.tabs button').forEach(x=>x.classList.toggle('on',x===b));
+$$('.tabs button[data-v]').forEach(b=>b.addEventListener('click',()=>{
+  $$('.tabs button[data-v]').forEach(x=>x.classList.toggle('on',x===b));
   $$('.view').forEach(v=>v.classList.toggle('on',v.id==='v-'+b.dataset.v));
 }));
-function goLibrary(){ $$('.tabs button').forEach(x=>x.classList.toggle('on',x.dataset.v==='library'));
+$('#themeBtn').addEventListener('click',toggleTheme);
+function goLibrary(){ $$('.tabs button[data-v]').forEach(x=>x.classList.toggle('on',x.dataset.v==='library'));
   $$('.view').forEach(v=>v.classList.toggle('on',v.id==='v-library')); }
-function goMap(t){ $$('.tabs button').forEach(x=>x.classList.toggle('on',x.dataset.v==='map'));
+function goMap(t){ $$('.tabs button[data-v]').forEach(x=>x.classList.toggle('on',x.dataset.v==='map'));
   $$('.view').forEach(v=>v.classList.toggle('on',v.id==='v-map'));
   const q=$('#mapq'); q.value=t||''; q.dispatchEvent(new Event('input')); }
 
@@ -345,7 +425,12 @@ function goMap(t){ $$('.tabs button').forEach(x=>x.classList.toggle('on',x.datas
 function renderHome(){
   const total=books.length, read=books.filter(b=>b.read).length;
   const fmt=f=>books.filter(b=>b.format===f).length;
-  $('#mast-line').innerHTML=`A private catalogue &middot; <b>${total}</b> titles &middot; <b>${read}</b> read &middot; three millenia of print`;
+  const yrsAll=books.map(b=>b.year).filter(y=>typeof y==='number');
+  const spanTxt=(()=>{ if(!yrsAll.length)return ''; const lo=Math.min(...yrsAll), hi=Math.max(...yrsAll); const span=hi-lo;
+    if(span>=2000)return `${Math.floor(span/1000)} millennia of print`;
+    if(span>=1000)return `over a millennium of print`;
+    return `${Math.round(span/100)} centuries of print`; })();
+  $('#mast-line').innerHTML=`A private catalogue &middot; <b>${total}</b> titles &middot; <b>${read}</b> read${spanTxt?' &middot; '+spanTxt:''}`;
 
   const spineH=b=>b.pages?Math.round(26+36*Math.min(1,Math.max(0,(b.pages-80)/920))):(30+hash(b.title)%32);
   const monthAgo=new Date(Date.now()-30*864e5).toISOString().slice(0,10);
@@ -355,7 +440,8 @@ function renderHome(){
     i.style.background=FMT_COLOR[b.format]||'var(--ink-soft)';
     i.style.height=spineH(b)+'px';
     if(isNew(b))i.className='fresh';
-    i.title=b.title+(b.author?' — '+b.author:'')+(b.year?' ('+b.year+')':'')+(b.pages?' · '+b.pages+'pp':'')+(isNew(b)?' · newly added':''); strip.appendChild(i);});
+    if(b.loan){i.className=(i.className?i.className+' ':'')+'loaned';}
+    i.title=b.title+(b.author?' — '+b.author:'')+(b.year?' ('+b.year+')':'')+(b.pages?' · '+b.pages+'pp':'')+(b.loan?' · on loan':(isNew(b)?' · newly added':'')); strip.appendChild(i);});
   const nNew=books.filter(isNew).length;
   const nb=$('#newbadge'); if(nb){nb.innerHTML=nNew?`<span class="freshdot"></span>${nNew} added this month`:'';}
 
@@ -382,6 +468,24 @@ function renderHome(){
     <div class="stat"><div class="n">${total}</div><div class="l">Titles</div></div>
     <div class="stat"><div class="n">${pct}%</div><div class="l">${read} read &middot; ${total-read} to go</div><div class="bar"><b style="width:${pct}%"></b></div><div class="catbreak">${catRows}</div></div>
     <div class="stat pie">${pie}</div>`;
+
+  // decade-of-publication histogram, stacked by format.
+  // Pre-1900 is sparse, so those years are grouped into wider (century) bins; 1900+ shown by decade.
+  const binOf=y=>{ if(!y)return null; if(y<1900){ const c=Math.floor(y/100)*100; return {key:c,label:c+'s',pre:true}; } const d=Math.floor(y/10)*10; return {key:d,label:String(d).slice(2)+'s',pre:false}; };
+  const bins={}; const order=[]; let undated=0;
+  books.forEach(b=>{ const bin=binOf(b.year); if(!bin){undated++;return;} if(!bins[bin.key]){bins[bin.key]={label:bin.label,Kindle:0,Audiobook:0,Paperback:0,other:0};order.push(bin.key);} const f=['Kindle','Audiobook','Paperback'].includes(b.format)?b.format:'other'; bins[bin.key][f]++; });
+  order.sort((a,b)=>a-b);
+  const colMax=Math.max(...order.map(k=>{const o=bins[k];return o.Kindle+o.Audiobook+o.Paperback+o.other;}),1);
+  const segColor={Kindle:'var(--orange)',Audiobook:'var(--blue)',Paperback:'var(--green)',other:'var(--ink-soft)'};
+  let cols='';
+  if(undated) cols+=`<div class="col"><div class="tip">Ancient / undated: ${undated}</div><div class="cnt">${undated}</div><div class="stackwrap" style="height:${undated/colMax*100}%"><div class="seg" style="height:100%;background:var(--ink-soft)"></div></div><div class="dec">n/d</div></div>`;
+  order.forEach(k=>{
+    const o=bins[k], tot=o.Kindle+o.Audiobook+o.Paperback+o.other;
+    const segs=['Paperback','Audiobook','Kindle','other'].filter(f=>o[f]>0).map(f=>`<div class="seg" style="height:${o[f]/tot*100}%;background:${segColor[f]}"></div>`).join('');
+    const detail=['Paperback','Kindle','Audiobook','other'].filter(f=>o[f]>0).map(f=>`${f}: ${o[f]}`).join(' · ');
+    cols+=`<div class="col"><div class="tip">${o.label==='1800s'||o.label==='1700s'||o.label==='1600s'||o.label==='1500s'||o.label==='1300s'?o.label+' (century)':o.label} — ${tot} books<br>${detail}</div><div class="cnt">${tot}</div><div class="stackwrap" style="height:${tot/colMax*100}%">${segs}</div><div class="dec">${o.label}</div></div>`;
+  });
+  $('#hist').innerHTML=cols;
 
   const AW_COLOR={Nobel:'var(--aw-nobel)',Booker:'var(--aw-booker)',Pulitzer:'var(--aw-pulitzer)',Hugo:'var(--aw-hugo)',Nebula:'var(--aw-nebula)'};
   const AW_TIP={Nobel:'By a Nobel literature laureate',Booker:'Booker Prize winner',Pulitzer:'Pulitzer Prize winner',Hugo:'Hugo Award winner',Nebula:'Nebula Award winner'};
@@ -448,6 +552,26 @@ function renderHome(){
       c.addEventListener('keydown',e=>{if(e.key==='Enter')open();});
     });
   } else { lw.style.display='none'; }
+
+  // On loan: books with a loan field, listed with whom/where/since
+  const loans=books.filter(b=>b.loan);
+  const lnw=$('#loan-wrap');
+  if(loans.length){
+    lnw.style.display='';
+    const fmtSince=d=>{ if(!d)return ''; const [y,m]=d.split('-'); return m?`${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m-1]} ${y}`:y; };
+    $('#loans').innerHTML=loans.map(b=>{
+      const to=(b.loan.to||'').trim(), where=(b.loan.where||'').trim(), since=fmtSince(b.loan.since);
+      const bits=[to&&('to '+to), where&&('at '+where), since&&('since '+since)].filter(Boolean).join(' &middot; ');
+      return `<div class="rcard loan" style="border-top-color:var(--ink-soft)" data-t="${esc(b.title)}" tabindex="0" role="button" aria-label="Find ${esc(b.title)} in library">
+        <span class="yr">${bits||'on loan'}</span><span class="tt">${esc(b.title)}${chip(b)}</span><span class="au">${esc(b.author)}</span>
+      </div>`;
+    }).join('');
+    $$('#loans .rcard').forEach(c=>{
+      const open=()=>{ $('#q').value=c.dataset.t; goLibrary(); renderLib(); };
+      c.addEventListener('click',open);
+      c.addEventListener('keydown',e=>{if(e.key==='Enter')open();});
+    });
+  } else { lnw.style.display='none'; }
 
   const byAuthor={};
   books.forEach(b=>{if(b.author){const c=ALIAS[b.author]||b.author;(byAuthor[c]=byAuthor[c]||[]).push(b);}});
@@ -681,7 +805,10 @@ function spineEl(b){
   const h=40+hash(b.title)%14;
   const monthAgo=new Date(Date.now()-30*864e5).toISOString().slice(0,10);
   const fresh=b.added&&b.added>=monthAgo;
-  return `<span class="spine2 ${b.read?'read':'unread'}${fresh?' fresh2':''}" data-t="${esc((b.title+' '+b.author).toLowerCase())}" data-title="${esc(b.title)}" style="width:${w}px;height:${h}px" title="${esc(b.title)} — ${esc(b.author)}${b.pages?' · '+b.pages+'pp':''}${b.read?' · read':''}${fresh?' · newly added':''}">${b.awards?'<i></i>':''}</span>`;
+  const loaned=!!b.loan;
+  const cls=`spine2 ${b.read?'read':'unread'}${fresh&&!loaned?' fresh2':''}${loaned?' loaned':''}`;
+  const note=loaned?` · on loan${b.loan.to?' to '+b.loan.to:''}`:(fresh?' · newly added':'');
+  return `<span class="${cls}" data-t="${esc((b.title+' '+b.author).toLowerCase())}" data-title="${esc(b.title)}" style="width:${w}px;height:${h}px" title="${esc(b.title)} — ${esc(b.author)}${b.pages?' · '+b.pages+'pp':''}${b.read?' · read':''}${note}">${b.awards?'<i></i>':''}</span>`;
 }
 function renderMap(){
   const el=$('#map-body'); if(!el)return;
@@ -780,6 +907,10 @@ function deriveShelf(b){
 let derived=0;
 books.forEach(b=>{ if(!('shelf' in b)){ b.shelf=deriveShelf(b); derived++; } });
 if(derived){ markDirty(); }
+/* apply owner name to masthead + tab title (possessive added automatically) */
+(function(){ const o=(CONFIG.owner||'My').trim(); const poss=o+(/s$/i.test(o)?'\u2019':'\u2019s');
+  const h=$('#masthead'); if(h)h.innerHTML=poss+' Library';
+  document.title=poss+' Library'; })();
 fillFilters();renderHome();renderLib();renderReading();renderMap();
 </script>
 </body>
