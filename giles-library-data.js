@@ -1,4 +1,4 @@
-// Giles’s Library — data file. Keep next to giles-library.html
+// Giles' Library — data file. Keep next to giles-library.html
 const BOOKS = [
  {
   "title": "Loitering with Intent",
@@ -1440,7 +1440,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 478
  },
  {
   "title": "Uncommon Danger",
@@ -2015,7 +2016,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 433
  },
  {
   "title": "The Kindness of Enemies",
@@ -2920,7 +2922,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 319
  },
  {
   "title": "How We Invented Freedom & Why It Matters",
@@ -3091,7 +3094,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 353
  },
  {
   "title": "Myths & Legends of the Celtic Race",
@@ -3794,7 +3798,7 @@ const BOOKS = [
   "shelf": "Fiction A3",
   "pages": 93
  },
-  {
+ {
   "title": "The Sign of the Four",
   "author": "Arthur Conan Doyle",
   "year": 1890,
@@ -3805,7 +3809,7 @@ const BOOKS = [
   "shelf": "Fiction A3",
   "pages": 170
  },
-  {
+ {
   "title": "The Adventures of Sherlock Holmes",
   "author": "Arthur Conan Doyle",
   "year": 1892,
@@ -3816,7 +3820,7 @@ const BOOKS = [
   "shelf": "Fiction A3",
   "pages": 228
  },
-  {
+ {
   "title": "The Memoirs of Sherlock Holmes",
   "author": "Arthur Conan Doyle",
   "year": 1894,
@@ -3827,8 +3831,7 @@ const BOOKS = [
   "shelf": "Fiction A3",
   "pages": 180
  },
-
-  {
+ {
   "title": "The Hound of the Baskervilles",
   "author": "Arthur Conan Doyle",
   "year": 1902,
@@ -3839,7 +3842,7 @@ const BOOKS = [
   "shelf": "Fiction A3",
   "pages": 140
  },
-  {
+ {
   "title": "The Return of Sherlock Holmes",
   "author": "Arthur Conan Doyle",
   "year": 1905,
@@ -3850,7 +3853,7 @@ const BOOKS = [
   "shelf": "Fiction A3",
   "pages": 220
  },
-  {
+ {
   "title": "The Valley of Fear",
   "author": "Arthur Conan Doyle",
   "year": 1915,
@@ -3861,7 +3864,7 @@ const BOOKS = [
   "shelf": "Fiction A3",
   "pages": 120
  },
-  {
+ {
   "title": "His Last Bow",
   "author": "Arthur Conan Doyle",
   "year": 1917,
@@ -3872,7 +3875,7 @@ const BOOKS = [
   "shelf": "Fiction A3",
   "pages": 130
  },
-   {
+ {
   "title": "The Case-Book of Sherlock Holmes",
   "author": "Arthur Conan Doyle",
   "year": 1927,
@@ -3924,7 +3927,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 156
  },
  {
   "title": "Diary of a Nobody",
@@ -4498,14 +4502,15 @@ const BOOKS = [
   "rating": 3
  },
  {
-  "title": "Swampland",
+  "title": "Swamplandia!",
   "author": "Karen Russell",
   "year": 2011,
   "series": "",
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 418
  },
  {
   "title": "Revolutionary Spring",
@@ -4610,7 +4615,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 747
  },
  {
   "title": "The Magnificent Ambersons",
@@ -14132,7 +14138,7 @@ const BOOKS = [
   "read": true,
   "shelf": "Non-Fiction 6"
  },
-  {
+ {
   "title": "Snowblind",
   "author": "Robert Sabbag",
   "year": 1998,

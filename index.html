@@ -16,6 +16,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+html,body{transition:background-color .4s ease,color .4s ease}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
 a{color:inherit}
 button{font-family:var(--disp);cursor:pointer}
@@ -139,6 +140,15 @@ input.shelf-edit{font-family:var(--mono);font-size:12px;width:120px;border:1px s
 
 /* ---------- AWARDS ---------- */
 :root{--aw-nobel:#B8890B;--aw-booker:#15171C;--aw-pulitzer:#5F7186;--aw-hugo:#6B4FA0;--aw-nebula:#0B7285}
+:root[data-theme="night"]{
+  --paper:#16181D; --paper-2:#1E2128; --ink:#E7E3D6; --ink-soft:#9A9587;
+  --orange:#F06A2E; --blue:#6D9BE0; --green:#3FB58C; --mustard:#E0B84C;
+  --rule:#33363E; --card:#1B1E24;
+  --aw-nobel:#E0B84C; --aw-booker:#C7C0AE; --aw-pulitzer:#8AA0BC; --aw-hugo:#A98FD0; --aw-nebula:#3FB58C;
+}
+.theme-toggle{position:absolute;right:16px;top:50%;transform:translateY(-50%);background:none;border:1px solid var(--rule);color:var(--ink-soft);cursor:pointer;font-size:15px;line-height:1;padding:4px 9px;border-radius:3px;transition:color .15s,border-color .15s}
+.theme-toggle:hover{border-color:var(--ink-soft);color:var(--ink)}
+:root[data-theme="night"] .theme-toggle{color:var(--mustard);border-color:var(--mustard)}
 .chip{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--aw-other,var(--mustard));color:var(--aw-other,var(--mustard));padding:2px 6px 1px;margin-left:8px;vertical-align:2px;white-space:nowrap}
 .chip.nobel{border-color:var(--aw-nobel);color:var(--aw-nobel)}
 .chip.booker{border-color:var(--aw-booker);color:var(--aw-booker)}
@@ -220,6 +230,7 @@ textarea{width:100%;min-height:170px;font-family:var(--mono);font-size:12.5px;pa
   <button data-v="library">Library</button>
   <button data-v="reading">Reading</button>
   <button data-v="map">Map</button>
+  <button id="themeBtn" class="theme-toggle" title="Toggle day / night" aria-label="Toggle day or night mode">&#9789;</button>
 </nav>
 
 <main>
@@ -369,6 +380,26 @@ const CONFIG = {
 };
 
 const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+
+/* ---- day / night theme ----
+   Auto: night between 19:00 and 07:00, day otherwise.
+   The toggle flips to the opposite of whatever is showing, and that manual
+   choice sticks for the rest of the session (until the page is reloaded,
+   when it reverts to following the clock). */
+let themeManual = null;   // null = follow clock; 'day' or 'night' = user override
+function autoTheme(){ const h=new Date().getHours(); return (h>=19||h<7)?'night':'day'; }
+function currentTheme(){ return themeManual || autoTheme(); }
+function applyTheme(){
+  const t=currentTheme();
+  document.documentElement.setAttribute('data-theme', t==='night'?'night':'day');
+  const btn=$('#themeBtn');
+  if(btn){ btn.innerHTML = t==='night' ? '\u263C' : '\u263D';   // sun when night (tap for day), moon when day
+           btn.title = t==='night' ? 'Switch to day mode' : 'Switch to night mode'; }
+}
+function toggleTheme(){ themeManual = (currentTheme()==='night') ? 'day' : 'night'; applyTheme(); }
+applyTheme();
+// re-check the clock every 5 min so it flips at 7 while left open (unless overridden)
+setInterval(()=>{ if(!themeManual) applyTheme(); }, 300000);
 if(typeof BOOKS==='undefined'){document.body.innerHTML='<div style="font-family:monospace;padding:60px 24px;max-width:60ch;margin:auto;line-height:1.7"><b>Data file not found.</b><br>This app needs <code>giles-library-data.js</code> in the same folder as this HTML file. Move the two files back together and reload.</div>';throw new Error('no data');}
 let books=BOOKS;
 let dirty=false;
@@ -378,13 +409,14 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const hash=s=>{let h=0;for(let i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))|0}return Math.abs(h)};
 
 /* ---- tabs ---- */
-$$('.tabs button').forEach(b=>b.addEventListener('click',()=>{
-  $$('.tabs button').forEach(x=>x.classList.toggle('on',x===b));
+$$('.tabs button[data-v]').forEach(b=>b.addEventListener('click',()=>{
+  $$('.tabs button[data-v]').forEach(x=>x.classList.toggle('on',x===b));
   $$('.view').forEach(v=>v.classList.toggle('on',v.id==='v-'+b.dataset.v));
 }));
-function goLibrary(){ $$('.tabs button').forEach(x=>x.classList.toggle('on',x.dataset.v==='library'));
+$('#themeBtn').addEventListener('click',toggleTheme);
+function goLibrary(){ $$('.tabs button[data-v]').forEach(x=>x.classList.toggle('on',x.dataset.v==='library'));
   $$('.view').forEach(v=>v.classList.toggle('on',v.id==='v-library')); }
-function goMap(t){ $$('.tabs button').forEach(x=>x.classList.toggle('on',x.dataset.v==='map'));
+function goMap(t){ $$('.tabs button[data-v]').forEach(x=>x.classList.toggle('on',x.dataset.v==='map'));
   $$('.view').forEach(v=>v.classList.toggle('on',v.id==='v-map'));
   const q=$('#mapq'); q.value=t||''; q.dispatchEvent(new Event('input')); }
 
