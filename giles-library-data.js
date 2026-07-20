@@ -4249,10 +4249,11 @@ const BOOKS = [
   "author": "Orhan Pamuk",
   "year": 2014,
   "series": "",
-  "awards": "",
+  "awards": "Nobel",
   "format": "Audiobook",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 624
  },
  {
   "title": "The Dispossessed",
@@ -4441,7 +4442,7 @@ const BOOKS = [
   "format": "Kindle",
   "read": true,
   "shelf": "Digital",
-  "pages": 49,
+  "pages": 80,
   "rating": 4
  },
  {
@@ -11371,7 +11372,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B6",
+  "pages": 308
  },
  {
   "title": "Shantaram",
@@ -12544,7 +12546,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 368
  },
  {
   "title": "What's Left?",
@@ -12576,7 +12579,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 320
  },
  {
   "title": "Khomeini's Ghost",
@@ -12695,7 +12699,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 232
  },
  {
   "title": "A Time of Gifts",
@@ -13391,7 +13396,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 215
  },
  {
   "title": "A History of the World in 100 Objects",
@@ -13950,7 +13956,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 368
  },
  {
   "title": "All the Trouble in the World",
@@ -14415,7 +14422,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 720
  },
  {
   "title": "Calling All the Dreamers",
@@ -15142,7 +15150,7 @@ const BOOKS = [
   "year": 2025,
   "series": "Rust",
   "awards": "",
-  "format": "Kindle",
+  "format": "Audiobook",
   "read": true,
   "pages": 224,
   "shelf": "Digital"

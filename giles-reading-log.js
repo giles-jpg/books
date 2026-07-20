@@ -2435,5 +2435,65 @@ const READING_LOG = [
   "debut": "Debut",
   "decade": "1980s",
   "prizes": ""
- }
+ },
+ {
+  "year": 2026,
+  "title": "One Hundred Years of Anarchy",
+  "nat": "USA",
+  "setting": "Europe",
+  "genre": "Non Fiction",
+  "gender": "Male",
+  "format": "Kindle",
+  "debut": "Debut",
+  "decade": "2010s",
+  "prizes": ""
+ }, 
+ {
+  "year": 2026,
+  "title": "Orbital",
+  "nat": "UK",
+  "setting": "Space",
+  "genre": "Fiction",
+  "gender": "Female",
+  "format": "Audiobook",
+  "debut": "Debut",
+  "decade": "2020s",
+  "prizes": "Booker"
+ },
+ {
+  "year": 2026,
+  "title": "Are Snakes Necessary?",
+  "nat": "USA",
+  "setting": "North America",
+  "genre": "Fiction",
+  "gender": "Female",
+  "format": "Paperback",
+  "debut": "Debut",
+  "decade": "2010s",
+  "prizes": ""
+ },
+ {
+  "year": 2026,
+  "title": "The Janitor",
+  "nat": "USA",
+  "setting": "North America",
+  "genre": "Fiction",
+  "gender": "Male",
+  "format": "Audiobook",
+  "debut": "Returning",
+  "decade": "2020s",
+  "prizes": ""
+ },
+ {
+  "year": 2026,
+  "title": "The Batchelors",
+  "nat": "UK",
+  "setting": "Europe",
+  "genre": "Fiction",
+  "gender": "Female",
+  "format": "Audiobook",
+  "debut": "Returning",
+  "decade": "1960",
+  "prizes": ""
+ } 
 ];
