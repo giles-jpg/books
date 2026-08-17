@@ -2486,7 +2486,7 @@ const READING_LOG = [
  },
  {
   "year": 2026,
-  "title": "The Batchelors",
+  "title": "The Bachelors",
   "nat": "UK",
   "setting": "Europe",
   "genre": "Fiction",
@@ -2495,5 +2495,41 @@ const READING_LOG = [
   "debut": "Returning",
   "decade": "1960",
   "prizes": ""
- } 
+ },
+ {
+  "year": 2026,
+  "title": "Goldfinger",
+  "nat": "UK",
+  "setting": "Europe",
+  "genre": "Fiction",
+  "gender": "Male",
+  "format": "Kindle",
+  "debut": "Returning",
+  "decade": "1960",
+  "prizes": ""
+ },
+ {
+  "year": 2026,
+  "title": "LA Woman",
+  "nat": "USA",
+  "setting": "North Ameica",
+  "genre": "Fiction",
+  "gender": "Female",
+  "format": "Paperback",
+  "debut": "Debut",
+  "decade": "1980",
+  "prizes": ""
+ },
+ {
+  "year": 2026,
+  "title": "Prime of Miss JB",
+  "nat": "UK",
+  "setting": "Europe",
+  "genre": "Fiction",
+  "gender": "Female",
+  "format": "Paperback",
+  "debut": "Returning",
+  "decade": "1960",
+  "prizes": ""
+ },
 ];
