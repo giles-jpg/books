@@ -2609,6 +2609,18 @@ const BOOKS = [
   "rating": 4
  },
  {
+  "title": "Cotton Comes to Harlem",
+  "author": "Chester Himes",
+  "year": 1964,
+  "series": "Harlem Cycle",
+  "awards": "",
+  "format": "Audible",
+  "read": true,
+  "shelf": "Digital",
+  "pages": 160,
+  "rating": 4
+ },
+ {
   "title": "H is for Hawk",
   "author": "Helen Macdonald",
   "year": 2014,

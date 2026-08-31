@@ -2532,4 +2532,16 @@ const READING_LOG = [
   "decade": "1960",
   "prizes": ""
  },
+ {
+  "year": 2026,
+  "title": "Cotton Comes to Harlem",
+  "nat": "USA",
+  "setting": "North America",
+  "genre": "Fiction",
+  "gender": "Male",
+  "format": "Audiobook",
+  "debut": "Returning",
+  "decade": "1964",
+  "prizes": ""
+ },
 ];
