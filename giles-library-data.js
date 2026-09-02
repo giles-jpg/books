@@ -12,6 +12,17 @@ const BOOKS = [
   "pages": 224
  },
  {
+  "title": "The Diamond Age",
+  "author": "Neal Stephenson",
+  "year": 1995,
+  "series": "",
+  "awards": "Hugo,Nebula",
+  "format": "Audiobook",
+  "read": true,
+  "shelf": "Digital",
+  "pages": 499
+ },
+ {
   "title": "Inishowen",
   "author": "Joseph O'Connor",
   "year": 2000,
@@ -132,6 +143,17 @@ const BOOKS = [
   "rating": 4
  },
  {
+  "title": "Cotton Comes to Harlem",
+  "author": "Chester Himes",
+  "year": 1964,
+  "series": "Harlem Cycle",
+  "awards": "",
+  "format": "Audiobook",
+  "read": false,
+  "shelf": "Digital",
+  "pages": 176
+ },
+ {
   "title": "The Green Road",
   "author": "Anne Enright",
   "year": 2015,
@@ -233,7 +255,7 @@ const BOOKS = [
   "series": "James Bond",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "added": "2026-07-10",
   "pages": 294
@@ -312,7 +334,7 @@ const BOOKS = [
   "author": "N.K. Jemisin",
   "year": 2015,
   "series": "The Broken Earth",
-  "awards": "",
+  "awards": "Hugo",
   "format": "Kindle",
   "read": false,
   "shelf": "Digital",
@@ -676,7 +698,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 361
  },
  {
   "title": "Working Backwards:",
@@ -1490,7 +1513,7 @@ const BOOKS = [
   "pages": 310
  },
  {
-  "title": "The List: A Slough House novella",
+  "title": "The List",
   "author": "Mick Herron",
   "year": 2015,
   "series": "Slough House",
@@ -1695,7 +1718,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 128
  },
  {
   "title": "Symphony for the City of the Dead",
@@ -1939,7 +1963,7 @@ const BOOKS = [
   "rating": 4
  },
  {
-  "title": "Police at the Station and They Don't Look Friendly (Detective Sean Duffy Book 6)",
+  "title": "Police at the Station and They Don't Look Friendly",
   "author": "Adrian McKinty",
   "year": 2017,
   "series": "Sean Duffy",
@@ -1962,7 +1986,7 @@ const BOOKS = [
  },
  {
   "title": "The Obstacle is the Way",
-  "author": "Ryan",
+  "author": "Ryan Holliday",
   "year": 2014,
   "series": "",
   "awards": "",
@@ -2072,7 +2096,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 223
  },
  {
   "title": "Plato and the Tyrant",
@@ -2387,7 +2412,7 @@ const BOOKS = [
   "format": "Kindle",
   "read": true,
   "shelf": "Digital",
-  "pages": 448,
+  "pages": 341,
   "rating": 4
  },
  {
@@ -2614,7 +2639,7 @@ const BOOKS = [
   "year": 1964,
   "series": "Harlem Cycle",
   "awards": "",
-  "format": "Audible",
+  "format": "Audiobook",
   "read": true,
   "shelf": "Digital",
   "pages": 160,
@@ -2660,7 +2685,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 291
  },
  {
   "title": "The Blind Owl",
@@ -2705,7 +2731,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 208
  },
  {
   "title": "The Cowboy and the Cossack",
@@ -3153,7 +3180,7 @@ const BOOKS = [
   "format": "Kindle",
   "read": true,
   "shelf": "Digital",
-  "pages": 10,
+  "pages": 256,
   "rating": 4
  },
  {
@@ -3186,7 +3213,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 288
  },
@@ -3198,7 +3225,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 244
  },
  {
   "title": "Ablutions",
@@ -3336,7 +3364,8 @@ const BOOKS = [
   "awards": "",
   "format": "Kindle",
   "read": true,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 438
  },
  {
   "title": "You Can’t Read This Book",
@@ -3573,7 +3602,7 @@ const BOOKS = [
   "format": "Kindle",
   "read": false,
   "shelf": "Digital",
-  "pages": 38
+  "pages": 220
  },
  {
   "title": "Middlemarch",
@@ -3712,12 +3741,13 @@ const BOOKS = [
  {
   "title": "Tacitus: The Histories, Volumes I and II",
   "author": "Tacitus",
-  "year": 105,
+  "year": 110,
   "series": "",
   "awards": "",
   "format": "Kindle",
   "read": false,
-  "shelf": "Digital"
+  "shelf": "Digital",
+  "pages": 336
  },
  {
   "title": "The Forged Coupon",
@@ -3938,7 +3968,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Kindle",
-  "read": false,
+  "read": true,
   "shelf": "Digital",
   "pages": 156
  },
@@ -4007,6 +4037,7 @@ const BOOKS = [
   "format": "Audiobook",
   "read": true,
   "shelf": "Digital",
+  "pages": 456,
   "rating": 4
  },
  {
@@ -4111,6 +4142,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Audiobook",
+  "pages": 362,
   "read": false,
   "shelf": "Digital"
  },
@@ -4135,6 +4167,7 @@ const BOOKS = [
   "format": "Audiobook",
   "read": true,
   "shelf": "Digital",
+  "pages": 293,
   "rating": 4
  },
  {
@@ -4348,6 +4381,7 @@ const BOOKS = [
   "format": "Audiobook",
   "read": true,
   "shelf": "Digital",
+  "pages": 142,
   "rating": 4
  },
  {
@@ -5331,7 +5365,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 119
  },
  {
   "title": "Doctor Zhivago",
@@ -5342,7 +5377,7 @@ const BOOKS = [
   "format": "Paperback",
   "read": false,
   "shelf": "Prizewinners",
-  "pages": 77
+  "pages": 592
  },
  {
   "title": "Of Mice and Men",
@@ -5408,7 +5443,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 278
  },
  {
   "title": "A House for Mr Biswas",
@@ -5430,7 +5466,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": true,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 208
  },
  {
   "title": "A Flag on the Island",
@@ -5475,7 +5512,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 417
  },
  {
   "title": "Istanbul",
@@ -5552,7 +5590,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 368
  },
  {
   "title": "The War of the End of the World",
@@ -5574,7 +5613,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 257
  },
  {
   "title": "The Language of Passion",
@@ -5584,7 +5624,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": true,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 304
  },
  {
   "title": "The Storyteller",
@@ -5594,7 +5635,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 245
  },
  {
   "title": "Who Killed Palomino Molero?",
@@ -5616,7 +5658,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 416
  },
  {
   "title": "The Notebooks of Don Rigoberto",
@@ -5626,7 +5669,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 375
  },
  {
   "title": "The Bad Girl",
@@ -5647,7 +5691,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 320
  },
  {
   "title": "Death in the Andes",
@@ -5724,7 +5769,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": true,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 501
  },
  {
   "title": "Palace of Desire",
@@ -5734,7 +5780,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 608
  },
  {
   "title": "Sugar Street",
@@ -5744,7 +5791,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Prizewinners"
+  "shelf": "Prizewinners",
+  "pages": 448
  },
  {
   "title": "The Labyrinth of Solitude",
@@ -5811,7 +5859,8 @@ const BOOKS = [
   "format": "Audiobook",
   "read": true,
   "shelf": "Digital",
-  "rating": 4
+  "rating": 4,
+  "pages": 247
  },
  {
   "title": "The Loss of El Dorado",
@@ -6155,7 +6204,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A2"
+  "shelf": "Fiction A2",
+  "pages": 254
  },
  {
   "title": "The IPCRESS File",
@@ -6287,7 +6337,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A4"
+  "shelf": "Fiction A4",
+  "pages": 485
  },
  {
   "title": "18% Gray",
@@ -6955,7 +7006,8 @@ const BOOKS = [
   "awards": "Nobel",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A5"
+  "shelf": "Fiction A5",
+  "pages": 291
  },
  {
   "title": "Pleasantville",
@@ -7043,7 +7095,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Fiction C4",
   "pages": 240
  },
@@ -7055,7 +7107,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction C4"
+  "shelf": "Fiction C4",
+  "pages": 286
  },
  {
   "title": "More Tales of Pirx the Pilot",
@@ -7228,7 +7281,7 @@ const BOOKS = [
   "format": "Paperback",
   "read": true,
   "shelf": "Fiction C4",
-  "pages": 448,
+  "pages": 341,
   "rating": 4
  },
  {
@@ -7475,7 +7528,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C2"
+  "shelf": "Fiction C2",
+  "pages": 975
  },
  {
   "title": "The Basil and Josephine Stories",
@@ -7508,7 +7562,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C5"
+  "shelf": "Fiction C5",
+  "pages": 495
  },
  {
   "title": "Love and Death in a Hot Country",
@@ -7563,17 +7618,19 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C5"
+  "shelf": "Fiction C5",
+  "pages": 192
  },
  {
   "title": "The Snowman",
   "author": "Jo Nesbø",
   "year": 2007,
-  "series": "",
+  "series": "Harry Hole",
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C5"
+  "shelf": "Fiction C5",
+  "pages": 383
  },
  {
   "title": "The Committed",
@@ -7753,7 +7810,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C3"
+  "shelf": "Fiction C3",
+  "pages": 324
  },
  {
   "title": "The Girl on the Train",
@@ -8057,7 +8115,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction C7"
+  "shelf": "Fiction C7",
+  "pages": 256
  },
  {
   "title": "The Hot Rock",
@@ -8367,7 +8426,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 512
  },
  {
   "title": "Fritz Lang: The Nature of the Beast",
@@ -8432,7 +8492,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 176
  },
  {
   "title": "Sam Peckinpah's Feature Films",
@@ -8442,7 +8503,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 242
  },
  {
   "title": "Savage Cinema",
@@ -8463,7 +8525,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 574
  },
  {
   "title": "\"If They Move... Kill 'Em!\": The Life and Times of Sam Peckinpah",
@@ -8473,7 +8536,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 572
  },
  {
   "title": "The Godfather Book",
@@ -8505,7 +8569,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 579
  },
  {
   "title": "The Twilight Zone Companion",
@@ -8548,7 +8613,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 195
  },
  {
   "title": "TV (The Book)",
@@ -8558,7 +8624,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 382
  },
  {
   "title": "Trainspotting & Shallow Grave",
@@ -8568,7 +8635,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 233
  },
  {
   "title": "A New History of Documentary Film",
@@ -8578,7 +8646,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 448
  },
  {
   "title": "Nigel Andrews on Jaws",
@@ -8599,7 +8668,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 371
  },
  {
   "title": "Glued to the Box",
@@ -8642,7 +8712,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 268
  },
  {
   "title": "High Concept",
@@ -8663,7 +8734,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 292
  },
  {
   "title": "Samuel Fuller",
@@ -8684,7 +8756,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 59
  },
  {
   "title": "Waiting for Lefty and Other Plays",
@@ -8694,7 +8767,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 418
  },
  {
   "title": "Golden Boy and Other Plays",
@@ -8704,7 +8778,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 272
  },
  {
   "title": "Star of the Sea",
@@ -8890,7 +8965,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A6"
+  "shelf": "Fiction A6",
+  "pages": 581
  },
  {
   "title": "Bel Canto",
@@ -9319,7 +9395,7 @@ const BOOKS = [
   "format": "Paperback",
   "read": true,
   "shelf": "Fiction A7",
-  "pages": 26
+  "pages": 649
  },
  {
   "title": "Dr Jekyll and Mr Hyde",
@@ -9428,7 +9504,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction A7"
+  "shelf": "Fiction A7",
+  "pages": 211
  },
  {
   "title": "The Handle",
@@ -9569,7 +9646,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction A1"
+  "shelf": "Fiction A1",
+  "pages": 512
  },
  {
   "title": "Judgment on Deltchev",
@@ -9754,7 +9832,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Fiction B1",
   "pages": 160
  },
@@ -9766,7 +9844,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 198
  },
  {
   "title": "High-Rise",
@@ -9776,7 +9855,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 208
  },
  {
   "title": "The Wasp Factory",
@@ -9929,7 +10009,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 140
  },
  {
   "title": "HHhH",
@@ -9950,7 +10031,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B1"
+  "shelf": "Fiction B1",
+  "pages": 400
  },
  {
   "title": "Civilisations",
@@ -10235,7 +10317,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 643
  },
  {
   "title": "My Part of Her",
@@ -10311,7 +10394,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B2"
+  "shelf": "Fiction B2",
+  "pages": 256
  },
  {
   "title": "Foucault's Pendulum",
@@ -10343,7 +10427,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 470
  },
  {
   "title": "Time Shelter",
@@ -10353,7 +10438,8 @@ const BOOKS = [
   "awards": "Booker",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B3"
+  "shelf": "Fiction B3",
+  "pages": 304
  },
  {
   "title": "Marathon Man",
@@ -10375,7 +10461,7 @@ const BOOKS = [
   "format": "Paperback",
   "read": false,
   "shelf": "Fiction B3",
-  "pages": 164
+  "pages": 509
  },
  {
   "title": "Claire DeWitt and the Bohemian Highway",
@@ -10968,7 +11054,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B4"
+  "shelf": "Fiction B4",
+  "pages": 290
  },
  {
   "title": "A Small Town in Germany",
@@ -11374,7 +11461,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B5"
+  "shelf": "Fiction B5",
+  "pages": 607
  },
  {
   "title": "Colorless Tsukuru Tazaki and His Years of Pilgrimage",
@@ -11545,12 +11633,45 @@ const BOOKS = [
   "title": "Bulldog Drummond",
   "author": "Sapper",
   "year": 1920,
-  "series": "",
+  "series": "Bulldog Drummond",
   "awards": "",
   "format": "Paperback",
   "read": true,
   "shelf": "Fiction B6",
-  "pages": 280
+  "pages": 243
+ },
+ {
+  "title": "The Black Gang",
+  "author": "Sapper",
+  "year": 1922,
+  "series": "Bulldog Drummond",
+  "awards": "",
+  "format": "Paperback",
+  "read": true,
+  "shelf": "Fiction B6",
+  "pages": 248
+ },
+ {
+  "title": "The Third Round",
+  "author": "Sapper",
+  "year": 1924,
+  "series": "Bulldog Drummond",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction B6",
+  "pages": 256
+ },
+ {
+  "title": "The Final Count",
+  "author": "Sapper",
+  "year": 1925,
+  "series": "Bulldog Drummond",
+  "awards": "",
+  "format": "Paperback",
+  "read": false,
+  "shelf": "Fiction B6",
+  "pages": 244
  },
  {
   "title": "Persepolis",
@@ -11626,7 +11747,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Fiction B6"
+  "shelf": "Fiction B6",
+  "pages": 517
  },
  {
   "title": "The New Republic",
@@ -11768,7 +11890,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 196
  },
  {
   "title": "Sunset Oasis",
@@ -11789,7 +11912,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Fiction B7"
+  "shelf": "Fiction B7",
+  "pages": 530
  },
  {
   "title": "The Little Friend",
@@ -12279,7 +12403,7 @@ const BOOKS = [
   "title": "L'Assommoir",
   "author": "Émile Zola",
   "year": 1877,
-  "series": "",
+  "series": "Les Rougon-Macquart",
   "awards": "",
   "format": "Paperback",
   "read": false,
@@ -12290,7 +12414,7 @@ const BOOKS = [
   "title": "Nana",
   "author": "Émile Zola",
   "year": 1880,
-  "series": "",
+  "series": "Les Rougon-Macquart",
   "awards": "",
   "format": "Paperback",
   "read": false,
@@ -12301,7 +12425,7 @@ const BOOKS = [
   "title": "Germinal",
   "author": "Émile Zola",
   "year": 1885,
-  "series": "",
+  "series": "Les Rougon-Macquart",
   "awards": "",
   "format": "Paperback",
   "read": false,
@@ -12312,7 +12436,7 @@ const BOOKS = [
   "title": "The Masterpiece",
   "author": "Émile Zola",
   "year": 1886,
-  "series": "",
+  "series": "Les Rougon-Macquart",
   "awards": "",
   "format": "Paperback",
   "read": false,
@@ -12323,7 +12447,7 @@ const BOOKS = [
   "title": "The Debacle",
   "author": "Émile Zola",
   "year": 1892,
-  "series": "",
+  "series": "Les Rougon-Macquart",
   "awards": "",
   "format": "Paperback",
   "read": false,
@@ -12334,12 +12458,12 @@ const BOOKS = [
   "title": "Money",
   "author": "Émile Zola",
   "year": 1891,
-  "series": "",
+  "series": "Les Rougon-Macquart",
   "awards": "",
   "format": "Paperback",
   "read": true,
   "shelf": "Fiction B8",
-  "pages": 89
+  "pages": 423
  },
  {
   "title": "Chocky",
@@ -12651,13 +12775,14 @@ const BOOKS = [
  },
  {
   "title": "Unholy Babylon",
-  "author": "Adel Darwish & Gregory Alexander",
+  "author": "Adel Darwish",
   "year": 1991,
   "series": "",
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 2"
+  "shelf": "Non-Fiction 2",
+  "pages": 335
  },
  {
   "title": "A Devil's Chaplain",
@@ -12821,7 +12946,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 400
  },
  {
   "title": "Distrust That Particular Flavor",
@@ -12897,7 +13023,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 3"
+  "shelf": "Non-Fiction 3",
+  "pages": 283
  },
  {
   "title": "Getting to Know the General",
@@ -13169,7 +13296,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 228
  },
  {
   "title": "Blood & Belonging",
@@ -13267,7 +13395,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 4"
+  "shelf": "Non-Fiction 4",
+  "pages": 164
  },
  {
   "title": "White Line Fever",
@@ -13561,7 +13690,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 5"
+  "shelf": "Non-Fiction 5",
+  "pages": 752
  },
  {
   "title": "101 Poems Against War",
@@ -13785,7 +13915,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 400
  },
  {
   "title": "Destiny Disrupted",
@@ -13817,7 +13948,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 566
  },
  {
   "title": "Going to Sea in a Sieve",
@@ -13827,7 +13959,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 266
  },
  {
   "title": "The Rise and Rise of Kerry Packer Uncut",
@@ -13936,7 +14069,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 1"
+  "shelf": "Non-Fiction 1",
+  "pages": 384
  },
  {
   "title": "Wonderful Tonight",
@@ -14155,7 +14289,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 344
  },
  {
   "title": "Snowblind",
@@ -14209,17 +14344,19 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 225
  },
  {
-  "title": "Uncertainty",
+  "title": "In an Uncertain World",
   "author": "Robert E. Rubin",
   "year": 2003,
   "series": "",
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 6"
+  "shelf": "Non-Fiction 6",
+  "pages": 448
  },
  {
   "title": "Heirs to Forgotten Kingdoms",
@@ -14262,7 +14399,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Film"
+  "shelf": "Film",
+  "pages": 94
  },
  {
   "title": "Monarch: The History of the British Monarchy",
@@ -14392,7 +14530,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": false,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 914
  },
  {
   "title": "Gods and Kings",
@@ -14424,7 +14563,8 @@ const BOOKS = [
   "awards": "",
   "format": "Paperback",
   "read": true,
-  "shelf": "Non-Fiction 7"
+  "shelf": "Non-Fiction 7",
+  "pages": 976
  },
  {
   "title": "Crashed: How a Decade of Financial Crises Changed the World",
@@ -14564,7 +14704,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Film"
  },
  {
@@ -14584,7 +14724,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Film"
  },
  {
@@ -14594,7 +14734,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Film"
  },
  {
@@ -15031,7 +15171,7 @@ const BOOKS = [
   "title": "Mr Norris Changes Trains",
   "author": "Christopher Isherwood",
   "year": 1935,
-  "series": "",
+  "series": "The Berlin Stories",
   "awards": "",
   "format": "Paperback",
   "read": false,
@@ -15042,7 +15182,7 @@ const BOOKS = [
   "title": "Goodbye to Berlin",
   "author": "Christopher Isherwood",
   "year": 1939,
-  "series": "",
+  "series": "The Berlin Stories",
   "awards": "",
   "format": "Paperback",
   "read": false,
