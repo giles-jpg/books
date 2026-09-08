@@ -168,7 +168,9 @@ input.shelf-edit{font-family:var(--mono);font-size:12px;width:120px;border:1px s
 .tl{display:flex;gap:5px;align-items:flex-end;padding:6px 2px 0;overflow-x:auto}
 .tl .col{flex:1;min-width:30px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:3px}
 .tl .col .dots{display:flex;flex-direction:column-reverse;gap:3px;padding-bottom:8px}
-.tl .col i{width:9px;height:9px;border-radius:50%;display:block}
+.tl .col i{width:9px;height:9px;border-radius:50%;display:block;transition:transform .12s,box-shadow .12s}
+.tl .col i[data-t]:hover{transform:scale(1.55);box-shadow:0 0 0 2px var(--card),0 0 0 3px currentColor}
+.tl .col i[data-t]:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .tl .col .lab{font-family:var(--mono);font-size:10px;color:var(--ink-soft);border-top:2px solid var(--ink);padding:6px 4px 0;width:100%;text-align:center}
 .tl-note{font-family:var(--mono);font-size:10.5px;color:var(--ink-soft);margin-top:10px;display:flex;gap:16px;flex-wrap:wrap}
 .tl-note i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;transform:translateY(.5px)}
@@ -517,10 +519,15 @@ function renderHome(){
     let cols='';
     for(let d=d0;d<=d1;d+=10){
       const dots=dated.filter(w=>Math.floor(w.b.year/10)*10===d)
-        .map(w=>`<i style="background:${AW_COLOR[w.a]||'var(--mustard)'}" title="${esc(w.b.title)} (${w.b.year}) — ${esc(w.a)}"></i>`).join('');
+        .map(w=>`<i style="background:${AW_COLOR[w.a]||'var(--mustard)'};cursor:pointer" data-t="${esc(w.b.title)}" tabindex="0" role="button" title="${esc(w.b.title)} (${w.b.year}) — ${esc(w.a)}" aria-label="Find ${esc(w.b.title)} in library"></i>`).join('');
       cols+=`<div class="col"><div class="dots">${dots}</div><span class="lab">${String(d).slice(2)}s</span></div>`;
     }
     $('#timeline').innerHTML=cols;
+    $$('#timeline .col i[data-t]').forEach(dot=>{
+      const open=()=>{ if(typeof resetFilters==='function')resetFilters(); $('#q').value=dot.dataset.t; goLibrary(); renderLib(); };
+      dot.addEventListener('click',open);
+      dot.addEventListener('keydown',e=>{if(e.key==='Enter')open();});
+    });
     const undated=new Set(winners.filter(w=>!w.b.year).map(w=>w.b.title)).size;
     $('#tl-note').innerHTML=prizes.map(({p})=>`<span><i style="background:${AW_COLOR[p]||'var(--mustard)'}"></i>${esc(p)}</span>`).join('')
       +(undated?`<span>+ ${undated} undated winner${undated===1?'':'s'} not plotted</span>`:'');
