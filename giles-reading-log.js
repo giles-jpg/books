@@ -2544,4 +2544,28 @@ const READING_LOG = [
   "decade": "1964",
   "prizes": ""
  },
+ {
+  "year": 2026,
+  "title": "Colonel Sun",
+  "nat": "UK",
+  "setting": "Europe",
+  "genre": "Fiction",
+  "gender": "Male",
+  "format": "Audiobook",
+  "debut": "Returning",
+  "decade": "1968",
+  "prizes": ""
+ },
+ {
+  "year": 2026,
+  "title": "Irish Goodbye",
+  "nat": "USA",
+  "setting": "North America",
+  "genre": "Fiction",
+  "gender": "Male",
+  "format": "Audiobook",
+  "debut": "Returning",
+  "decade": "2026",
+  "prizes": ""
+ },
 ];

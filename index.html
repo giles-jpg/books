@@ -143,12 +143,12 @@ td.c-shelf .none{opacity:.45}
 input.shelf-edit{font-family:var(--mono);font-size:12px;width:120px;border:1px solid var(--ink);padding:3px 6px;background:#fff}
 
 /* ---------- AWARDS ---------- */
-:root{--aw-nobel:#B8890B;--aw-booker:#15171C;--aw-pulitzer:#5F7186;--aw-hugo:#6B4FA0;--aw-nebula:#0B7285}
+:root{--aw-nobel:#B8890B;--aw-booker:#15171C;--aw-pulitzer:#5F7186;--aw-hugo:#6B4FA0;--aw-nebula:#0B7285;--aw-costa:#8C1D3F}
 :root[data-theme="night"]{
   --paper:#16181D; --paper-2:#1E2128; --ink:#E7E3D6; --ink-soft:#9A9587;
   --orange:#F06A2E; --blue:#6D9BE0; --green:#3FB58C; --mustard:#E0B84C;
   --rule:#33363E; --card:#1B1E24;
-  --aw-nobel:#E0B84C; --aw-booker:#C7C0AE; --aw-pulitzer:#8AA0BC; --aw-hugo:#A98FD0; --aw-nebula:#3FB58C;
+  --aw-nobel:#E0B84C; --aw-booker:#C7C0AE; --aw-pulitzer:#8AA0BC; --aw-hugo:#A98FD0; --aw-nebula:#3FB58C; --aw-costa:#D65C82;
 }
 .theme-toggle{position:absolute;right:16px;top:50%;transform:translateY(-50%);background:none;border:1px solid var(--rule);color:var(--ink-soft);cursor:pointer;font-size:15px;line-height:1;padding:4px 9px;border-radius:3px;transition:color .15s,border-color .15s}
 .theme-toggle:hover{border-color:var(--ink-soft);color:var(--ink)}
@@ -159,6 +159,7 @@ input.shelf-edit{font-family:var(--mono);font-size:12px;width:120px;border:1px s
 .chip.pulitzer{border-color:var(--aw-pulitzer);color:var(--aw-pulitzer)}
 .chip.hugo{border-color:var(--aw-hugo);color:var(--aw-hugo)}
 .chip.nebula{border-color:var(--aw-nebula);color:var(--aw-nebula)}
+.chip.costa{border-color:var(--aw-costa);color:var(--aw-costa)}
 .prizes{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:22px}
 .prize{background:var(--card);border:1px solid var(--rule);border-left:6px solid var(--pc);padding:16px 18px;cursor:pointer;transition:transform .12s}
 .prize:hover{transform:translateY(-3px)}
@@ -492,8 +493,8 @@ function renderHome(){
   });
   $('#hist').innerHTML=cols;
 
-  const AW_COLOR={Nobel:'var(--aw-nobel)',Booker:'var(--aw-booker)',Pulitzer:'var(--aw-pulitzer)',Hugo:'var(--aw-hugo)',Nebula:'var(--aw-nebula)'};
-  const AW_TIP={Nobel:'By a Nobel literature laureate',Booker:'Booker Prize winner',Pulitzer:'Pulitzer Prize winner',Hugo:'Hugo Award winner',Nebula:'Nebula Award winner'};
+  const AW_COLOR={Nobel:'var(--aw-nobel)',Booker:'var(--aw-booker)',Pulitzer:'var(--aw-pulitzer)',Hugo:'var(--aw-hugo)',Nebula:'var(--aw-nebula)',Costa:'var(--aw-costa)'};
+  const AW_TIP={Nobel:'By a Nobel literature laureate',Booker:'Booker Prize winner',Pulitzer:'Pulitzer Prize winner',Hugo:'Hugo Award winner',Nebula:'Nebula Award winner',Costa:'Costa / Whitbread Award winner'};
   const awList=b=>(b.awards||'').split(',').map(s=>s.trim()).filter(Boolean);
   const chip=b=>awList(b).map(a=>`<span class="chip ${esc(a.toLowerCase())}" title="${esc(AW_TIP[a]||a)}">${esc(a)}</span>`).join('');
   const winners=[];
@@ -626,7 +627,7 @@ function renderLib(){
   const filtered=q||ff||fr||fs||fa||fsh;
   $('#hits').innerHTML=`${list.length} of ${books.length} titles ${filtered?'<button id="clear-f">clear filters</button>':''}`;
   if(filtered) $('#clear-f').addEventListener('click',()=>{resetFilters();renderLib();});
-  const AW_TIP2={Nobel:'By a Nobel literature laureate',Booker:'Booker Prize winner',Pulitzer:'Pulitzer Prize winner',Hugo:'Hugo Award winner',Nebula:'Nebula Award winner'};
+  const AW_TIP2={Nobel:'By a Nobel literature laureate',Booker:'Booker Prize winner',Pulitzer:'Pulitzer Prize winner',Hugo:'Hugo Award winner',Nebula:'Nebula Award winner',Costa:'Costa / Whitbread Award winner'};
   $('#rows').innerHTML=list.map(b=>{
     const idx=books.indexOf(b);
     const c=(b.awards||'').split(',').map(s=>s.trim()).filter(Boolean)
