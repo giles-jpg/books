@@ -131,6 +131,18 @@ const BOOKS = [
   "rating": 4
  },
  {
+  "title": "Fire",
+  "author": "John Boyne",
+  "year": 2024,
+  "series": "The Elements",
+  "awards": "",
+  "format": "Audiobook",
+  "read": true,
+  "shelf": "Digital",
+  "pages": 176,
+  "rating": 4
+ },
+ {
   "title": "The Heat's On",
   "author": "Chester Himes",
   "year": 1961,
@@ -5724,7 +5736,7 @@ const BOOKS = [
   "series": "",
   "awards": "Nobel",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Prizewinners",
   "pages": 192
  },
@@ -7604,7 +7616,7 @@ const BOOKS = [
   "author": "Shiva Naipaul",
   "year": 1973,
   "series": "",
-  "awards": "",
+  "awards": "Costa",
   "format": "Paperback",
   "read": false,
   "shelf": "Fiction C5",
@@ -15327,6 +15339,39 @@ const BOOKS = [
   "format": "Kindle",
   "read": true,
   "pages": 247,
+  "shelf": "Digital"
+ },
+ {
+  "title": "Creation Lake",
+  "author": "Rachel Kushner",
+  "year": 2024,
+  "series": "",
+  "awards": "",
+  "format": "Audiobook",
+  "read": false,
+  "pages": 416,
+  "shelf": "Digital"
+ },
+  {
+  "title": "The Illegals",
+  "author": "Shaun Walker",
+  "year": 2025,
+  "series": "",
+  "awards": "",
+  "format": "Audiobook",
+  "read": false,
+  "pages": 448,
+  "shelf": "Digital"
+ },
+  {
+  "title": "The Final Score",
+  "author": "Don Winslow",
+  "year": 2025,
+  "series": "",
+  "awards": "",
+  "format": "Audiobook",
+  "read": false,
+  "pages": 302,
   "shelf": "Digital"
  },
  {

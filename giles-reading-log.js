@@ -2477,7 +2477,7 @@ const READING_LOG = [
   "title": "The Janitor",
   "nat": "USA",
   "setting": "North America",
-  "genre": "Fiction",
+  "genre": "Short Stories",
   "gender": "Male",
   "format": "Audiobook",
   "debut": "Returning",
@@ -2561,11 +2561,47 @@ const READING_LOG = [
   "title": "Irish Goodbye",
   "nat": "USA",
   "setting": "North America",
-  "genre": "Fiction",
+  "genre": "Short Stories",
   "gender": "Male",
   "format": "Audiobook",
   "debut": "Returning",
   "decade": "2026",
   "prizes": ""
  },
+ {
+  "year": 2026,
+  "title": "Fire",
+  "nat": "Ireland",
+  "setting": "Europe",
+  "genre": "Fiction",
+  "gender": "Male",
+  "format": "Audiobook",
+  "debut": "Returning",
+  "decade": "2025",
+  "prizes": ""
+ },
+ {
+  "year": 2026,
+  "title": "Pale View",
+  "nat": "Japan",
+  "setting": "Asia",
+  "genre": "Fiction",
+  "gender": "Male",
+  "format": "Paperback",
+  "debut": "Returning",
+  "decade": "1983",
+  "prizes": ""
+ },
+ {
+  "year": 2026,
+  "title": "Silent Planet",
+  "nat": "UK",
+  "setting": "Space",
+  "genre": "Fiction",
+  "gender": "Male",
+  "format": "Paperback",
+  "debut": "Returning",
+  "decade": "1938",
+  "prizes": ""
+ }
 ];
