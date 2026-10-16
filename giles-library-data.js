@@ -6962,7 +6962,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Paperback",
-  "read": false,
+  "read": true,
   "shelf": "Fiction A5",
   "pages": 174
  },
@@ -15370,7 +15370,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Audiobook",
-  "read": false,
+  "read": true,
   "pages": 302,
   "shelf": "Digital"
  },

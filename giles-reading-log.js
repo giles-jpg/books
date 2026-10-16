@@ -2603,5 +2603,17 @@ const READING_LOG = [
   "debut": "Returning",
   "decade": "1938",
   "prizes": ""
+ },
+ {
+  "year": 2026,
+  "title": "Final Score",
+  "nat": "USA",
+  "setting": "North America",
+  "genre": "Short Stories",
+  "gender": "Male",
+  "format": "Audiobook",
+  "debut": "Returning",
+  "decade": "1938",
+  "prizes": ""
  }
 ];
