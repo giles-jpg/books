@@ -15387,8 +15387,9 @@ const BOOKS = [
    "to": "(unlocated)",
    "where": "",
    "since": ""
+  }
  },
-  {
+ {
   "title": "Now it Can Be Told",
   "author": "Leslie Groves",
   "year": 1961,
@@ -15442,6 +15443,5 @@ const BOOKS = [
   "read": false,
   "pages": 302,
   "shelf": "Digital"
- }
  }
 ];
