@@ -15359,7 +15359,7 @@ const BOOKS = [
   "series": "",
   "awards": "",
   "format": "Audiobook",
-  "read": false,
+  "read": true,
   "pages": 448,
   "shelf": "Digital"
  },
@@ -15387,6 +15387,61 @@ const BOOKS = [
    "to": "(unlocated)",
    "where": "",
    "since": ""
-  }
+ },
+  {
+  "title": "Now it Can Be Told",
+  "author": "Leslie Groves",
+  "year": 1961,
+  "series": "",
+  "awards": "",
+  "format": "Audiobook",
+  "read": true,
+  "pages": 496,
+  "shelf": "Digital"
+ },
+  {
+  "title": "The Girls of Slender Means",
+  "author": "Muriel Spark",
+  "year": 1963,
+  "series": "",
+  "awards": "",
+  "format": "Audiobook",
+  "read": true,
+  "pages": 140,
+  "shelf": "Digital"
+},
+  {
+  "title": "The Man with the Golden Gun",
+  "author": "Ian Fleming",
+  "year": 1965,
+  "series": "James Bond",
+  "awards": "",
+  "format": "Audiobook",
+  "read": true,
+  "pages": 208,
+  "shelf": "Digital"
+ },
+  {
+  "title": "The End of Everything",
+  "author": "M John Harrison",
+  "year": 2026,
+  "series": "",
+  "awards": "Booker",
+  "format": "Audiobook",
+  "read": true,
+  "pages": 208,
+  "shelf": "Digital"
+ },
+  {
+  "title": "The Defector",
+  "author": "Richard Kerbaj",
+  "year": 2025,
+  "series": "",
+  "awards": "",
+  "format": "Audiobook",
+  "read": false,
+  "pages": 302,
+  "shelf": "Digital"
+ }
  }
 ];

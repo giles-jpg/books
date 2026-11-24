@@ -2615,5 +2615,53 @@ const READING_LOG = [
   "debut": "Returning",
   "decade": "1938",
   "prizes": ""
+ },
+ {
+  "year": 2026,
+  "title": "Now it Can Be Told",
+  "nat": "USA",
+  "setting": "North America",
+  "genre": "Non Fiction",
+  "gender": "Male",
+  "format": "Audiobook",
+  "debut": "Debut",
+  "decade": "1961",
+  "prizes": ""
+ },
+ {
+  "year": 2026,
+  "title": "Slender",
+  "nat": "UK",
+  "setting": "Europe",
+  "genre": "Fiction",
+  "gender": "Female",
+  "format": "Audiobook",
+  "debut": "Returning",
+  "decade": "1963",
+  "prizes": ""
+ },
+ {
+  "year": 2026,
+  "title": "Golden Gun",
+  "nat": "UK",
+  "setting": "North America",
+  "genre": "Fiction",
+  "gender": "Male",
+  "format": "Audiobook",
+  "debut": "Returning",
+  "decade": "1961",
+  "prizes": ""
+ },
+ {
+  "year": 2026,
+  "title": "End of Everything",
+  "nat": "UK",
+  "setting": "Europe",
+  "genre": "Fiction",
+  "gender": "Male",
+  "format": "Audiobook",
+  "debut": "Debut",
+  "decade": "2026",
+  "prizes": ""
  }
 ];
