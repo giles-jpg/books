@@ -15434,6 +15434,17 @@ const BOOKS = [
   "shelf": "Digital"
  },
   {
+  "title": "Clown Town",
+  "author": "Mick Herron",
+  "year": 2026,
+  "series": "",
+  "awards": "",
+  "format": "Kindle",
+  "read": false,
+  "pages": 352,
+  "shelf": "Digital"
+},
+  {
   "title": "The Defector",
   "author": "Richard Kerbaj",
   "year": 2025,
@@ -15441,7 +15452,7 @@ const BOOKS = [
   "awards": "",
   "format": "Audiobook",
   "read": false,
-  "pages": 302,
+  "pages": 304,
   "shelf": "Digital"
  }
 ];
